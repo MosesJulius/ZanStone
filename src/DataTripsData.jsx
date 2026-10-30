@@ -8,81 +8,42 @@ import beach2 from "../src/assets/image/Folder1/beach.jpg";
 import beach3 from "../src/assets/image/Folder1/beach2.jpg";
 import beach4 from "../src/assets/image/Folder1/beach3.jpg";
 import beach5 from "../src/assets/image/Folder1/beach4.jpg";
-import beach6 from "../src/assets/image/Folder1/beach5.jpg";
 import blue1 from "../src/assets/image/Folder1/blue1.jpg";
 import blue2 from "../src/assets/image/Folder1/blue2.jpg";
 import blue3 from "../src/assets/image/Folder1/blue3.jpg";
 import blue4 from "../src/assets/image/Folder1/blue4.jpg";
 import safariBg from "../src/assets/image/Folder1/desti.jpg";
-import farasi from "../src/assets/image/Folder1/farasi1.jpg";
-import farasi1 from "../src/assets/image/Folder1/farasi2.jpg";
-import farasi2 from "../src/assets/image/Folder1/farasi3.jpg";
-import farasi3 from "../src/assets/image/Folder1/farasi4.jpg";
-import farasi4 from "../src/assets/image/Folder1/farasi5.jpg";
-import farasi5 from "../src/assets/image/Folder1/farasi6.jpg";
-import farasi6 from "../src/assets/image/Folder1/farasi7.jpg";
+import safari1 from "../src/assets/image/safari1.jpg";
+import safari2 from "../src/assets/image/safari2.jpg";
+import safari3 from "../src/assets/image/safari3.jpg";
+import safari5 from "../src/assets/image/safari5.jpg";
+import safari4 from "../src/assets/image/safari4.jpg";
+import mikumi1 from "../src/assets/image/Folder1/mikumi1.jpg";
+import mikumi from "../src/assets/image/Folder1/mikumi.jpg";
+import mikumi2 from "../src/assets/image/Folder1/mikumi2.jpg";
+import mikumi3 from "../src/assets/image/Folder1/mikumi3.jpg";
 import kayaking from "../src/assets/image/Folder1/kayaking.jpg";
 import maa1 from "../src/assets/image/Folder1/maa1.jpeg";
 import maa2 from "../src/assets/image/Folder1/maa2.jpeg";
-import maa3 from "../src/assets/image/Folder1/maa3.jpeg";
-import maa4 from "../src/assets/image/Folder1/maa4.jpg";
-import maa5 from "../src/assets/image/Folder1/maa5.jpg";
 import pung1 from "../src/assets/image/Folder1/pung1.jpeg";
-import rock4 from "../src/assets/image/Folder1/rock.jpg";
-import rock5 from "../src/assets/image/Folder1/rock1.jpg";
 import sal1 from "../src/assets/image/Folder1/sal1.jpg";
 import sal2 from "../src/assets/image/Folder1/sal2.jpg";
-import sal3 from "../src/assets/image/Folder1/salaam.jpg";
 import jozani from "../src/assets/image/jozani/jozani.jpg";
-import jozani2 from "../src/assets/image/jozani/jozani2.jpg";
 import mnemba from "../src/assets/image/mnemba/mnemba.jpg";
 import mnemba1 from "../src/assets/image/mnemba/mnemba1.jpg";
-import mnemba10 from "../src/assets/image/mnemba/mnemba10.jpg";
-import mnemba11 from "../src/assets/image/mnemba/mnemba11.jpg";
-import mnemba12 from "../src/assets/image/mnemba/mnemba12.jpg";
-import mnemba13 from "../src/assets/image/mnemba/mnemba13.jpg";
-import mnemba14 from "../src/assets/image/mnemba/mnemba14.jpg";
 import mnemba5 from "../src/assets/image/mnemba/mnemba5.jpg";
 import mnemba6 from "../src/assets/image/mnemba/mnemba6.jpg";
-import mnemba7 from "../src/assets/image/mnemba/mnemba7.jpg";
-import mnemba8 from "../src/assets/image/mnemba/mnemba8.jpg";
-import mnemba9 from "../src/assets/image/mnemba/mnemba9.jpg";
-import nakupenda4 from "../src/assets/image/nakupenda/nakupenda2.jpg";
 import nakupenda3 from "../src/assets/image/nakupenda/nakupenda5.jpg";
 import nakupenda2 from "../src/assets/image/nakupenda/nakupenda6.jpg";
 import nakupenda from "../src/assets/image/nakupenda/nakupendasandbank.jpg";
 import nakupenda1 from "../src/assets/image/nakupenda/nalupenda1.jpg";
 import prison from "../src/assets/image/prison/prisonisland.jpg";
 import prison2 from "../src/assets/image/prison/prisonisland2.avif";
-import prison3 from "../src/assets/image/prison/prisonisland3.jpg";
-import prison4 from "../src/assets/image/prison/prisonisland4.jpg";
-import prison5 from "../src/assets/image/prison/prisonisland5.jpg";
-import prison6 from "../src/assets/image/prison/prisonisland6.jpg";
-import prison7 from "../src/assets/image/prison/prisonisland7.jpg";
 import rock from "../src/assets/image/rock/rock.jpg";
-import rock2 from "../src/assets/image/rock/rock2.jpg";
-import rock3 from "../src/assets/image/rock/rock3.jpg";
 import spice from "../src/assets/image/spice/spice.jpg";
-import spice1 from "../src/assets/image/spice/spice1.jpg";
-import spice2 from "../src/assets/image/spice/spice2.jpg";
-import spice3 from "../src/assets/image/spice/spice3.jpg";
 import stone from "../src/assets/image/stonetown/stonetown.jpg";
-import stone2 from "../src/assets/image/stonetown/stonetown2.jpg";
-import stone3 from "../src/assets/image/stonetown/stonetown3.jpg";
-import stone4 from "../src/assets/image/stonetown/stonetown4.jpg";
-import stone5 from "../src/assets/image/stonetown/stonetown5.avif";
-import stone6 from "../src/assets/image/stonetown/stonetown6.jpg";
-import stone7 from "../src/assets/image/stonetown/stonetown7.jpg";
-import stone8 from "../src/assets/image/stonetown/stonetown8.jpg";
 import sunset from "../src/assets/image/sunset/sunset.jpg";
 import sunset1 from "../src/assets/image/sunset/sunset1.jpg";
-import sunset2 from "../src/assets/image/sunset/sunset2.jpg";
-import sunset3 from "../src/assets/image/sunset/sunset3.jpg";
-import sunset4 from "../src/assets/image/sunset/sunset4.jpg";
-import sunset5 from "../src/assets/image/sunset/sunset5.jpg";
-import sunset6 from "../src/assets/image/sunset/sunset6.jpg";
-import kilimanjaro from '../src/assets/kilimanjaro.jpg.jpeg';
-import selous from '../src/assets/Selous.jpg.jpeg';
 
 
 
@@ -101,27 +62,29 @@ const placeholderImages = {
 };
 
 const tourPhotosByName = {
-  'zanzibar-mikumi-safari': [safariBg, mnemba, prison, stone, sunset, spice],
-  'vip-special-package': [mnemba1, nakupenda1, prison2, stone2, spice1, sunset1],
-  'kilimanjaro-machame': [kilimanjaro, farasi, farasi1, farasi2, farasi3, farasi4],
-  'kendwa-sunset': [sunset, sunset1, sunset2, sunset3, sunset4, sunset5],
-  'salaam-maalum-caves': [maa1, maa2, maa3, sal1, beach1, beach2],
-  'prison-island-nakupenda': [prison, nakupenda, prison2, nakupenda2, prison3, nakupenda3],
-  'nyange-private': [rock, rock2, rock3, rock4, rock5, beach3],
-  'stone-town-prison': [stone, prison, stone2, prison4, stone3, prison5],
-  'prison-stone-town-late': [prison6, stone4, prison7, stone5, stone6, stone7],
-  'salaam-cave': [sal1, sal2, sal3, maa4, maa5, pung1],
-  'stone-town-spice': [stone, spice, stone2, spice2, stone3, spice3],
-  'safari-blue': [blue1, blue2, blue3, blue4, beach4, beach5],
-  'grand-slam': [mnemba5, nakupenda4, prison7, stone8, rock3, sunset6],
-  'stone-town-walking': [stone, stone2, stone3, stone4, stone5, stone6],
-  'pungume-island': [farasi5, farasi6, beach6, beach1, beach2, beach3],
-  'selous-zanzibar': [selous, mnemba6, mnemba7, mnemba8, mnemba9, mnemba10],
-  'exclusive-5days': [safariBg, mnemba, stone, sunset, rock, spice],
-  'signature-6days': [safariBg, mnemba1, stone2, sunset2, rock2, spice2],
-  'grand-island': [mnemba11, mnemba12, mnemba13, mnemba14, stone7, stone8],
-  'safari-fusion': [safariBg, selous, mnemba, nakupenda, prison, beach4],
-  'salaam-maalum-dup': [sal1, sal2, sal3, maa1, maa2, maa3]
+  'clear-kayak-drone': [kayaking, pung1, blue1, blue2, beach4, mnemba],
+  'mnemba-snorkeling': [mnemba, mnemba1, mnemba5, mnemba6, blue1, beach1],
+  'nakupenda-prison-private': [nakupenda, prison, nakupenda2, prison2, beach3, sunset],
+  'nakupenda-sandbank': [nakupenda1, nakupenda, nakupenda2, nakupenda3, beach4, sunset1],
+  'nyange-sandbank': [nakupenda3, beach3, blue2, mnemba5, beach1, sunset],
+  'pungume-sandbank': [pung1, blue1, blue2, mnemba5, mnemba6, beach1],
+  'safari-blue': [blue1, blue2, blue3, blue4, beach4, mnemba],
+  'salaam-cave': [sal2, sal1, mnemba5, blue1, beach3, mnemba1],
+  'jozani-salaam': [jozani, sal1, mnemba5, beach1, blue1, mnemba],
+  'salaam-maalum': [sal1, maa1, maa2, beach1, mnemba5, blue1],
+  'stone-prison': [stone, prison, prison2, beach1, mnemba, blue1],
+  'stone-spice': [stone, spice, mnemba, beach1, blue1, mnemba5],
+  'kendwa-sunset': [sunset, sunset1, beach4, mnemba, blue1, blue2],
+  'zanzibar-mikumi': [safariBg, safari1, mnemba, nakupenda, prison, sunset],
+  'tarangire-ngorongoro': [safari3, safari2, safari1, safariBg, sunset, mnemba],
+  'serengeti-safari': [safari2, safari3, safari1, safariBg, sunset, mnemba],
+  'nyerere-safari': [safari1, safari3, safari2, safariBg, sunset, mnemba],
+  'mikumi-safari': [safari5, safari1, safari3, safari2, safariBg, sunset],
+  'serengeti-3day': [safari4, safari2, safari3, safari1, safariBg, sunset],
+  'ngorongoro-2day': [mikumi1, safari1, safari3, safari2, safariBg, sunset],
+  'mikumi-3day': [mikumi, safari1, safari3, safari2, safariBg, sunset],
+  'serengeti-balloon': [mikumi3, mikumi2, safari2, safari3, safari1, safariBg],
+  'nyerere-2day': [mikumi2, safari1, safari3, safari2, safariBg, sunset]
 };
 
 const generateTourPhotos = (baseName, count = 6) => {
@@ -144,1728 +107,1895 @@ const generateTourPhotos = (baseName, count = 6) => {
   return photos;
 };
 export const dayTripsData = [
-  // Tour 1: Zanzibar & Mikumi Safari Adventure (8 Days)
+  // 2-Day Nyerere (Selous) Safari with Boat Safari — newest package
   {
-    id: 'zanzibar-mikumi-safari-8days',
-    name: 'Zanzibar & Mikumi Safari Adventure',
-    shortDescription: '8-Day Journey Combining Paradise Beaches with Wild Safari Thrills',
-    description: 'Embark on a once-in-a-lifetime journey combining the tropical paradise of Zanzibar with the thrilling wildlife of Mikumi National Park. This exclusive itinerary blends relaxation, adventure, culture, and natural beauty.',
-    fullDescription: `Embark on a once-in-a-lifetime journey combining the tropical paradise of Zanzibar with the thrilling wildlife of Mikumi National Park. This exclusive itinerary blends relaxation, adventure, culture, and natural beauty.
+    id: 'nyerere-2day-boat-safari',
+    name: '2-Day Nyerere National Park (Selous) Safari from Zanzibar',
+    shortDescription: 'Game drive plus Rufiji River boat safari with a full-board overnight stay — 2 shared-safari days with flights',
+    description: 'Fly to Nyerere National Park for a full-day game drive and overnight stay, then explore the Rufiji River by boat before flying back to Zanzibar — shared safari on a full-board basis with return flights included.',
+    fullDescription: `Experience Tanzania’s wilderness by land and water on an unforgettable two-day safari from Zanzibar.
 
-From powder-white beaches and crystal-clear turquoise waters to vibrant coral reefs and breathtaking wildlife, every moment is designed to inspire wonder and create unforgettable memories. Sail on traditional dhows, explore hidden lagoons, dine on freshly prepared seafood on pristine sandbanks, and witness Africa's iconic wildlife in their natural habitat.
+Fly directly to Nyerere National Park, enjoy a full-day wildlife game drive and spend one night near the park. The following morning, explore the Rufiji River by boat before flying back to Zanzibar. 2 Days | 1 Night | Shared Safari | Full Board | Return Flights Included.
 
-This is more than a vacation — it is a dream African adventure brought to life. 🌴🐘✨
+YOUR ITINERARY
+Day 1 – Zanzibar to Nyerere + Full-Day Game Drive: early pickup, domestic flight, meet your driver-guide, game drive through savannahs, woodlands and the Rufiji River area (elephants, lions, giraffes, buffaloes, zebras, hippos, crocodiles and more), lunch on safari, dinner and overnight near the park. Full Board.
 
-ITINERARY – PREMIUM EXPERIENCE EDITION
+Day 2 – Boat Safari + Return to Zanzibar: approx. two-hour Rufiji River boat safari (hippos, crocodiles, birds, animals at the riverbanks), lunch, transfer to the airstrip, return flight, hotel transfer.
 
-Day 1: Arrival in Zanzibar – Luxury Welcome
-Upon arrival at Zanzibar International Airport, you will be warmly greeted and escorted to a private, luxurious, clean, and air-conditioned vehicle for a comfortable transfer to your hotel. Relax as you take in Zanzibar's tropical scenery. Spend the evening at leisure — a perfect time for a beach walk, poolside relaxation, or your first stunning sunset.
+PACKAGE INCLUDES: return domestic flights, hotel pickup & drop-off, airport/airstrip transfers, 1 night accommodation, full-board meals, full-day game drive in a shared jeep, English-speaking driver-guide, 2-hour boat safari, park entrance fees, drinking water, taxes and fees, team assistance throughout.
 
-Day 2: Safari Blue Adventure – Ocean Paradise with Kwa Le Island
-Set sail on a traditional wooden dhow for the iconic Safari Blue experience. Cruise through turquoise waters, snorkel over vibrant coral reefs, and explore natural lagoons. Visit Kwa Le Island, a secluded tropical paradise ideal for swimming, photography, and pure relaxation. Enjoy a freshly prepared seafood BBQ lunch on a pristine sandbank while lounging with fresh tropical fruits.
+EXCLUDES: international flights, Tanzania visa, travel/medical insurance, tips, alcohol, personal drinks, personal expenses, private vehicle.
 
-Day 3: Nakupenda Sandbank & Prison Island – Tropical Dream Day
-Begin with a boat ride to Nakupenda Sandbank, a postcard-perfect white sand paradise. Swim, snorkel, or simply relax on the beach. Enjoy fresh tropical fruits and soft drinks while lounging on the sandbank, along with a delicious seafood lunch. Afterward, visit Prison Island to meet giant tortoises and explore historic colonial-era ruins.
-
-Day 4: Beach Relaxation & Sunset Cruise in Kendwa
-Spend the day at leisure enjoying your hotel or beach. Optional activities: spa treatments, yoga, or snorkeling. In the late afternoon, private transfer to Kendwa Beach for a romantic sunset dhow cruise along Zanzibar's coastline with refreshing soft drinks and local snacks.
-
-Day 5: Mikumi National Park – Full-Day Safari Adventure
-Start early with a private pick-up from your hotel and transfer to the airport for a flight to Mikumi. Explore Mikumi National Park in a comfortable 4x4 vehicle with an expert guide. Spot lions, elephants, giraffes, zebras, and more. Enjoy a scenic picnic lunch in the savannah before returning to Zanzibar.
-
-Day 6: Mnemba Atoll Snorkeling – Underwater Paradise
-Early pick-up at 6:00 AM to avoid crowds. Transfer to Matemwe, then head to Mnemba Atoll, a protected marine reserve. Snorkel in crystal-clear waters, swim with tropical fish, and enjoy the tranquility. Fresh fruits and soft drinks provided, followed by a seafood lunch on the beach.
-
-Day 7: Salaam Cave & Swimming with Turtles – Hidden Gem
-Private transfer to Salaam Cave in Kizimkazi. Swim in calm, crystal-clear waters and interact with friendly turtles. Enjoy optional soft drinks and fresh fruits while relaxing in this serene lagoon.
-
-Day 8: Departure – Farewell to Zanzibar
-Enjoy a final morning at leisure — last stroll on the beach or hotel relaxation. Private transfer ensures a smooth journey to Zanzibar International Airport.`,
-    price: {
-      '2': '$1,227',
-      '3-5': '$1,838',
-      '6-9': '$1,526',
-      '10+': '$1,403'
-    },
-    priceNote: 'Price based on:',
-    image: safariBg,
-    duration: '8 Days / 7 Nights',
-    groupSize: 'Private tour',
-    category: 'daytrip',
+PRICE PER PERSON
+2 Travellers: $750 per person
+3 Travellers: $720 per person
+4+ Travellers: $700 per person
+From $700 per person. Shared safari — private vehicle on request at extra cost. Passport details required in advance. Wildlife sightings cannot be guaranteed.`,
+    price: 'From $700',
+    priceNote: 'Per person',
+    image: mikumi2,
+    duration: '2 Days / 1 Night',
+    groupSize: 'Shared Safari',
+    category: 'safari',
     isDayTrip: false,
-    location: 'Zanzibar & Mikumi',
+    location: 'Nyerere (Selous)',
     tips: [
       {
-        text: 'Book the Safari Blue and the Nakupenda day trip early in the morning for best water clarity and quieter beaches.',
-        image: safariBg
+        text: 'Have clear passport details ready in advance to reserve the domestic flights.',
+        image: mikumi2
       },
       {
-        text: 'Carry sun protection, a swim vest, and waterproof shoes for beach and rockland walking.',
-        image: mnemba
+        text: 'Domestic flights have strict luggage limits — the allowance is confirmed before departure.',
+        image: safari1
       },
       {
-        text: 'Bring a small binoculurs to spot wildlife during the Mikumi safari segment.',
-        image: prison
+        text: 'The boat safari is a highlight — keep the camera ready for hippos and river birds.',
+        image: safari3
       }
     ],
     highlights: [
-      'Safari Blue Adventure with Kwa Le Island',
-      'Nakupenda Sandbank & Prison Island Tour',
-      'Kendwa Sunset Dhow Cruise',
-      'Full-Day Mikumi Safari with Game Drive',
-      'Mnemba Atoll Snorkeling & Dolphin Spotting',
-      'Salaam Cave Turtle Swimming Experience'
+      'Full-day Nyerere game drive',
+      'Rufiji River boat safari',
+      'Return domestic flights',
+      'Full-board overnight stay',
+      'Shared jeep, guide & park fees'
     ],
     includes: [
-      'Private airport transfers (arrival & departure) in luxury vehicles',
-      'Private air-conditioned vehicles for all transfers around Zanzibar',
-      'Professional English-speaking guides for all excursions',
-      'Private boats for Safari Blue, Nakupenda, Prison Island, and Mnemba Atoll',
-      'Sharing sunset dhow cruise with soft drinks and local snacks',
-      'All entrance fees and government taxes included — no hidden costs',
-      'Fresh seafood lunches on sandbanks and beaches',
-      'Soft drinks and fresh tropical fruits daily on all excursions',
-      'Snorkeling equipment provided (mask, fins, life jackets)',
-      'Full-day 4x4 safari in Mikumi National Park with picnic lunch',
-      'Round-trip flights to Mikumi',
-      'Swimming with turtles at Salaam Cave'
-    ],
-    excludes: [
-      'International flights to/from Zanzibar',
-      'Travel insurance and personal expenses',
-      'Tips and gratuities for guides and drivers',
-      'Alcoholic beverages'
-    ],
-    status: '2026 Premium Adventure',
-    rating: 5.0,
-    reviewCount: 0,
-    bookingLink: '/book/zanzibar-mikumi-safari-8days',
-    featured: true,
-    photos: generateTourPhotos('zanzibar-mikumi-safari')
-  },
-
- 
-
-  // Tour 4: Kendwa Sunset Cruise
-  {
-    id: 'kendwa-sunset-cruise',
-    name: 'Kendwa Sunset Cruise',
-    shortDescription: 'The Most Iconic Sunset in East Africa',
-    description: 'Experience the magic of the Indian Ocean as the sun dips below the horizon aboard a traditional wooden dhow.',
-    fullDescription: `Tour Grade: 2026 Romantic & Leisure Excellence
-Type: Private or Executive Sharing Charter
-
-OVERVIEW: THE MOST ICONIC SUNSET IN EAST AFRICA
-Experience the magic of the Indian Ocean as the sun dips below the horizon with ZanStone Tours & Safaris. The Kendwa Sunset Cruise is the ultimate way to conclude your day in Zanzibar.
-
-Aboard a handcrafted traditional wooden dhow, you will sail along the stunning coastline of Kendwa and Nungwi, famous for their calm, turquoise waters and vibrant gold-and-orange skies. Whether you are seeking a romantic escape, a family celebration, or a relaxing evening with friends, this cruise offers the perfect blend of Swahili culture, music, and breathtaking natural beauty.
-
-DETAILED PROFESSIONAL ITINERARY & TIMINGS
-
-04:00 PM – VIP Hotel Pickup & Kendwa Transfer (pickup time depends on your hotel location)
-Start your evening with a private collection from your resort in a clean, air-conditioned vehicle. We head to the world-famous Kendwa Beach, where your traditional dhow awaits.
-
-Traditional Dhow Boarding & Departure
-Step aboard our professionally crewed dhow. As the sails are hoisted, we glide away from the shore into the calm, deep blue waters of the North Coast.
-
-Coastal Sailing & Swahili Rhythms
-Relax on comfortable cushions as we sail along the coastline. Enjoy live Swahili music or soft island rhythms while the crew serves traditional Zanzibar snacks and refreshments.
-
-The Golden Hour & Sunset Toast
-As the "Golden Hour" begins, the sky transforms into a masterpiece of pink, orange, and purple hues. We anchor in a prime position to watch the Zanzibar Sunset over the horizon. Toast to the moment with chilled refreshments and tropical fruit platters.
-
-Arrival Back at Shore & Return Transfer
-After the sun has set, we sail back to Kendwa Beach under the emerging stars. Your private driver will be waiting to provide a comfortable transfer back to your hotel.`,
-    price: {
-      '2': '$130',
-      '3-4': '$180',
-      '5-6': '$220 Per Person',
-      '7-12': '$40 Per Person',
-      '13+': '$35 Per Person'
-    },
-    priceNote: 'Price based on',
-    image: beach1,
-    duration: '3-4 Hours (Sunset)',
-    groupSize: 'sharing trip or private charter',
-    category: 'daytrip',
-    isDayTrip: true,
-    location: 'Kendwa/Nungwi',
-    highlights: [
-      'Traditional Dhow Sailing',
-      'Live Swahili Music',
-      'Sunset Toast',
-      'Local Snacks & Refreshments',
-      'Expert Crew',
-      'Hotel Transfers Included'
-    ],
-    includes: [
-      'Private Hotel Pickup & Drop-off',
-      'Handcrafted Dhow Charter with professional crew',
-      'Professional Licensed Guide',
-      'Soft drinks, bottled water, and local snacks',
-      'Fresh tropical fruit platters',
-      'Live Swahili entertainment',
-      'All Government Fees and local taxes'
-    ],
-    excludes: [
-      'Personal expenses',
-      'Alcoholic beverages (can be pre-arranged)',
-      'Tips and gratuities'
-    ],
-    status: '2026 Romantic Excellence',
-    rating: 5.0,
-    reviewCount: 0,
-    bookingLink: '/book/kendwa-sunset-cruise',
-    featured: false,
-    photos: generateTourPhotos('kendwa-sunset')
-  },
-
-  // Tour 5: Salaam Cave & Maalum Cave Experience
-  {
-    id: 'salaam-maalum-caves',
-    name: 'Salaam Cave & Maalum Cave Experience',
-    shortDescription: 'Swim with Turtles and Discover Hidden Oases',
-    description: 'Explore two of Zanzibar\'s most iconic natural sinkholes - from ethical turtle encounters to premium eco-wellness swimming.',
-    fullDescription: `Tour Grade: 2026 Nature & Wellness Excellence
-Type: Private Tour
-
-📍 Overview: The Ultimate Hidden Oasis Journey
-Discover the mystical inland waters of Zanzibar with ZanStone Tours & Safaris. This exclusive combo tour takes you to two of the island's most iconic natural sinkholes. From the ethical sea turtle encounter at Salaam Cave in Kizimkazi to the premium, serene eco-wellness swimming at Maalum Cave in Paje, this itinerary is designed for travelers seeking tranquility, photography, and a deep connection with nature.
-
-🌊 Detailed Professional Itinerary & Timings
-
-09:00 AM – VIP Hotel Pickup & Private Transfer 🚐
-Start your morning with a private collection from your resort in a clean, air-conditioned vehicle. We head to the southern coast for your first natural encounter.
-
-Salaam Cave: Swimming with Turtles 🐢
-Arrive at the natural turquoise lagoon of Salaam Cave. Spend your time swimming alongside friendly sea turtles in a protected environment. This is a rare, interactive experience perfect for nature lovers and underwater photography.
-
-Scenic Coastal Transfer to Paje 🌴
-Enjoy a relaxing drive across the island toward the East Coast. We will stop for a quick local refreshment or a fresh coconut (Dafu) along the way.
-
-Maalum Cave: The Premium Eco-Lagoon 💎
-Enter the sophisticated and peaceful Maalum Cave. Unlike other spots, Maalum is a curated "natural swimming pool" with crystal-clear fresh water. It is known for its stunning rock formations and quiet, high-end atmosphere.
-
-Relaxation & Fresh Tropical Fruits 🥥
-After your swim, lounge by the cave's edge. Enjoy a professional platter of Zanzibar seasonal fruits and chilled mineral water as you soak in the serene jungle vibes.
-
-Professional Return Transfer 🚐
-After a full day of exploring Zanzibar's hidden wonders, your private driver will facilitate a comfortable transfer back to your hotel.`,
-    price: {
-      '2': '$215',
-      '3-4': '$284',
-      '5-6': '$70 Per Person',
-      '7-12': '$65 Per Person',
-        '13+': '$60 Per Person'
-    },
-    priceNote: 'Price based on',
-    image: maa1,
-    duration: 'Full Day (9:00 AM - 4:00 PM)',
-    groupSize: 'Private Tour',
-    category: 'daytrip',
-    isDayTrip: true,
-    location: 'Kizimkazi & Paje',
-    highlights: [
-      'Swim with Sea Turtles',
-      'Explore Maalum Cave',
-      'Natural Freshwater Lagoon',
-      'Professional Guide',
-      'Fresh Tropical Fruits',
-      'Scenic Coastal Drive'
-    ],
-    includes: [
-      'Private Hotel Pickup & Drop-off',
-      'Professional Licensed Guide',
-      'Double Cave Access (Salaam & Maalum)',
-      'Ethical Turtle Interaction',
-      'Bottled mineral water and fresh tropical fruits',
-      'All Government Fees included'
-    ],
-    excludes: [
-      'Personal expenses',
-      'Lunch (can be added)',
-      'Tips and gratuities'
-    ],
-    status: '2026 Nature Excellence',
-    rating: 5.0,
-    reviewCount: 0,
-    bookingLink: '/book/salaam-maalum-caves',
-    featured: false,
-    photos: generateTourPhotos('salaam-maalum-caves')
-  },
-
-  // Tour 6: Prison Island & Nakupenda Sandbank
-  {
-    id: 'prison-island-nakupenda',
-    name: 'Prison Island & Nakupenda Sandbank',
-    shortDescription: 'Giant Tortoises and Tropical Sandbank Paradise',
-    description: 'Experience two of the most iconic Zanzibar sea excursions in one spectacular journey.',
-    fullDescription: `Tour Grade: 2026 Top-Rated Experience
-Type: Private tour
-
-📍 Overview: Paradise Meets History
-Experience two of the most iconic Zanzibar sea excursions in one spectacular journey with ZanStone Tours & Safaris. This full-day itinerary seamlessly blends the historic intrigue of Prison Island (Changuu) with the breathtaking natural beauty of Nakupenda Sandbank. From encountering century-old Giant Aldabra Tortoises to indulging in a gourmet seafood BBQ on a disappearing island of white sand, this tour is crafted for travelers seeking the perfect mix of Zanzibar history, nature, and tropical luxury.
-
-🐢 Detailed Professional Itinerary & Timings
-
-08:30 AM – VIP Hotel Pickup & Stone Town Transfer 🚐
-Start your morning with a private pickup in a clean, air-conditioned vehicle. We coordinate our departure from the Stone Town port to ensure you reach the sandbank before the midday crowds.
-
-Prison Island Heritage Tour (Changuu Island) 🐢
-A 20-minute boat ride across the turquoise Indian Ocean brings you to the historic Prison Island. Enjoy a guided tour of the colonial ruins and the Giant Tortoise Sanctuary. Feed and photograph these gentle giants, some over 150 years old.
-
-Nakupenda Sandbank 
-We take a boat to Nakupenda Sandbank, a breathtaking stretch of pure white sand. Snorkel in Zanzibar's shallow coral gardens, swim in crystal-clear waters, or simply relax under a sunshade.
-
-Signature Seafood BBQ on the Sandbank 🍤
-Savor an authentic Zanzibar seafood lunch freshly prepared on the beach. Indulge in grilled lobster, prawns, calamari, and fresh fish, accompanied by tropical fruits and chilled refreshments.
-
-Scenic Return & Arrival Back at Hotel 🚤
-Enjoy a final dip before a relaxing boat ride back to the shore. Your private driver will provide a comfortable transfer back to your resort.`,
-    price: {
-      '2': '$270',
-      '3-4': '$116  Per person',
-      '5-6': '$88 Per person',
-      '7-12': '$80 Per person',
-      '13+': '$75 Per person'
-    },
-    priceNote: 'Price based on',
-    image: prison,
-    duration: 'Full Day (7:30 AM - 4:30 PM)',
-    groupSize: 'Private tour',
-    category: 'daytrip',
-    isDayTrip: true,
-    location: 'Stone Town',
-    highlights: [
-      'Giant Tortoise Sanctuary',
-      'Nakupenda Sandbank',
-      'Seafood BBQ Lunch',
-      'Snorkeling',
-      'Historical Prison Island Tour',
-      'Professional Guide'
-    ],
-    includes: [
-      'Private Hotel Pickup & Drop-off',
-      'Traditional Boat Transfers',
-      'Licensed Professional Guide',
-      'Prison Island entrance fees',
-      'Gourmet Seafood Lunch',
-      'Unlimited bottled water and soft drinks',
-      'All Government Fees included'
-    ],
-    excludes: [
-      'Personal expenses',
-      'Tips and gratuities'
-    ],
-    status: '2026 Top-Rated',
-    rating: 5.0,
-    reviewCount: 0,
-    bookingLink: '/book/prison-island-nakupenda',
-    featured: true,
-    photos: generateTourPhotos('prison-island-nakupenda')
-  },
-
-  // Tour 7: Nyange (Nakupenda) Private Sandbank Escape
-  {
-    id: 'nyange-private-sandbank',
-    name: 'Nyange (Nakupenda) Private Sandbank Escape',
-    shortDescription: 'Exclusive Luxury in the Middle of the Indian Ocean',
-    description: 'Discover the most breathtaking natural wonder of Zanzibar with this private VIP sandbank experience.',
-    fullDescription: `Tour Grade: 2026 VIP Experience
-Type: Private Tour
-
-📍 Overview: Exclusive Luxury in the Middle of the Indian Ocean
-Discover the most breathtaking natural wonder of Zanzibar with ZanStone Tours & Safaris. Nyange (widely known as small nakupenda or Nakupenda biss) is a pristine, ephemeral sandbank that emerges from the turquoise Indian Ocean, offering a surreal landscape of pure white sand and crystal-clear infinity.
-
-This private version is designed for travelers who seek a secluded escape to swim, snorkel, and indulge in a world-class Seafood BBQ in one of the most beautiful settings on Earth.
-
-🌊 Detailed Professional Itinerary & Timings
-
-08:00 AM – VIP Hotel Pickup & Stone Town Transfer 🚐
-Start your morning with a private pickup from your resort in a clean, air-conditioned vehicle. We coordinate our departure from Stone Town to ensure you reach the sandbank before the midday crowds.
-
-Scenic Private Boat Voyage ⛵
-Board your  private boat for a 20-minute cruise across the sparkling turquoise waters. Watch the horizon as the white sands of Nyange slowly appear.
-
-Sandbank Bliss 
-Swim in the shallow, warm waters or  Our crew will set up a private sunshade for you to lounge and enjoy the 360-degree ocean views.
-
-Signature Seafood BBQ on the Sandbank 🍤
-Savor an authentic Zanzibar Seafood Lunch freshly prepared on-site. Indulge in grilled lobster, jumbo prawns, calamari, and fresh fish, accompanied by spiced rice and local salads. Follow your meal with a colorful platter of seasonal tropical fruits.
-
-Relaxation & Arrival Back at Hotel 🚤
-Enjoy a final dip in the crystal waters before a relaxing boat ride back to the shore. Your private driver will be waiting to provide a comfortable transfer back to your resort.`,
-    price: {
-      '2': '$230',
-      '3-4': '$280',
-      '5-6': '$65 per person',
-      '7-12': '$60 per person',
-      '13+': '$55 per person'
-    },
-    priceNote: 'Price based on',
-    image: nakupenda,
-    duration: 'Full Day (07:30 AM - 4:00 PM)',
-    groupSize: 'Private tour',
-    category: 'daytrip',
-    isDayTrip: true,
-    location: 'Stone Town',
-    highlights: [
-      'Private Sandbank Experience',
-      'Premium Seafood BBQ',
-      'Lobster & Prawns',
-      'Snorkeling Gear Included',
-      'Private Boat Charter',
-      'Professional Photography'
-    ],
-    includes: [
-      'Private Hotel Pickup & Drop-off',
-      'private boat',
-      'Licensed Professional Guide',
-      'Gourmet Seafood Lunch with lobster',
-      'Unlimited bottled water and soft drinks',
-      'High-quality snorkeling equipment',
-      'All Government Fees included'
-    ],
-    excludes: [
-      'Personal expenses',
-      'Tips and gratuities'
-    ],
-    status: '2026 VIP Experience',
-    rating: 5.0,
-    reviewCount: 0,
-    bookingLink: '/book/nyange-private-sandbank',
-    featured: true,
-    photos: generateTourPhotos('nyange-private')
-  },
-
-  // Tour 8: Stone Town & Prison Island Heritage
-  {
-    id: 'stone-town-prison-island',
-    name: 'Stone Town & Prison Island Heritage Tour',
-    shortDescription: 'History, Culture & Gentle Giants',
-    description: 'Experience the profound historical depth and natural charm of Zanzibar with this curated day trip.',
-    fullDescription: `Tour Grade: 2026 Cultural & Wildlife Excellence
-Type: Private Executive Tour
-
-📍 Overview: History, Culture & Gentle Giants
-Experience the profound historical depth and natural charm of Zanzibar with this curated day trip by ZanStone Tours & Safaris. This tour bridges the gap between the legendary, winding alleys of Stone Town (UNESCO World Heritage Site) and the tranquil shores of Prison Island (Changuu).
-
-From the architectural marvels of the Sultan's palaces to the majestic, century-old Giant Aldabra Tortoises, this experience offers a complete immersion into the soul of the Spice Island.
-
-🏺 Detailed Professional Itinerary & Timings
-
-08:00 AM – VIP Hotel Pickup & Stone Town Transfer 🚐
-Begin your day with a private collection from your resort in a clean, air-conditioned vehicle. We head to the waterfront of Stone Town.
-
-Prison Island Heritage Tour (Changuu Island) 🐢
-A 20-minute boat ride across the turquoise Indian Ocean brings you to the historic Prison Island. Enjoy a guided tour of the colonial-era quarantine ruins and the Giant Tortoise Sanctuary.
-
-Stone Town UNESCO Walking Tour 🏛️
-Return to the mainland for a deep dive into the ancient city. Explore the Old Slave Market & Anglican Cathedral, the House of Wonders, and the Sultan's Palace Museum. Marvel at the iconic Zanzibar Carved Doors and experience the vibrant energy of the Darajani Market.
-
-Authentic Swahili Lunch (Optional/Flexible) 🍛
-Enjoy a break for a traditional Swahili Lunch at a curated rooftop restaurant in Stone Town.
-
-Leisurely Return Transfer 🚐
-After a morning of discovery, your private driver will facilitate a comfortable transfer back to your hotel.`,
-    price: {
-      '2': '$251',
-      '3-4': '$100  Per person',
-      '5-6': '$82 Per person',
-      '7-12': '$75 Per person',
-      '13+': '$70 Per person'
-    },
-    priceNote: 'price based on',
-    image: prison3,
-    duration: 'Full Day (8:00 AM - 4:00 PM)',
-    groupSize: 'Private Executive Tour',
-    category: 'daytrip',
-    isDayTrip: true,
-    location: 'Stone Town',
-    highlights: [
-      'UNESCO World Heritage Site',
-      'Prison Island Tortoises',
-      'Old Slave Market',
-      'House of Wonders',
-      'Sultan\'s Palace',
-      'Darajani Market'
-    ],
-    includes: [
-      'Private Hotel Pickup & Drop-off',
-      'Traditional Boat Transfers',
-      'Professional Licensed Guide',
-      'Prison Island entrance fees',
-      'UNESCO Site Permits',
-      'Bottled mineral water and tropical fruits',
-      'All Government Fees included'
-    ],
-    excludes: [
-      'Personal expenses',
-      'Lunch costs (unless pre-arranged)',
-      'Tips and gratuities'
-    ],
-    status: '2026 Cultural Excellence',
-    rating: 5.0,
-    reviewCount: 0,
-    bookingLink: '/book/stone-town-prison-island',
-    featured: false,
-    photos: generateTourPhotos('stone-town-prison')
-  },
-
-
-  // Tour 10: Salaam Cave Swimming with Turtles
-  {
-    id: 'salaam-cave-turtles',
-    name: 'Salaam Cave: Swimming with Turtles',
-    shortDescription: 'A Magical Encounter in a Hidden Oasis',
-    description: 'Discover one of Zanzibar\'s most serene hidden gems - swim with sea turtles in a natural turquoise lagoon.',
-    fullDescription: `Tour Grade: 2026 Nature Excellence
-Type: Private Executive Transfer & Guided Tour
-
-📍 Overview: A Magical Encounter in a Hidden Oasis
-Discover one of Zanzibar's most serene hidden gems with ZanStone Tours & Safaris. Located in the quiet village of Kizimkazi, Salaam Cave is a breathtaking natural inland lagoon filled with crystal-clear turquoise seawater.
-
-This tour offers a rare and ethical opportunity to swim and interact with friendly sea turtles in a protected environment. Surrounded by ancient rock formations and lush greenery, it is the perfect escape for nature lovers and photography enthusiasts seeking a unique, peaceful experience away from the traditional beach crowds.
-
-🐢 Detailed Professional Itinerary & Timings
-
-09:00 AM – Hotel Pickup & Private Transfer 🚐
-Start your day with a private collection from your resort in a clean, air-conditioned vehicle. Enjoy a scenic drive through local villages as you head to the southern coast.
-
-Arrival at Salaam Cave & Orientation 📍
-Upon arrival, your professional guide will provide a brief orientation on the cave's history and sea turtle conservation.
-
-Swimming with Turtles & Photography 🐢
-Step into the calm, turquoise waters of the natural cave. Spend your time swimming alongside the turtles, feeding them seaweed, and capturing incredible underwater photos.
-
-Scenic Return Transfer 🚐
-After a morning of natural wonder, your private driver will facilitate a comfortable transfer back to your hotel.`,
-    price: {
-      '2': '$175',
-      '3-4': '$220 ',
-      '5-6': '$55 Per Person',
-      '7-12': '$50 Per Person',
-      '13+': '$45 Per Person'
-    },
-    priceNote: 'Price based on',
-    image: sal1,
-    duration: 'Half Day (9:00 AM - 1:00 PM)',
-    groupSize: 'Private Executive Tour',
-    category: 'daytrip',
-    isDayTrip: true,
-    location: 'Kizimkazi',
-    highlights: [
-      'Swim with Sea Turtles',
-      'Natural Turquoise Lagoon',
-      'Underwater Photography',
-      'Conservation Education',
-      'Professional Guide',
-      'Scenic Drive'
-    ],
-    includes: [
-      'Private Hotel Pickup & Drop-off',
-      'Professional Licensed Guide',
-      'Salaam Cave Entry fees',
-      'Ethical Turtle Interaction',
-      'Bottled mineral water',
-      'All Government Fees included'
-    ],
-    excludes: [
-      'Personal expenses',
-      'Lunch',
-      'Tips and gratuities'
-    ],
-    status: '2026 Nature Excellence',
-    rating: 5.0,
-    reviewCount: 0,
-    bookingLink: '/book/salaam-cave-turtles',
-    featured: false,
-    photos: generateTourPhotos('salaam-cave')
-  },
-
-  // Tour 11: Stone Town & Spice Farm
-  {
-    id: 'stone-town-spice-farm',
-    name: 'Stone Town & Spice Farm Discovery',
-    shortDescription: 'The Heart & Soul of Zanzibar',
-    description: 'Discover why Zanzibar is celebrated as the "Spice Island" and a historical gateway to East Africa.',
-    fullDescription: `Tour Grade: 2026 Cultural Excellence
-Type: Private Executive Tour
-
-📍 Overview: The Heart & Soul of Zanzibar
-Discover why Zanzibar is celebrated as the "Spice Island" and a historical gateway to East Africa. This professionally curated day trip by ZanStone Tours & Safaris combines the architectural grandeur of Stone Town (UNESCO World Heritage Site) with the aromatic wonders of our organic spice plantations.
-
-Navigate the legendary limestone alleys and sultan's palaces before heading to the lush countryside to touch, smell, and taste the world's finest spices. It is the definitive experience for those seeking history, culture, and gastronomy in one day.
-
-🏺 Detailed Professional Itinerary & Timings
-
-09:00 AM – VIP Hotel Pickup & Private Transfer 🚐
-Your journey begins with a private collection from your resort in a clean, air-conditioned vehicle.
-
-Stone Town UNESCO Walking Tour 🏛️
-Wander through the narrow, winding streets of the ancient city. Visit the Old Slave Market & Anglican Cathedral, the House of Wonders, and the Sultan's Palace Museum. Marvel at the iconic Zanzibar Carved Doors.
-
-Authentic Swahili Farm Lunch 🍛
-Transition to the lush countryside for a traditional Swahili Lunch prepared at the farm. Savor organic dishes like spiced pilau rice and seasonal vegetables.
-
-Organic Spice Plantation Journey 🌿
-An immersive sensory tour of a working Zanzibar Spice Farm. See, touch, smell, and taste fresh cloves, nutmeg, cinnamon, vanilla, and cardamom directly from the trees.
-
-Relaxation & Arrival Back at Hotel 🚐
-After a day of cultural and sensory discovery, your private driver will facilitate a comfortable transfer back to your hotel.`,
-    price: {'2': '$175',
-      '3-4': '$220  Per person',
-      '5-6': '$50 Per person',
-      '7-12': '$45 Per person',
-      '13+': '$40 Per person'},
-    priceNote: 'Price based on',
-    image: spice,
-    duration: 'Full Day (9:00 AM - 4:30 PM)',
-    groupSize: 'Private Executive Tour',
-    category: 'daytrip',
-    isDayTrip: true,
-    location: 'Stone Town & Countryside',
-    highlights: [
-      'UNESCO Stone Town Tour',
-      'Spice Farm Experience',
-      'Traditional Swahili Lunch',
-      'Old Slave Market',
-      'House of Wonders',
-      'Spice Tasting'
-    ],
-    includes: [
-      'Private Hotel Pickup & Drop-off',
-      'Professional Licensed Guide',
-      'UNESCO Site Access',
-      'Authentic Swahili Lunch',
-      'Unlimited bottled water',
-      'Spice samples and fresh coconut water',
-      'All Government Fees included'
-    ],
-    excludes: [
-      'Personal expenses',
-      'Tips and gratuities'
-    ],
-    status: '2026 Cultural Excellence',
-    rating: 5.0,
-    reviewCount: 0,
-    bookingLink: '/book/stone-town-spice-farm',
-    featured: true,
-    photos: generateTourPhotos('stone-town-spice')
-  },
-
-  // Tour 12: Safari Blue Adventure
-  {
-    id: 'safari-blue-adventure',
-    name: 'The Legendary Safari Blue Adventure',
-    shortDescription: 'Premium Private Dhow Adventure',
-    description: 'Zanzibar\'s most iconic sea excursion across the protected Menai Bay Marine Conservation Area.',
-    fullDescription: `Tour Grade: 2026 Top-Rated Experience
-Type: Private Executive Charter (Sharing Options Available)
-
-📍 Overview: The Ultimate Celebration of Ocean & Island Life
-Embark on Zanzibar's most iconic sea excursion with ZanStone Tours & Safaris. The Safari Blue adventure is a full-day journey across the protected Menai Bay Marine Conservation Area.
-
-Aboard a handcrafted traditional wooden dhow, you will discover hidden sandbanks, explore prehistoric mangrove lagoons, and snorkel in vibrant coral gardens. The highlight of the day is our Signature Seafood BBQ Buffet served on Kwale Island under the shade of ancient baobab trees.
-
-🌊 Detailed Professional Itinerary & Timings
-
-08:00 AM – VIP Hotel Pickup & Fumba Transfer 🚐
-Start your morning with a private collection from your resort in a clean, air-conditioned vehicle.
-
-Traditional Dhow Sailing & Sandbank Bliss ⛵
-Board our professionally crewed dhow and set sail across the turquoise waters. First stop is a secluded sandbank where you can swim and sunbathe.
-
-Premium Snorkeling in Menai Bay 🤿
-Dive into the crystal-clear waters of the conservation area. Explore diverse coral reefs teeming with tropical fish.
-
-Gourmet Seafood BBQ on Kwale Island 🦞
-Head to Kwale Island for a world-class seafood feast. Indulge in freshly grilled lobster, jumbo prawns, calamari, octopus, and fish.
-
-Natural Lagoon & Mangrove Exploration 🌿
-Visit a hidden Blue Lagoon—a natural swimming pool surrounded by mangrove forests.
-
-Arrival Back at Hotel 🚐
-After a full day of ocean exploration, enjoy a scenic sail back to the shore.`,
-    price: {
-      '2': '$250',
-      '3-4': '$90  Per person',
-      '5-6': '$75 Per person',
-      '7-12': '$65 Per person',
-      '13+': '$60 Per person'
-    },
-    priceNote: 'Price based on',
-    image: blue1,
-    duration: 'Full Day (7:30 AM - 5:00 PM)',
-    groupSize: 'Private tour',
-    category: 'daytrip',
-    isDayTrip: true,
-    location: 'Menai Bay',
-    highlights: [
-      'Traditional Dhow Sailing',
-      'Kwale Island Visit',
-      'Seafood BBQ Buffet',
-      'Snorkeling in Coral Gardens',
-      'Mangrove Lagoon',
-      '500-Year-Old Baobab Tree'
-    ],
-    includes: [
-      'Private Hotel Pickup & Drop-off',
-      'private boat',
-      'Licensed Professional Guide',
-      'Gourmet Seafood Buffet with lobster',
-      'Unlimited bottled water and soft drinks',
-      'High-quality snorkeling equipment',
-      'All Marine Park Fees included'
-    ],
-    excludes: [
-      'Personal expenses',
-      'Alcoholic beverages',
-      'Tips and gratuities'
-    ],
-    status: '2026 Top-Rated',
-    rating: 5.0,
-    reviewCount: 0,
-    bookingLink: '/book/safari-blue',
-    featured: true,
-    photos: generateTourPhotos('safari-blue')
-  },
-
-  // Tour 13: ZanStone Grand Slam (10 Days)
-  {
-    id: 'zanstone-grand-slam',
-    name: 'ZanStone Grand Slam VIP Experience',
-    shortDescription: '10-Day Exclusive Multi-Activity Luxury Journey',
-    description: 'The most prestigious and comprehensive itinerary bridging island serenity with mainland safari adventure.',
-    fullDescription: `Tour Category: Exclusive VIP Multi-Activity | Duration: 10 Days / 9 Nights | Year: 2026 Edition
-
-Executive Summary
-The ZanStone Grand Slam is our most prestigious and comprehensive itinerary. This 10-day journey bridges the turquoise serenity of private island sandbanks with the raw, high-octane adventure of a mainland Tanzania Safari. From viral Drone Photoshoots in clear kayaks to the historical depths of Stone Town, every detail is managed with 100% private logistics.
-
-Detailed Professional Itinerary & Timings
-
-Day 1: Arrival & VIP Executive Transfer 🛬
-Pickup: Anytime (24/7 Service). Meet our professional concierge at Zanzibar International Airport for a private transfer to your resort.
-
-Day 2: Mnemba Atoll: Private Dolphin & Snorkeling Safari 🐬
-Start: 07:00 AM | Finish: 02:00 PM. Early departure to beat the crowds at Mnemba Atoll. Observe wild dolphins and snorkel in the "natural aquarium" of the reef.
-
-Day 3: Stone Town Heritage & The Spice Plantation Journey 🏺🌿
-Start: 09:00 AM | Finish: 04:30 PM. Explore the winding alleys of Stone Town. Discover the botanical secrets of the Spice Island with farm-to-table lunch.
-
-Day 4: Salaam Cave & The Iconic Rock Restaurant 🐢🍽️
-Start: 09:00 AM | Finish: 05:00 PM. Swim with sea turtles in Salaam Cave. Enjoy VIP reservation at The Rock Restaurant.
-
-Day 5: Total Island Relaxation & Spa Day 🧘‍♂️
-Full Day Leisure. Enjoy resort amenities and Balinese spa treatment.
-
-Day 6: Pungume Island: The Hidden Turquoise Escape 🏝️
-Start: 08:30 AM | Finish: 04:00 PM. Discover secluded Pungume Sandbank with private beach BBQ.
-
-Day 7: Nakupenda Sandbank & Prison Island Discovery 🐢
-Start: 08:30 AM | Finish: 04:30 PM. Sail to Nakupenda Sandbank and visit Giant Tortoise Sanctuary.
-
-Day 8: Full-Day Safari: Mikumi or Selous (Flight Trip) 🦁
-Start: 04:30 AM | Finish: 06:30 PM. Fly for Full-Day 4x4 Safari tracking lions and elephants.
-
-Day 9: Clear Kayak Photoshoot & Sunset Dhow Cruise 🛶📸🌅
-Start: 09:00 AM | Finish: 07:00 PM. Enjoy Clear Kayak & Drone Photoshoot. Evening Sunset Cruise with live music.
-
-Day 10: Final Reflection & Coordinated Departure ✈️
-Morning leisure followed by private airport transfer.`,
-    price: 'Contact for pricing',
-    priceNote: 'Price based on:',
-    image: kayaking,
-    duration: '10 Days / 9 Nights',
-    groupSize: 'Private tour',
-    category: 'daytrip',
-    isDayTrip: false,
-    location: 'Zanzibar & Mainland',
-    highlights: [
-      'Mnemba Atoll Private Safari',
-      'Stone Town & Spice Farm',
-      'Salaam Cave Turtles',
-      'The Rock Restaurant',
-      'Pungume Island Escape',
-      'Mikumi/Selous Safari',
-      'Clear Kayak Photoshoot',
-      'Sunset Dhow Cruise'
-    ],
-    includes: [
-      'Private Executive Transfers in luxury vehicles',
-      'Bespoke Marine Charters (100% private boats)',
-      'Round-trip domestic flights',
-      'Private 4x4 open-roof safari jeep',
-      'Elite Multi-Lingual Guiding',
-      'Daily Signature Seafood BBQ Buffets',
-      'Professional Clear Kayak & Drone Photoshoot',
-      'Guaranteed table at The Rock Restaurant',
-      'All National Park fees and permits',
-      'High-quality snorkeling equipment'
+      'Return domestic flights Zanzibar–Nyerere',
+      'Zanzibar hotel pickup and drop-off',
+      'Airport and airstrip transfers',
+      'One night’s accommodation, full board',
+      'Full-day wildlife game drive',
+      'Shared safari jeep + driver-guide',
+      'Two-hour boat safari',
+      'Park entrance fees + drinking water',
+      'Government taxes and applicable fees'
     ],
     excludes: [
       'International flights',
-      'Travel insurance',
-      'Personal expenses',
-      'Tips and gratuities'
+      'Tanzania visa',
+      'Travel and medical insurance',
+      'Tips for guide, crew and staff',
+      'Alcoholic beverages & personal expenses',
+      'Private safari vehicle'
     ],
-    status: '2026 VIP Exclusive',
+    status: '2026 New Experience',
     rating: 5.0,
     reviewCount: 0,
-    bookingLink: '/book/zanstone-grand-slam',
+    bookingLink: '/book/nyerere-2day-boat-safari',
     featured: true,
-    photos: generateTourPhotos('grand-slam')
+    photos: generateTourPhotos('nyerere-2day')
   },
 
-
-
-  // Tour 15: Pungume Island Hidden Sandbank
+  // 4-Day Serengeti Fly-in Safari with Hot-Air Balloon — newest package
   {
-    id: 'pungume-island',
-    name: 'Pungume Island Hidden Sandbank',
-    shortDescription: 'The Hidden Turquoise Sandbank & Marine Safari',
-    description: 'Discover the secluded beauty of Southern Zanzibar away from the crowds.',
-    fullDescription: `Tour Grade: 2026 Exclusive Adventure
-Type: Private Executive Charter
+    id: 'serengeti-balloon-4days',
+    name: '4-Day Serengeti Fly-in Safari with Hot-Air Balloon',
+    shortDescription: 'Fly into the Serengeti, sunrise balloon flight with bush breakfast, and 3 days of private game drives',
+    description: 'Four-day private Serengeti fly-in safari: direct flights from Zanzibar, hot-air balloon flight with bush breakfast, three days of wildlife viewing with a professional guide, and three nights at a safari lodge or camp.',
+    fullDescription: `Experience the magic of Serengeti National Park on an unforgettable four-day private safari from Zanzibar.
 
-📍 Overview: An Untouched Paradise Away from the Crowds
-Discover the secluded beauty of Southern Zanzibar with ZanStone Tours & Safaris. Pungume Sandbank is a hidden gem located near Kizimkazi, offering a quieter and more exclusive alternative to the mainstream sandbank tours.
+Fly directly into the heart of the Serengeti, enjoy exceptional wildlife encounters and admire the endless plains from a hot-air balloon — no long road transfers. Ideal for couples, families and small groups.
 
-This private marine safari takes you across the deep blue waters to a shimmering white sandbank surrounded by a vast, shallow turquoise lagoon. Known for its vibrant coral gardens and high probability of dolphin sightings, Pungume is the definitive choice for travelers seeking privacy, pristine nature, and a true "off-the-beaten-path" island experience.
+YOUR ITINERARY
+Day 1 – Flight Zanzibar to Serengeti: early pickup, direct morning flight, first game drive en route (lions, elephants, giraffes, zebras, wildebeest, cheetahs), picnic lunch in the park, dinner and overnight in Serengeti.
 
-🌊 Detailed Professional Itinerary & Timings
+Day 2 – Hot-Air Balloon + Full-Day Game Drive: sunrise balloon flight over the plains, bush breakfast in the wilderness, then full-day game drive. All meals, overnight Serengeti.
 
-08:00 AM – VIP Hotel Pickup & Kizimkazi Transfer 🚐
-Start with a private collection from your resort.
+Day 3 – Full-Day Serengeti Game Drive: Big Five, predators, herds and birdlife with picnic lunch; dinner and overnight.
 
-Private Boat Departure & Dolphin Spotting 🐬
-Board your private boat and set sail toward the Pungume Marine Area, famous for resident pods of wild dolphins.
+Day 4 – Morning Game Drive + Return Flight: final drive toward the airstrip, scheduled flight to Zanzibar, hotel transfer. Breakfast and lunch per flight schedule.
 
-Premium Snorkeling at Pungume Reef 🤿
-Dive into crystal-clear waters surrounding the untouched Pungume coral reef.
+PACKAGE INCLUDES: return Zanzibar–Serengeti flights, 3 nights safari accommodation, balloon safari + bush breakfast, private 4x4 with pop-up roof, English-speaking guide, park entrance and conservation fees, indicated meals, drinking water, Zanzibar and airstrip transfers.
 
-Pungume Sandbank Bliss 🏖️
-Arrive at the breathtaking Pungume Sandbank. Relax on soft, white sand.
+EXCLUDES: international flights, Tanzania visa, travel/medical insurance, tips, alcohol, personal expenses, optional activities.
 
-Signature Seafood BBQ on the Sandbank 🍤
-Indulge in grilled lobster, jumbo prawns, calamari, and fish.
-
-Relaxation & Arrival Back at Hotel 🚤
-Enjoy a final swim before returning to your resort.`,
-    price: 'Contact for pricing',
-    priceNote: 'Price based on:',
-    image: pung1,
-    duration: 'Full Day (8:00 AM - 4:00 PM)',
-    groupSize: 'Private Executive Charter',
-    category: 'daytrip',
-    isDayTrip: true,
-    location: 'Kizimkazi',
-    highlights: [
-      'Private Sandbank Experience',
-      'Dolphin Spotting',
-      'Pristine Coral Reefs',
-      'Seafood BBQ Lunch',
-      'Snorkeling Gear',
-      'Exclusive Privacy'
-    ],
-    includes: [
-      'Private Hotel Pickup & Drop-off',
-      'Bespoke Marine Charter',
-      'Licensed Professional Guide',
-      'Gourmet Seafood Lunch',
-      'Unlimited bottled water and soft drinks',
-      'High-quality snorkeling equipment',
-      'All Government Fees and marine park permits'
-    ],
-    excludes: [
-      'Personal expenses',
-      'Tips and gratuities'
-    ],
-    status: '2026 Exclusive Adventure',
-    rating: 5.0,
-    reviewCount: 0,
-    bookingLink: '/book/pungume-island',
-    featured: false,
-    photos: generateTourPhotos('pungume-island')
-  },
-
-  // Tour 16: Selous Safari & Zanzibar (8 Days)
-  {
-    id: 'selous-zanzibar-safari',
-    name: 'Selous Safari & Zanzibar Beach Escape',
-    shortDescription: '8-Day Journey Where Ocean Meets the Wild',
-    description: 'Experience the ultimate African contrast with Selous boat safaris and Zanzibar beach paradise.',
-    fullDescription: `Category: Luxury Wilderness Edition 2026
-Duration: 8 Days / 7 Nights (Includes Overnight Safari)
-Highlights: Selous Boat Safari, Rufiji River, Mnemba Atoll, Nakupenda Sandbank & Giant Tortoises.
-
-OVERVIEW: Where the Ocean Meets the Wild
-Experience the ultimate African contrast with ZanStone Tours & Safaris. This 8-day premium itinerary balances the turquoise paradise of Zanzibar with the untouched wilderness of Selous Game Reserve (Nyerere National Park). From the iconic Rufiji River boat safaris to the white sands of Nakupenda, this journey is designed for travelers seeking relaxation, culture, and thrilling wildlife encounters.
-
-THE PREMIUM ITINERARY & TIMINGS
-
-Day 1: Arrival in Zanzibar – VIP Welcome 🛬
-Private transfer from airport to your hotel.
-
-Day 2: Safari Blue Adventure – Menai Bay ⛵
-Start: 08:00 AM | Finish: 04:00 PM. Sail on a traditional dhow through Menai Bay with Seafood BBQ.
-
-Day 3: Nakupenda Sandbank & Prison Island 🐢
-Start: 08:30 AM | Finish: 04:30 PM. Visit Nakupenda Sandbank and Prison Island with giant tortoises.
-
-Day 4: Fly to Selous & Full-Day Game Drive 🦁
-Start: 06:00 AM | Finish: 06:00 PM. Flight to Selous. Game drive spotting elephants, lions, and buffaloes. Overnight at luxury lodge.
-
-Day 5: Selous Boat Safari – Rufiji River 🚤
-Start: 08:00 AM | Finish: 05:00 PM. Cruise the Rufiji River to see hippos and crocodiles. Second night in reserve.
-
-Day 6: Mnemba Atoll Snorkeling Trip 🐬
-Start: 07:00 AM | Finish: 02:00 PM. Return to Zanzibar and snorkel at Mnemba Atoll.
-
-Day 7: Salaam Cave & Swimming with Turtles 🐢
-Start: 09:00 AM | Finish: 04:00 PM. Visit Salaam Cave to swim with turtles.
-
-Day 8: Departure – Farewell East Africa ✈️
-Private airport transfer.`,
-    price: 'Contact for pricing',
-    priceNote: 'Price based on:',
-    image: selous,
-    duration: '8 Days / 7 Nights',
-    groupSize: 'Private Luxury Safari',
-    category: 'daytrip',
+PRICE PER PERSON
+2 Guests: $5,194 per person
+3 Guests: $4,705 per person
+4+ Guests: $4,694 per person
+From $4,694 per person. Flights and lodges have limited availability in high season — send your dates for a personalised quotation.`,
+    price: 'From $4,694',
+    priceNote: 'Per person',
+    image: mikumi3,
+    duration: '4 Days / 3 Nights',
+    groupSize: 'Private Safari',
+    category: 'safari',
     isDayTrip: false,
-    location: 'Zanzibar & Selous',
+    location: 'Serengeti',
+    tips: [
+      {
+        text: 'Balloon mornings start before sunrise — dress warmly; it heats up fast after landing.',
+        image: mikumi3
+      },
+      {
+        text: 'A camera with zoom is essential — predators, herds and the balloon landscapes.',
+        image: mikumi2
+      },
+      {
+        text: 'High-season flights and lodges fill fast — book early with your travel dates.',
+        image: safari2
+      }
+    ],
     highlights: [
-      'Selous Game Reserve Safari',
-      'Rufiji River Boat Safari',
-      'Nakupenda Sandbank',
-      'Prison Island Tortoises',
-      'Mnemba Atoll Snorkeling',
-      'Salaam Cave Turtles'
+      'Sunrise hot-air balloon + bush breakfast',
+      'Direct return flights from Zanzibar',
+      '3 days of Serengeti game drives',
+      'Private 4x4, guide & 3 nights stay',
+      'Big Five, predators & herds'
     ],
     includes: [
-      'Private VIP Transfers in luxury vehicles',
-      'Multi-Language Professional Guides',
-      'Overnight Safari with full-board accommodation',
-      'Round-trip domestic flights',
-      'Private boat charters',
-      'High-quality snorkeling gear',
-      'All park fees and government taxes'
+      'Return domestic flights Zanzibar–Serengeti',
+      'Three nights’ safari accommodation',
+      'Hot-air balloon safari + bush breakfast',
+      'Private 4x4 with pop-up roof',
+      'Professional English-speaking guide',
+      'Park entrance, taxes & conservation fees',
+      'Indicated meals + drinking water',
+      'Hotel, airport & airstrip transfers'
     ],
     excludes: [
       'International flights',
-      'Travel insurance',
-      'Personal expenses',
-      'Tips and gratuities'
+      'Tanzania visa',
+      'Travel and medical insurance',
+      'Tips for guide and lodge staff',
+      'Alcoholic beverages & personal expenses'
     ],
-    status: '2026 Luxury Wilderness',
+    status: '2026 New Experience',
     rating: 5.0,
     reviewCount: 0,
-    bookingLink: '/book/selous-zanzibar-safari',
+    bookingLink: '/book/serengeti-balloon-4days',
     featured: true,
-    photos: generateTourPhotos('selous-zanzibar')
+    photos: generateTourPhotos('serengeti-balloon')
   },
 
-  // Tour 17: 5-Day Exclusive Zanzibar
+  // 3-Day Mikumi National Park Safari from Zanzibar — newest package
   {
-    id: 'zanzibar-exclusive-5days',
-    name: 'Exclusive Zanzibar 5-Day Escape',
-    shortDescription: '5-Day Sophisticated Blend of Adventure and Serenity',
-    description: 'The definitive choice for travelers seeking to maximize their island getaway without compromising on quality.',
-    fullDescription: `Tour Type: Private & Exclusive | Duration: 5 Days / 4 Nights | Year: 2026 Edition
+    id: 'mikumi-safari-3days',
+    name: '3-Day Mikumi National Park Safari from Zanzibar',
+    shortDescription: 'Ferry + SGR train + full-day Mikumi game drive + Maasai village + 2 nights — complete mainland safari',
+    description: 'Travel from Zanzibar by ferry and modern SGR train to Mikumi National Park for a full-day wildlife safari, authentic Maasai culture and two relaxing nights close to the park.',
+    fullDescription: `Experience Tanzania beyond the beach with an unforgettable 3-day safari combining wildlife, culture and adventure.
 
-Executive Overview
-Discover the soul of the Spice Island with ZanStone Tours & Safaris. This meticulously crafted 5-day itinerary offers a sophisticated blend of adventure and serenity. We have curated the most iconic Zanzibar experiences—from the marine biodiversity of Mnemba Atoll to the historical depth of Stone Town—ensuring every moment is defined by luxury, comfort, and authentic Swahili hospitality.
+Travel from Zanzibar by ferry and modern SGR train to Mikumi National Park — full-day game drive, Maasai village experience and two nights near the park, with all transport, accommodation and logistics arranged.
 
-Detailed Professional Itinerary
+YOUR ITINERARY
+Day 1 – Zanzibar to Dar es Salaam to Morogoro to Mikumi: morning ferry, SGR electric train, road transfer, check-in and lunch. At approx. 5:00 PM, Maasai village visit — traditions, songs and dances. Dinner and overnight in Mikumi.
 
-Day 1: Arrival & Seamless VIP Integration 🛬
-Pickup: On-Demand (24/7). VIP transfer to your resort.
+Day 2 – Full-Day Mikumi Safari: from approx. 6:15 AM, game drive through open savannahs (lions, elephants, giraffes, zebras, buffaloes, wildebeest, hippos and more), lunch in the park, afternoon drive, dinner and overnight.
 
-Day 2: The Sandbank & Heritage Expedition (Nakupenda & Prison Island) 🐢
-Start: 08:00 AM | Finish: 04:30 PM. Educational visit to Prison Island with giant tortoises. Sail to Nakupenda Sandbank for Signature Seafood BBQ.
+Day 3 – Mikumi to Morogoro to Dar es Salaam to Zanzibar: SGR train, return ferry, hotel transfer. End of safari.
 
-Day 3: Mnemba Atoll Marine Exploration & Dolphin Encounter 🐬
-Start: 07:00 AM | Finish: 03:30 PM. Early departure for dolphin encounter at Mnemba Atoll. Snorkel in vibrant coral gardens.
+WHAT'S INCLUDED: hotel pickup & drop-off, return ferry tickets, return SGR tickets, all mainland transfers, 2 nights in Mikumi, full-day game drive, vehicle & guide, park fees, Maasai village experience, meals as indicated, drinking water, taxes and fees.
 
-Day 4: Natural Wonders & Iconic Gastronomy (The Rock Restaurant) 🍽️
-Start: 09:00 AM | Finish: 05:00 PM. Visit Salaam Cave for turtle swimming. Secure reservation at The Rock Restaurant.
+NOT INCLUDED: travel insurance, tips & personal expenses, alcohol.
 
-Day 5: Final Leisure & Professional Departure ✈️
-Morning leisure followed by coordinated airport transfer.`,
-    price: 'Contact for pricing',
-    priceNote: 'Price based on:',
-    image: nakupenda1,
-    duration: '5 Days / 4 Nights',
-    groupSize: 'Private & Exclusive',
-    category: 'daytrip',
-    isDayTrip: false,
-    location: 'Zanzibar',
-    highlights: [
-      'Nakupenda Sandbank',
-      'Prison Island Tortoises',
-      'Mnemba Atoll Snorkeling',
-      'Dolphin Encounter',
-      'Salaam Cave Turtles',
-      'The Rock Restaurant'
-    ],
-    includes: [
-      'Elite Transportation in premium vehicles',
-      'Bespoke Marine Charters (private boats)',
-      'Expert Multi-Lingual Guides',
-      'Daily high-end seafood BBQ lunches',
-      'All conservation fees and permits',
-      'Professional-grade snorkeling equipment'
-    ],
-    excludes: [
-      'International flights',
-      'Travel insurance',
-      'Personal expenses',
-      'Tips and gratuities'
-    ],
-    status: '2026 VIP Exclusive',
-    rating: 5.0,
-    reviewCount: 0,
-    bookingLink: '/book/zanzibar-exclusive-5days',
-    featured: false,
-    photos: generateTourPhotos('exclusive-5days')
-  },
-
-  // Tour 18: ZanStone Signature Package (6 Days)
-  {
-    id: 'zanstone-signature-6days',
-    name: 'ZanStone Signature Package',
-    shortDescription: '6-Day Premium Private Journey',
-    description: 'A meticulously curated 6-day journey designed for travelers who demand the perfect equilibrium between adventure and luxury.',
-    fullDescription: `Tour Status: Premium Private Package 2026 | Duration: 6 Days / 5 Nights | Exclusivity: 100% Private Transfers & Charters
-
-Executive Summary
-The ZanStone Signature Package is a meticulously curated 6-day journey designed for travelers who demand the perfect equilibrium between adventure and luxury. This itinerary traverses the island's most iconic landscapes—from the historical corridors of Stone Town to the vibrant marine ecosystems of Mnemba Atoll. Every detail, from private executive transfers to gourmet seafood dining, is professionally managed to ensure a seamless immersion into the "Spice Island's" natural and cultural heritage.
-
-The Professional Itinerary
-
-Day 1: VIP Arrival & Luxury Integration 🛬
-Pickup: Anytime (24/7 Service). Private transfer to your resort.
-
-Day 2: Nakupenda Sandbank & The Giant Tortoise Sanctuary 🐢
-Start: 08:30 AM | Finish: 04:30 PM. Private boat to Prison Island and Nakupenda Sandbank with Signature Seafood BBQ.
-
-Day 3: The Safari Blue® Marine Conservation Tour ⛵
-Start: 08:00 AM | Finish: 05:00 PM. Traditional dhow exploration of Menai Bay with gourmet seafood buffet on Kwale Island.
-
-Day 4: Stone Town Heritage & The Spice Plantation Journey 🌿
-Start: 09:00 AM | Finish: 04:30 PM. Guided historical tour of Stone Town followed by Spice Plantation visit with traditional Swahili Farm Lunch.
-
-Day 5: Mnemba Atoll: Dolphin Encounter & Marine Reserve 🐬
-Start: 06:30 AM | Finish: 02:00 PM. Early morning dolphin encounter and snorkeling at Mnemba Atoll.
-
-Day 6: Final Leisure & Coordinated Departure ✈️
-Morning leisure followed by private airport transfer.`,
-    price: 'Contact for pricing',
-    priceNote: 'Pricebased on:',
-    image: blue2,
-    duration: '6 Days / 5 Nights',
-    groupSize: '100% Private',
-    category: 'daytrip',
-    isDayTrip: false,
-    location: 'Zanzibar',
-    highlights: [
-      'Nakupenda Sandbank',
-      'Prison Island Tortoises',
-      'Safari Blue Adventure',
-      'Stone Town Tour',
-      'Spice Farm Experience',
-      'Mnemba Atoll Snorkeling'
-    ],
-    includes: [
-      'Private Logistics in modern AC vehicles',
-      'Elite Multi-Lingual Guides',
-      'Bespoke Private Charters',
-      'Signature Seafood BBQ',
-      'Authentic Swahili lunches',
-      'All marine park fees and permits',
-      'Professional snorkeling equipment'
-    ],
-    excludes: [
-      'International flights',
-      'Travel insurance',
-      'Personal expenses',
-      'Tips and gratuities'
-    ],
-    status: '2026 Premium Private',
-    rating: 5.0,
-    reviewCount: 0,
-    bookingLink: '/book/zanstone-signature-6days',
-    featured: false,
-    photos: generateTourPhotos('signature-6days')
-  },
-
-  // Tour 19: Grand Island Odyssey (7 Days)
-  {
-    id: '7-Days-Zanzibar-Package',
-    name: '7-Days Zanzibar Package',
-    shortDescription: '7-Day VIP Executive Edition - Nature, Adventure & Social Impact',
-    description: 'A comprehensive 360-degree immersion into Zanzibar\'s soul with private marine expeditions, equestrian adventures, and village visits.',
-    fullDescription: `Tour Grade: VIP Executive Edition 2026 | Duration: 7 Days / 6 Nights | Focus: Nature, Adventure & Social Impact
-
-Executive Summary
-The Grand Island Odyssey by ZanStone Tours & Safaris is our most comprehensive 2026 itinerary. It is meticulously designed for the discerning traveler who seeks a deep, 360-degree immersion into Zanzibar's soul. This journey transcends the ordinary, blending private marine expeditions, equestrian beach adventures, and impactful village visits. From the turquoise sanctuary of Mnemba Atoll to the historical heartbeat of Stone Town, we handle every logistical detail with precision.
-
-The Professional Itinerary
-
-Day 1: Arrival & VIP Island Transition 🛬
-Pickup: Anytime (24/7 Concierge). Professional chauffeur transfer.
-
-Day 2: Nakupenda Sandbank & The Tortoise Sanctuary 🐢
-Start: 08:30 AM | Finish: 04:30 PM. Private boat to Nakupenda Sandbank and Prison Island with Gourmet Seafood BBQ.
-
-Day 3: Salaam Cave, Beach Horse Riding & The Rock Restaurant 🏇
-Start: 09:00 AM | Finish: 05:00 PM. Turtle swimming at Salaam Cave, equestrian beach ride, and visit to The Rock Restaurant.
-
-Day 4: The Safari Blue® Professional Charter ⛵
-Start: 08:00 AM | Finish: 05:00 PM. Traditional dhow exploration with premium snorkeling and seafood buffet.
-
-Day 5: Mnemba Atoll: Dolphin Encounter & Reef Exploration 🐬
-Start: 06:30 AM | Finish: 02:00 PM. Early morning dolphin watching and snorkeling at Mnemba Atoll.
-
-Day 6: Stone Town Heritage, Spice Science & Community Impact 🌿
-Start: 09:00 AM | Finish: 05:00 PM. UNESCO Stone Town tour, organic Spice Farm visit, and meaningful village visit supporting local children's projects.
-
-Day 7: Final Reflection & Coordinated Departure ✈️
-Morning leisure followed by airport transfer.`,
-    price: 'Contact for pricing',
-    priceNote: 'price based on:',
-    image: rock2,
-    duration: '7 Days / 6 Nights',
-    groupSize: 'VIP Executive',
-    category: 'daytrip',
-    isDayTrip: false,
-    location: 'Zanzibar',
-    highlights: [
-      'Nakupenda Sandbank',
-      'Prison Island Tortoises',
-      'Salaam Cave Turtles',
-      'Beach Horse Riding',
-      'The Rock Restaurant',
-      'Safari Blue Adventure',
-      'Mnemba Atoll Snorkeling',
-      'Community Impact Visit'
-    ],
-    includes: [
-      'Private Logistics in modern AC vehicles',
-      'Elite Marine Charters (private boats)',
-      'Professional Multi-Lingual Guides',
-      'Horse riding adventure',
-      'Swimming with turtles at Salaam Cave',
-      'Fresh seafood BBQ lunches',
-      'All marine park fees and permits',
-      'Contribution to local village projects'
-    ],
-    excludes: [
-      'International flights',
-      'Travel insurance',
-      'Personal expenses',
-      'Tips and gratuities'
-    ],
-    status: '2026 VIP Executive',
-    rating: 5.0,
-    reviewCount: 0,
-    bookingLink: '/book/grand-island-odyssey',
-    featured: true,
-    photos: generateTourPhotos('grand-island')
-  },
-
-  // Tour 20: Safari Fusion (7 Days)
-  {
-    id: 'safari-fusion-7days',
-    name: 'Safari Fusion',
-    shortDescription: '7-Day Big Five Safari & Private Marine Charters',
-    description: 'Designed for those who refuse to choose between a tropical paradise and a wild African safari.',
-    fullDescription: `Tour Grade: VIP Adventure Edition 2026 | Duration: 7 Days / 6 Nights | Focus: Big Five Safari & Private Marine Charters
-
-Executive Summary
-The ZanStone Safari Fusion is a premier 2026 itinerary designed for those who refuse to choose between a tropical paradise and a wild African safari. This 7-day journey seamlessly integrates the turquoise tranquility of Mnemba Atoll and Nakupenda Sandbank with a high-octane wildlife expedition to Mikumi National Park. Every logistical detail is professionally managed to provide an effortless, high-end experience of East Africa's natural wonders.
-
-The Professional Itinerary
-
-Day 1: VIP Arrival & Luxury Island Transition 🛬
-Pickup: Anytime (24/7 Service). Private transfer to hotel.
-
-Day 2: Nakupenda Sandbank & The Historical Tortoise Sanctuary 🐢
-Start: 08:30 AM | Finish: 04:30 PM. Private boat to Nakupenda Sandbank and Prison Island with Signature Seafood BBQ.
-
-Day 3: Salaam Cave, Beach Horse Riding & Iconic Dining 🏇
-Start: 09:00 AM | Finish: 05:00 PM. Turtle swimming, equestrian beach ride, and The Rock Restaurant.
-
-Day 4: The Safari Blue® Professional Marine Charter ⛵
-Start: 08:00 AM | Finish: 05:00 PM. Traditional dhow exploration with seafood buffet on secluded island.
-
-Day 5: Mnemba Atoll: Dolphin Encounter & Reef Exploration 🐬
-Start: 06:30 AM | Finish: 02:00 PM. Early morning dolphin watching and snorkeling.
-
-Day 6: Full-Day Mikumi National Park Safari (Mainland Adventure) 🦁
-Start: 04:30 AM | Finish: 06:30 PM. Flight to Mikumi for full-day game drive spotting lions, elephants, and giraffes.
-
-Day 7: Final Reflection & Coordinated Departure ✈️
-Morning leisure followed by airport transfer.`,
-    price: 'Contact for pricing',
-    priceNote: 'Price based on:',
-    image: mnemba12,
-    duration: '7 Days / 6 Nights',
-    groupSize: 'VIP Adventure',
-    category: 'daytrip',
-    isDayTrip: false,
-    location: 'Zanzibar & Mikumi',
-    highlights: [
-      'Nakupenda Sandbank',
-      'Prison Island Tortoises',
-      'Salaam Cave Turtles',
-      'Beach Horse Riding',
-      'Safari Blue Adventure',
-      'Mnemba Atoll Snorkeling',
-      'Mikumi Safari (Big Five)'
-    ],
-    includes: [
-      'Elite Logistics in modern AC vehicles',
-      'Full-day 4x4 safari in Mikumi',
-      'Private Marine Charters',
-      'Beach horse riding',
-      'Swimming with turtles',
-      'Fresh seafood BBQ lunches',
-      'Round-trip flights to Mikumi',
-      'All park fees and permits'
-    ],
-    excludes: [
-      'International flights',
-      'Travel insurance',
-      'Personal expenses',
-      'Tips and gratuities'
-    ],
-    status: '2026 VIP Adventure',
-    rating: 5.0,
-    reviewCount: 0,
-    bookingLink: '/book/safari-fusion-7days',
-    featured: true,
-    photos: generateTourPhotos('safari-fusion')
-  },
-
-  // Tour 21: Salaam Cave & Maalum Cave (Duplicate of Tour 5 - Keeping for completeness)
-  {
-    id: 'salaam-maalum-caves-dup',
-    name: 'Zanzibar Cave Wonders: Salaam & Maalum',
-    shortDescription: 'Swim with Turtles and Discover Hidden Oases',
-    description: 'Discover the mystical inland waters of Zanzibar with this exclusive combo tour.',
-    fullDescription: `Tour Grade: 2026 Nature & Wellness Excellence
-Type: Private Executive Transfer & Guided Tour
-
-📍 Overview: The Ultimate Hidden Oasis Journey
-Discover the mystical inland waters of Zanzibar with ZanStone Tours & Safaris. This exclusive combo tour takes you to two of the island's most iconic natural sinkholes. From the ethical sea turtle encounter at Salaam Cave in Kizimkazi to the premium, serene eco-wellness swimming at Maalum Cave in Paje, this itinerary is designed for travelers seeking tranquility, photography, and a deep connection with nature.
-
-🌊 Detailed Professional Itinerary & Timings
-
-09:00 AM – VIP Hotel Pickup & Private Transfer 🚐
-Start your morning with a private collection from your resort.
-
-Salaam Cave: Swimming with Turtles 🐢
-Swim alongside friendly sea turtles in a protected environment.
-
-Scenic Coastal Transfer to Paje 🌴
-Relaxing drive to the East Coast with fresh coconut stop.
-
-Maalum Cave: The Premium Eco-Lagoon 💎
-Enter the sophisticated Maalum Cave with crystal-clear fresh water.
-
-Relaxation & Fresh Tropical Fruits 🥥
-Enjoy fruit platter and mineral water by the cave.
-
-Professional Return Transfer 🚐
-Comfortable transfer back to your hotel.`,
-    price: {
-      '2': '$213',
-      '3-4': '$100 Per Person / $284',
-      '5-6': '$70',
-      '7-12': '$65'
-    },
-    priceNote: 'Price based on group size',
-    image: sal2,
-    duration: 'Full Day (9:00 AM - 4:00 PM)',
-    groupSize: 'Private Executive Tour',
-    category: 'daytrip',
-    isDayTrip: true,
-    location: 'Kizimkazi & Paje',
-    highlights: [
-      'Swim with Sea Turtles',
-      'Explore Maalum Cave',
-      'Natural Freshwater Lagoon',
-      'Professional Guide',
-      'Fresh Tropical Fruits',
-      'Scenic Coastal Drive'
-    ],
-    includes: [
-      'Private Hotel Pickup & Drop-off',
-      'Professional Licensed Guide',
-      'Double Cave Access',
-      'Ethical Turtle Interaction',
-      'Bottled mineral water and fresh fruits',
-      'All Government Fees included'
-    ],
-    excludes: [
-      'Personal expenses',
-      'Lunch',
-      'Tips and gratuities'
-    ],
-    status: '2026 Nature Excellence',
-    rating: 5.0,
-    reviewCount: 0,
-    bookingLink: '/book/salaam-maalum-caves-dup',
-    featured: false,
-    photos: generateTourPhotos('salaam-maalum-dup')
-  },
-
-  // Tour 22: Elite Media Experience
-  {
-    id: 'elite-media-experience',
-    name: 'Elite Media Experience',
-    shortDescription: 'Clear Kayak, Jet Car & Drone Photoshoot',
-    description: 'Combine high-speed thrill with world-class content creation in the most trending watersports experience.',
-    fullDescription: `Tour Grade: 2026 Social Media & VIP Excellence
-Type: Private Executive Experience
-
-OVERVIEW: CAPTURE THE MOMENT IN LUXURY
-Elevate your holiday memories with the most trending and exclusive watersports experience in Zanzibar, brought to you by ZanStone Tours & Safaris. This professionally curated session is designed for travelers who want to combine high-speed thrill with world-class content creation.
-
-Whether you are navigating the crystal-clear waters in our Transparent Clear Kayaks or racing across the waves in a Luxury Jet Car, our professional drone pilots will be overhead to capture every moment in stunning 4K resolution. It is the definitive choice for honeymooners, influencers, and travelers seeking the ultimate VIP souvenir.
-
-DETAILED PROFESSIONAL ITINERARY & TIMINGS
-
-09:00 AM – Hotel Pickup & Beach Club Transfer
-Start your morning with a private collection from your resort.
-
-Clear Kayak Session & Drone Cinematography
-Step into fully transparent kayaks. Professional Drone Pilot captures cinematic shots in 4K.
-
-Jet Car or Jet Ski Adrenaline Experience
-Transition to Luxury Jet Car or high-performance Jet Ski for high-speed action footage.
-
-Media Review & Refreshments
-Return to beach lounge for tropical fruits while media team backs up your footage.
-
-Professional Return Transfer
-Comfortable transfer back to your hotel.`,
-    price: 'Contact for pricing',
-    priceNote: 'Price based on:',
-    image: kayaking,
-    duration: 'Half Day (9:00 AM - 1:00 PM)',
-    groupSize: 'Private Executive',
-    category: 'daytrip',
-    isDayTrip: true,
-    location: 'Nungwi/Kendwa',
-    highlights: [
-      'Clear Kayak Session',
-      'Professional Drone Photography',
-      '4K Video Recording',
-      'Jet Car or Jet Ski Ride',
-      'High-Resolution Photos',
-      'Beach Club Refreshments'
-    ],
-    includes: [
-      'Private Hotel Pickup & Drop-off',
-      'Professional Drone Pilot',
-      'Clear Kayak Equipment',
-      'Jet Car or Jet Ski Rental',
-      'Digital transfer of all footage',
-      'Bottled mineral water and fresh fruits',
-      'Safety gear and professional briefing',
-      'All Government permits'
-    ],
-    excludes: [
-      'Personal expenses',
-      'Lunch',
-      'Tips and gratuities'
-    ],
-    status: '2026 VIP Excellence',
-    rating: 5.0,
-    reviewCount: 0,
-    bookingLink: '/book/elite-media-experience',
-    featured: true,
-    photos: generateTourPhotos('elite-media')
-  },
-
-  // Tour 23: Salaam Cave & Jozani Forest
-  {
-    id: 'salaam-cave-jozani',
-    name: 'Salaam Cave & Jozani Forest Expedition',
-    shortDescription: 'From Ancient Caves to the Tropical Canopy',
-    description: 'Experience the wild side of Zanzibar with this professionally curated eco-adventure combo tour.',
-    fullDescription: `Tour Grade: 2026 Eco-Adventure Excellence
-Type: Private Executive Transfer & Guided Tour
-
-📍 Overview: From Ancient Caves to the Tropical Canopy
-Experience the wild side of Zanzibar with ZanStone Tours & Safaris. This professionally curated combo tour takes you from the tranquil, turquoise lagoon of Salaam Cave to the lush, prehistoric canopy of Jozani Chwaka Bay National Park.
-
-Encounter the world-famous Red Colobus Monkeys, wander through mystical mangrove boardwalks, and enjoy the rare experience of swimming with sea turtles. It is the definitive choice for nature lovers, families, and photographers seeking Zanzibar's unique biodiversity in a single day.
-
-🌳 Detailed Professional Itinerary & Timings
-
-08:30 AM – VIP Hotel Pickup & Private Transfer 🚐
-Start your morning with a private collection from your resort.
-
-Jozani Forest: The Red Colobus Sanctuary 🐒
-Explore Zanzibar's only national park with a licensed park ranger. Spot endemic Red Colobus Monkeys and walk through mystical Mangrove swamp boardwalks.
-
-Scenic Transfer to Kizimkazi Village 🌴
-Relaxing drive south toward the coast.
-
-Salaam Cave: Swimming with Turtles 🐢
-Arrive at the natural turquoise lagoon of Salaam Cave. Swim with friendly sea turtles in their protected habitat.
-
-Relaxation & Fresh Tropical Fruits 🥥
-Enjoy fresh Zanzibar fruit platter and chilled mineral water by the lagoon.
-
-Professional Return Transfer 🚐
-Comfortable transfer back to your hotel.`,
-    price: {
-      '2': '$191',
-      '3-4': '$85 Per Person',
-      '5-6': '$65 Per Person',
-      '7-12': '$60 Per Person'
-    },
-    priceNote: 'Price based on:',
-    image: jozani2,
-    duration: 'Full Day (8:30 AM - 4:00 PM)',
-    groupSize: 'Private Executive Tour',
-    category: 'daytrip',
-    isDayTrip: true,
-    location: 'Jozani & Kizimkazi',
-    highlights: [
-      'Jozani Forest National Park',
-      'Red Colobus Monkeys',
-      'Mangrove Boardwalks',
-      'Salaam Cave Turtles',
-      'Swimming with Turtles',
-      'Nature Photography'
-    ],
-    includes: [
-      'Private Hotel Pickup & Drop-off',
-      'Licensed Professional Guide',
-      'National Park Access (Jozani Forest)',
-      'Salaam Cave Entry',
-      'Bottled mineral water',
-      'Fresh tropical fruit platters',
-      'All Government Fees included'
-    ],
-    excludes: [
-      'Personal expenses',
-      'Lunch',
-      'Tips and gratuities'
-    ],
-    status: '2026 Eco-Adventure',
-    rating: 5.0,
-    reviewCount: 0,
-    bookingLink: '/book/salaam-cave-jozani',
-    featured: true,
-    photos: generateTourPhotos('salaam-jozani')
-  },
-  // Tour 24: 3 Days Safari to Mikumi with Maasai Village
-  {
-    id: 'mikumi-maasai-village-safari',
-    name: '3 Days Safari to Mikumi National Park with Maasai Village Experience From Zanzibar',
-    shortDescription: 'Premium Safari Adventure Combining Wildlife Exploration with Authentic Cultural Immersion',
-    description: 'This 3-day, 2-night safari to Mikumi National Park is a carefully designed journey that combines wildlife adventure, cultural immersion, and scenic travel across Tanzania. Departing from Zanzibar, this experience blends ferry, modern SGR train, and private road transfers to ensure a smooth, comfortable, and well-organized safari.',
-    fullDescription: `Tour Grade: 2026 Premium Safari & Cultural Excellence
-Type: Private or Sharing Charter | Duration: 3 Days / 2 Nights
-
-🐘 Overview
-This 3-day, 2-night safari to Mikumi National Park is a carefully designed journey that combines wildlife adventure, cultural immersion, and scenic travel across Tanzania. Departing from Zanzibar, this experience blends ferry, modern SGR train, and private road transfers to ensure a smooth, comfortable, and well-organized safari.
-
-Mikumi is one of Tanzania's most accessible national parks and offers an incredible opportunity to witness Africa's iconic wildlife in vast open savannahs, often compared to the famous Serengeti ecosystem. This safari is ideal for travelers seeking both adventure and cultural discovery in a short but meaningful itinerary.
-
-🗓️ Detailed Itinerary
-
-✨ Day 1: Zanzibar – Dar es Salaam – Mikumi National Park – Maasai Village
-
-🌅 Early Morning Departure
-Your journey begins before sunrise with a hotel pick-up at 05:00 AM in Zanzibar. You will be assisted by our driver and transferred to the ferry terminal. A short 5-minute walk leads you to the boarding point.
-
-⛴️ Ferry to Dar es Salaam
-At 07:00 AM, board the ferry to Dar es Salaam. Enjoy a relaxing 2-hour ocean crossing with beautiful views of the Indian Ocean and the coastline.
-
-🚆 SGR Train to Morogoro
-Upon arrival in Dar es Salaam, you will walk to the nearby SGR station and board the modern electric train to Morogoro at 09:30 AM, arriving around 11:15 AM. This journey offers a comfortable and scenic experience through Tanzania's countryside.
-
-🚙 Transfer to Mikumi National Park
-From Morogoro, meet your professional driver-guide and begin a scenic road transfer to Mikumi National Park. Along the way, you will pass through rural villages, farmland, and natural landscapes that give a true glimpse of local life.
-
-🏨 Arrival & Lunch
-Upon arrival at your camp or lodge inside/near the park:
-• Check-in and refresh
-• Enjoy a freshly prepared lunch
-• Take time to relax before afternoon activities
-
-🛖 Maasai Village Experience (Around 5:00 PM)
-In the late afternoon, visit a traditional Maasai village for a cultural experience where you will:
-• Be warmly welcomed by Maasai warriors and elders
-• Witness traditional cattle herding lifestyle
-• Observe women milking cows and preparing traditional practices
-• Enjoy traditional dances, songs, and storytelling
-• Learn about Maasai customs, history, and social structure
-
-After sunset, return to your camp for dinner and overnight stay.
-
-🐾 Day 2: Full-Day Game Drive in Mikumi National Park
-
-🌅 Early Morning Start (06:15 AM)
-After breakfast, depart for a full-day safari adventure inside Mikumi National Park. Explore its vast plains, open grasslands, and acacia woodlands while searching for incredible wildlife.
-
-🐘 Wildlife You May Encounter:
-• Lions resting or hunting in the savannah
-• Large elephant herds moving across the plains
-• Graceful giraffes feeding on acacia trees
-• Zebras and buffaloes in large groups
-• Hippos in water pools
-• Crocodiles near river areas
-• Antelopes and colorful bird species
-
-🍴 Lunch in the Park
-Enjoy lunch at a designated picnic area or park restaurant, surrounded by nature and wildlife sounds. Continue your afternoon game drive, capturing unforgettable photography moments as the golden light enhances the landscape.
-
-Return to camp in the evening for dinner and overnight stay.
-
-🚆 Day 3: Mikumi – Morogoro – Dar es Salaam – Zanzibar
-
-🌅 Morning Departure
-After breakfast, check out and depart for Morogoro SGR station.
-
-🚆 Train to Dar es Salaam
-Board the electric train back to Dar es Salaam, enjoying a comfortable return journey.
-
-⛴️ Ferry Back to Zanzibar
-Upon arrival in Dar es Salaam, walk to the ferry terminal and board your return ferry to Zanzibar. On arrival in Zanzibar, our driver will meet you and transfer you back to your hotel, marking the end of your unforgettable safari experience.`,
-    price: {
-      'per_person': '$700'
-    },
-    priceNote: 'Price per person for group bookings',
-    image: safariBg,
+PRICE: $650 PER PERSON. Send your travel date, number of guests and Zanzibar hotel to check availability.`,
+    price: '$650',
+    priceNote: 'Per person',
+    image: mikumi,
     duration: '3 Days / 2 Nights',
-    groupSize: 'Private or Sharing tour',
-    category: 'daytrip',
+    groupSize: 'Private Tour',
+    category: 'safari',
     isDayTrip: false,
-    location: 'Zanzibar & Mikumi',
+    location: 'Mikumi',
+    tips: [
+      {
+        text: 'The SGR train and ferry run on fixed schedules — pickup time is confirmed with your booking.',
+        image: mikumi
+      },
+      {
+        text: 'Evening Maasai village visit on Day 1 — bring a camera and respectful curiosity.',
+        image: safari1
+      },
+      {
+        text: 'Full-day game drive starts 6:15 AM — pack sunscreen, hat and binoculars.',
+        image: safari3
+      }
+    ],
     highlights: [
-      'Ferry crossing to Dar es Salaam',
-      'Modern SGR train experience',
-      'Full-day game drive in Mikumi National Park',
-      'Maasai village cultural experience',
-      'Big Five wildlife sightings',
-      'Professional English-speaking safari guide',
-      'Comfortable accommodation in Mikumi'
+      'Ferry + SGR train adventure',
+      'Full-day Mikumi game drive',
+      'Authentic Maasai village visit',
+      '2 nights + meals arranged',
+      'All transport, fees & guide'
     ],
     includes: [
-      'Hotel pick-up and drop-off in Zanzibar',
-      'Roundtrip ferry tickets (Zanzibar – Dar es Salaam)',
-      'Roundtrip SGR train tickets (Dar es Salaam – Morogoro)',
-      'All road transfers in mainland Tanzania',
-      '2 nights full-board accommodation in Mikumi',
-      'Full-day game drive in Mikumi National Park',
-      'Maasai village cultural experience',
-      'All park entry fees and conservation charges',
-      'Professional English-speaking safari guide'
+      'Zanzibar hotel pickup & drop-off',
+      'Return Zanzibar–Dar es Salaam ferry tickets',
+      'Return SGR train tickets',
+      'All mainland transfers',
+      '2 nights’ accommodation in Mikumi',
+      'Full-day Mikumi game drive',
+      'Safari vehicle & professional guide',
+      'Mikumi National Park fees',
+      'Maasai village experience',
+      'Meals as indicated + drinking water',
+      'Government taxes & fees'
     ],
     excludes: [
-      'International flights to/from Zanzibar',
-      'Travel insurance and personal expenses',
-      'Tips and gratuities for guides and drivers',
+      'Travel insurance',
+      'Tips & personal expenses',
       'Alcoholic beverages'
     ],
-    status: '2026 private Safari',
+    status: '2026 New Experience',
     rating: 5.0,
     reviewCount: 0,
-    bookingLink: '/book/mikumi-maasai-village-safari',
+    bookingLink: '/book/mikumi-safari-3days',
     featured: true,
-    photos: generateTourPhotos('zanzibar-mikumi-safari')
+    photos: generateTourPhotos('mikumi-3day')
   },
 
-  // Tour 25: Selous Day Trip Safari
+  // 2-Day Ngorongoro Safari from Zanzibar — newest package
   {
-    id: 'selous-day-trip-safari',
-    name: 'Selous Day Trip Safari from Zanzibar – Full Experience Package',
-    shortDescription: 'Fly-In Day Safari to Africa\'s Largest Wilderness Area',
-    description: 'Discover one of Africa\'s largest and most untouched wilderness areas with this unforgettable day safari to Nyerere National Park. Departing from the tropical paradise of Zanzibar, this fly-in experience offers an exceptional opportunity to explore vast, raw, and authentic African landscapes within a single day.',
-    fullDescription: `Tour Grade: 2026 Premium Fly-In Safari Experience
-Type: Day Safari (All-Inclusive Fly-In)
+    id: 'ngorongoro-safari-2days',
+    name: '2-Day Ngorongoro Safari from Zanzibar',
+    shortDescription: 'Ngorongoro area plus a full crater game drive — return flights, lodge night, meals and transfers in 2 days',
+    description: 'Fly from Zanzibar to Arusha for two exciting safari days: Ngorongoro Conservation Area exploration plus a full game drive inside the world-famous Ngorongoro Crater — flights, 4x4 vehicle, accommodation, meals and transfers included.',
+    fullDescription: `Experience the breathtaking beauty and wildlife of Ngorongoro on an unforgettable 2-day safari from Zanzibar.
 
-🌍 Overview
-Discover one of Africa's largest and most untouched wilderness areas with this unforgettable day safari to Nyerere National Park. Departing from the tropical paradise of Zanzibar, this fly-in experience offers an exceptional opportunity to explore vast, raw, and authentic African landscapes within a single day.
+Fly to Arusha, begin your safari immediately, explore the Ngorongoro area on Day 1 and descend into the world-famous Ngorongoro Crater on Day 2 before flying back to Zanzibar.
 
-Famous for its remote beauty, rich biodiversity, and untouched ecosystems, Selous provides a more exclusive and adventurous safari experience compared to other parks in Tanzania—perfect for travelers seeking something truly wild and unique.
+YOUR ITINERARY
+Day 1 – Zanzibar to Arusha to Ngorongoro: early flight (approx. 08:00 arrival), meet your driver-guide, safari in the Ngorongoro area (elephants, giraffes, zebras, buffaloes, wildebeest and more), lunch on safari, dinner and overnight in the Ngorongoro/Karatu area.
 
-🗓️ Detailed Itinerary
+Day 2 – Ngorongoro Crater to Arusha to Zanzibar: descend into the crater for lions, elephants, buffaloes, rhinos, hippos, hyenas and birdlife; lunch on safari; return flight to Zanzibar and hotel transfer. End of safari.
 
-✨ Day Trip Experience
+WHAT'S INCLUDED: return flights, hotel pickup & drop-off, all mainland transfers, 4x4 with pop-up roof, professional driver-guide, conservation area and crater fees, 1 night accommodation, meals as indicated, drinking water, taxes and fees.
 
-🌅 Early Morning Departure (04:30 AM)
-Your adventure begins with a comfortable hotel pickup in Zanzibar. You will be transferred to the airport with full assistance for a smooth check-in process.
+NOT INCLUDED: travel insurance, tips & personal expenses, alcohol.
 
-✈️ Flight to Selous / Nyerere National Park (06:00 AM)
-Enjoy a scenic flight over Tanzania's coastline, rivers, and vast wilderness landscapes as you head toward one of Africa's most iconic protected areas.
-
-🐘 Arrival & Morning Game Drive (07:20 AM)
-Upon arrival, meet your professional safari guide and begin your game drive immediately in a shared 4x4 safari vehicle with a pop-up roof, offering excellent visibility for wildlife viewing and photography.
-
-Expect to see:
-• Elephants roaming freely in large herds
-• Lions and other predators
-• Giraffes and zebras
-• Hippos and crocodiles along the Rufiji River
-• Rich birdlife and antelope species
-
-🍴 Lunch in the Wilderness
-Enjoy a freshly prepared lunch served within the park, surrounded by the untouched beauty of Selous' vast landscapes.
-
-🦓 Afternoon Game Drive
-Continue exploring the park's diverse ecosystems, including open plains, woodlands, and river systems—especially the famous Rufiji River region, known for its dramatic wildlife concentration.
-
-✈️ Return to Zanzibar (Evening)
-After an unforgettable safari experience, transfer to the airstrip for your return flight to Zanzibar. Upon arrival, our driver will transfer you back to your hotel.
-
-🐾 Wildlife You May See
-• Elephants
-• Lions
-• Giraffes
-• Zebras
-• Hippos
-• Crocodiles
-• Buffaloes
-• Antelopes & diverse bird species`,
-    price: {
-      'per_person': '$850'
-    },
-    priceNote: 'Price per person',
-    image: selous,
-    duration: 'Full Day (04:30 AM - Evening Return)',
-    groupSize: 'Shared safari vehicle',
-    category: 'daytrip',
-    isDayTrip: true,
-    location: 'Nyerere National Park',
+PRICE PER PERSON
+2 Travellers: $1,648 per person
+3 Travellers: $1,600 per person
+4+ Travellers: $1,513 per person
+From $1,513 per person. Send your travel date, number of travelers and Zanzibar hotel to check availability — our team confirms your final price before booking. Includes flights, safari, crater, accommodation, meals and transfers.`,
+    price: 'From $1,513',
+    priceNote: 'Per person',
+    image: mikumi1,
+    duration: '2 Days / 1 Night',
+    groupSize: 'Private Tour',
+    category: 'safari',
+    isDayTrip: false,
+    location: 'Ngorongoro',
+    tips: [
+      {
+        text: 'Pack layers and a camera with zoom — crater mornings start cool and brighten fast.',
+        image: mikumi1
+      },
+      {
+        text: 'The crater day is the highlight — keep batteries charged for a full day of sightings.',
+        image: safari1
+      },
+      {
+        text: 'Send your travel date, group size and hotel for an exact personalised quotation.',
+        image: safari3
+      }
+    ],
     highlights: [
-      'Roundtrip domestic flights from Zanzibar',
-      'Morning and afternoon game drives',
-      'Rufiji River wildlife viewing',
-      'Shared 4x4 safari vehicle with pop-up roof',
-      'Professional safari guide',
-      'Lunch in the park',
-      'Big Five wildlife sightings'
+      'Ngorongoro Crater Big Five drive',
+      'Two days of safari experience',
+      'Return flights from Zanzibar',
+      '1 night accommodation + meals',
+      '4x4 vehicle, fees & pro guide'
     ],
     includes: [
-      'Roundtrip domestic flights (Zanzibar – Selous/Nyerere – Zanzibar)',
-      'Hotel pick-up and drop-off in Zanzibar',
-      'All park entry and conservation fees',
-      'Shared 4x4 safari vehicle with pop-up roof',
-      'Professional English-speaking safari guide',
-      'Lunch served inside the park',
-      'All taxes and government charges'
+      'Return flights Zanzibar–Arusha–Zanzibar',
+      'Zanzibar hotel pickup & drop-off',
+      'All mainland transfers',
+      '4x4 safari vehicle with pop-up roof',
+      'Professional safari driver-guide',
+      'Conservation area & crater fees',
+      '1 night accommodation',
+      'Meals as indicated + drinking water',
+      'Government taxes & applicable fees'
+    ],
+    excludes: [
+      'Travel insurance',
+      'Tips & personal expenses',
+      'Alcoholic beverages'
+    ],
+    status: '2026 New Experience',
+    rating: 5.0,
+    reviewCount: 0,
+    bookingLink: '/book/ngorongoro-safari-2days',
+    featured: true,
+    photos: generateTourPhotos('ngorongoro-2day')
+  },
+
+  // 3-Day Serengeti Safari from Zanzibar — newest package
+  {
+    id: 'serengeti-safari-3days',
+    name: '3-Day Serengeti Safari from Zanzibar',
+    shortDescription: 'Fly into the legendary Serengeti — 2 days of game drives, predators, herds and 2 wilderness nights',
+    description: 'Fly directly from Zanzibar into the heart of Tanzania’s most famous national park: exciting Serengeti game drives, incredible wildlife encounters and two nights surrounded by the African wilderness.',
+    fullDescription: `Fly directly from Zanzibar and experience the legendary Serengeti on an unforgettable 3-day wildlife safari.
+
+Leave the beaches behind and fly into the heart of Tanzania’s most famous national park — game drives across endless plains, incredible wildlife encounters and two nights surrounded by the African wilderness.
+
+YOUR ITINERARY
+Day 1 – Zanzibar to Serengeti: early pickup, flight to the Serengeti airstrip, immediate game drive (lions, leopards, cheetahs, elephants and more), lunch on safari, dinner and overnight in Serengeti.
+
+Day 2 – Full-Day Serengeti Game Drive: predators, herds and possibly Great Migration movements; all meals, overnight Serengeti.
+
+Day 3 – Serengeti to Zanzibar: final morning in the wilderness, return flight, hotel transfer. End of safari.
+
+WHAT'S INCLUDED: return flights, hotel pickup & drop-off, all Serengeti transfers, 4x4 with pop-up roof, professional driver-guide, park fees, listed game drives, 2 nights accommodation, meals as indicated, drinking water, taxes and fees.
+
+NOT INCLUDED: travel insurance, tips & personal expenses, alcohol, optional activities.
+
+PRICE PER PERSON
+2 Travellers: $3,352 per person
+3 Travellers: $3,000 per person
+4+ Travellers: $2,996 per person
+From $2,996 per person. Send your travel date, number of travelers and Zanzibar hotel to check availability — our team confirms your final price before booking. Includes flights, Serengeti safari, accommodation, meals and transfers.`,
+    price: 'From $2,996',
+    priceNote: 'Per person',
+    image: safari4,
+    duration: '3 Days / 2 Nights',
+    groupSize: 'Private Tour',
+    category: 'safari',
+    isDayTrip: false,
+    location: 'Serengeti',
+    tips: [
+      {
+        text: 'Pack layers and a camera with zoom — mornings are cool and sightings can be distant.',
+        image: safari4
+      },
+      {
+        text: 'Full-day game drives run on wildlife movement — trust your guide’s route each day.',
+        image: safari2
+      },
+      {
+        text: 'Send your travel date, group size and hotel for an exact personalised quotation.',
+        image: safari3
+      }
+    ],
+    highlights: [
+      'Legendary Serengeti game drives',
+      'Lions, leopards, cheetahs & herds',
+      'Return flights from Zanzibar',
+      '2 nights in Serengeti + all meals',
+      '4x4 vehicle, fees & pro guide'
+    ],
+    includes: [
+      'Return flights Zanzibar–Serengeti–Zanzibar',
+      'Zanzibar hotel pickup & drop-off',
+      'All Serengeti transfers',
+      '4x4 safari vehicle with pop-up roof',
+      'Professional safari driver-guide',
+      'Serengeti National Park fees',
+      'Listed game drives + 2 nights accommodation',
+      'Meals as indicated + drinking water',
+      'Government taxes & applicable fees'
+    ],
+    excludes: [
+      'Travel insurance',
+      'Tips & personal expenses',
+      'Alcoholic beverages',
+      'Optional activities'
+    ],
+    status: '2026 New Experience',
+    rating: 5.0,
+    reviewCount: 0,
+    bookingLink: '/book/serengeti-safari-3days',
+    featured: true,
+    photos: generateTourPhotos('serengeti-3day')
+  },
+
+  // Mikumi National Park Day Safari from Zanzibar — newest package
+  {
+    id: 'mikumi-day-safari',
+    name: 'Mikumi National Park Day Safari from Zanzibar',
+    shortDescription: 'Real safari in one day — return flights, game drive, lunch and transfers, back at your hotel by evening',
+    description: 'Fly from Zanzibar to Mikumi National Park for a full-day fly-in safari with a professional guide — lions, elephants, giraffes and more — and return to your hotel the same day.',
+    fullDescription: `Experience a real African safari in just one day.
+
+Fly from Zanzibar to Mikumi National Park, explore its spectacular wildlife with a professional safari guide, and return to your Zanzibar hotel the same day. Approx. 04:00 AM – 04:00 PM. Shared safari; return flights included.
+
+YOUR SAFARI DAY
+04:00 AM – Hotel Pickup and transfer to Zanzibar International Airport (time varies by hotel and flight schedule).
+
+Flight Zanzibar to Mikumi — scenic flight; driver-guide waiting on arrival.
+
+Mikumi Game Drive — pop-up-roof vehicle through open savannah: lions, elephants, giraffes, zebras, buffaloes, hippos, crocodiles, antelopes, monkeys, birds. Sightings vary; animals roam freely.
+
+Lunch in Mikumi, Afternoon Game Drive, Return Flight to Zanzibar, hotel drop-off approx. 04:00 PM.
+
+WHAT'S INCLUDED: round-trip flights, hotel transfers, park entrance fees, guided game drive, shared pop-up-roof vehicle, driver-guide, lunch, drinking water, taxes and fees, team assistance throughout.
+
+NOT INCLUDED: personal expenses, tips, travel insurance.
+
+PRICE PER PERSON
+1–2 People: $450 per person
+3 People: $430 per person
+4+ People: $420 per person
+From $450 per person. Shared safari — private option on request. Passport details required in advance for flights. Wildlife sightings cannot be guaranteed.`,
+    price: 'From $450',
+    priceNote: 'Per person',
+    image: safari5,
+    duration: 'Full Day (04:00–16:00)',
+    groupSize: 'Shared Safari',
+    category: 'safari',
+    isDayTrip: true,
+    location: 'Mikumi',
+    tips: [
+      {
+        text: 'Have passport details ready in advance — required for the domestic flight booking.',
+        image: safari5
+      },
+      {
+        text: 'Expect a 04:00 AM pickup and 04:00 PM return; times follow the flight schedule.',
+        image: safari1
+      },
+      {
+        text: 'Animals roam freely — every game drive is different; trust your guide’s route.',
+        image: safari3
+      }
+    ],
+    highlights: [
+      'Same-day fly-in safari from Zanzibar',
+      'Return flights + hotel transfers',
+      'Lions, elephants, giraffes & more',
+      'Pop-up-roof vehicle + pro guide',
+      'Lunch, water, park fees included'
+    ],
+    includes: [
+      'Round-trip flights Zanzibar–Mikumi–Zanzibar',
+      'Round-trip hotel transfers in Zanzibar',
+      'Mikumi National Park entrance fees',
+      'Guided safari game drive',
+      'Shared pop-up-roof vehicle',
+      'Professional safari driver-guide',
+      'Lunch and drinking water',
+      'Government taxes and applicable fees'
     ],
     excludes: [
       'Personal expenses',
       'Tips and gratuities',
-      'Beverages not included in park lunch',
-      'Photography fees'
+      'Travel insurance'
     ],
-    status: '2026 private Safari',
+    status: '2026 New Experience',
     rating: 5.0,
     reviewCount: 0,
-    bookingLink: '/book/selous-day-trip-safari',
+    bookingLink: '/book/mikumi-day-safari',
     featured: true,
-    photos: generateTourPhotos('selous-zanzibar')
+    photos: generateTourPhotos('mikumi-safari')
   },
 
+  // Nyerere National Park (Selous) Day Safari from Zanzibar — newest package
   {
-    id: 'mnemba-island',
-    name: 'Mnemba Island Snorkeling Trip',
-    shortDescription: 'The Ultimate Zanzibar Marine Experience',
-    description: 'Immerse yourself in the turquoise heart of the Indian Ocean with ZanStone Tours & Safaris. The Mnemba Island Snorkeling Trip is widely considered the crown jewel of Zanzibar\'s sea excursions. Our package offers a comprehensive marine adventure—from ethical dolphin spotting in their natural habitat to exploring the vibrant coral gardens of the Mnemba Atoll Marine Reserve.',
-    fullDescription: `Tour Status: 2026 Best-Seller | Type: Private or Executive Sharing Charter | Pricing: All-Inclusive (No Hidden Fees)
+    id: 'nyerere-selous-day-safari',
+    name: 'Nyerere National Park (Selous) Day Safari from Zanzibar',
+    shortDescription: 'Real African safari in one day — return flights, game drive, lunch and transfers, back at your hotel by evening',
+    description: 'Fly from Zanzibar to Nyerere National Park for a full-day fly-in safari with a professional guide — elephants, lions, giraffes, hippos and more — and return to your hotel the same day.',
+    fullDescription: `Experience a real African safari in just one day.
 
-📍 Overview: The Ultimate Zanzibar Marine Experience
+Fly from Zanzibar to Nyerere National Park, explore one of Tanzania’s remarkable wildlife destinations with a professional safari guide, and return to your Zanzibar hotel the same day. Approx. 04:00 AM – 04:00 PM. Shared safari; return flights included.
 
-Immerse yourself in the turquoise heart of the Indian Ocean with ZanStone Tours & Safaris. The Mnemba Island Snorkeling Trip is widely considered the crown jewel of Zanzibar's sea excursions. Our package offers a comprehensive marine adventure—from ethical dolphin spotting in their natural habitat to exploring the vibrant coral gardens of the Mnemba Atoll Marine Reserve. Designed for those who value privacy and quality, this tour ensures a seamless day of sun, sea, and high-end island hospitality with zero hidden costs.
+YOUR SAFARI DAY
+04:00 AM – Hotel Pickup & Airport Transfer (time varies by hotel and flight schedule).
 
-🐬 Detailed Professional Itinerary & Timings
+Flight Zanzibar to Nyerere — scenic flight; driver-guide waiting on arrival.
 
-• 07:00 AM – VIP Hotel Pickup & Private Transfer 🚐
-Start your day with a stress-free, private pickup from your hotel in a clean, air-conditioned vehicle. We depart early to ensure you arrive at the Matemwe/Muyuni departure point before the midday crowds, providing you with a more serene and exclusive ocean experience.
+Nyerere Game Drive — pop-up-roof vehicle through vast wilderness: elephants, lions, giraffes, buffaloes, hippos, crocodiles, zebras, antelopes, monkeys, birds. Sightings vary; animals roam freely.
 
-• Ethical Dolphin Watching (Respectful Encounter) 🐬
-Board your professional boat and cruise into the protected waters of the Mnemba Marine Conservation Area. Our expert captains track the resident pods of wild bottlenose dolphins. We prioritize sustainable tourism, allowing you to observe and photograph these majestic creatures at a respectful distance as they play in the waves.
+Lunch in Nyerere, Afternoon Game Drive, Return Flight to Zanzibar, hotel drop-off approx. 04:00 PM.
 
-• Premium Snorkeling at Mnemba Reef 🤿
-Drop anchor at the world-class coral gardens surrounding Mnemba Island. Explore a "natural aquarium" teeming with hundreds of species of tropical fish, sea stars, and colorful anemones. Our professional guides provide on-water assistance and high-quality, sterilized snorkeling equipment for your total safety and comfort.
+WHAT'S INCLUDED: round-trip flights, hotel transfers, park entrance fees, guided game drive, shared pop-up-roof vehicle, driver-guide, lunch, drinking water, taxes and fees, team assistance throughout.
 
-• Signature Seafood Lunch on the Beach 🍤
-After your underwater exploration, relax as we serve a Fresh Zanzibar Seafood Meal on the shore. Indulge in grilled fish, prawns, and calamari, accompanied by chilled soft drinks and a colorful platter of seasonal tropical fruits like clove-scented pineapple, sweet mangoes, and spiced watermelon.
+NOT INCLUDED: personal expenses, tips, travel insurance.
 
-• 01:30 PM – Relaxation & Arrival Back at Hotel 🚤
-Enjoy a final swim or sunbathe before a scenic boat ride back to the shore. Your private driver will be waiting to provide a comfortable, punctual transfer back to your hotel, ensuring your afternoon is free for further relaxation.
-
-✅ Package Includes (Inclusions)
-
-• ✔️ Private Hotel Pickup & Drop-off: (Modern air-conditioned vehicles).
-• ✔️ Elite Boat Excursion: (High-quality private or sharing charters with experienced crew).
-• ✔️ Licensed Professional Guide: (Expert in marine biology and Zanzibar's history).
-• ✔️ Technical Snorkeling Gear: (Clean, high-quality masks, fins, and snorkels).
-• ✔️ Professional Life Jackets: (Available in all sizes for swimmers and non-swimmers).
-• ✔️ Gourmet Seafood Lunch: (Freshly fish, prawns, calamari, and local sides).
-• ✔️ Refreshments: (Unlimited bottled mineral water, soft drinks, and fresh tropical fruits).
-• ✔️ All Government Fees: (Mnemba Marine Park permits and conservation fees included).
-• ✔️ All Local Entrance Fees: (Strictly Zero Hidden Costs).
-
-❌ Not Included (Exclusions)
-
-• Personal expenses and souvenirs.
-• Gratuities/Tips for your dedicated ZanStone team (Optional).`,
-    price: {
-      '2': '$225',
-      '3-4': '$280',
-      '5-6': '$70 Per Person',
-      '7-12': '$65 Per Person'
-    },
-    priceNote: 'Price based on:',
-    image: mnemba,
-    duration: 'Full Day (7:00 AM - 1:30 PM)',
-    groupSize: 'Private (1-10) or Executive Sharing',
-    category: 'daytrip',
+PRICE PER PERSON
+1–2 People: $470 per person
+3 People: $440 per person
+4+ People: $430 per person
+From $470 per person. Shared safari — private option on request. Passport details required in advance for flights. Wildlife sightings cannot be guaranteed.`,
+    price: 'From $470',
+    priceNote: 'Per person',
+    image: safari1,
+    duration: 'Full Day (04:00–16:00)',
+    groupSize: 'Shared Safari',
+    category: 'safari',
     isDayTrip: true,
-    location: 'Zanzibar',
+    location: 'Nyerere (Selous)',
+    tips: [
+      {
+        text: 'Have passport details ready in advance — required for the domestic flight booking.',
+        image: safari1
+      },
+      {
+        text: 'Expect a 04:00 AM pickup and 04:00 PM return; times follow the flight schedule.',
+        image: safari3
+      },
+      {
+        text: 'Animals roam freely — every game drive is different; trust your guide’s route.',
+        image: safari2
+      }
+    ],
     highlights: [
-      'VIP Hotel Pickup & Drop-off',
-      'Ethical Dolphin Watching',
-      'Premium Snorkeling at Mnemba Reef',
-      'Gourmet Seafood Lunch on Beach',
-      'Mnemba Marine Park Permits Included',
-      'Professional Licensed Marine Guide'
+      'Same-day fly-in safari from Zanzibar',
+      'Return flights + hotel transfers',
+      'Big game: elephants, lions, hippos',
+      'Pop-up-roof vehicle + pro guide',
+      'Lunch, water, park fees included'
     ],
     includes: [
-      'Private Hotel Pickup & Drop-off (Modern air-conditioned vehicles)',
-      'Elite Boat Excursion (High-quality private or sharing charters with experienced crew)',
-      'Licensed Professional Guide (Expert in marine biology and Zanzibar\'s history)',
-      'Technical Snorkeling Gear (Clean, high-quality masks, fins, and snorkels)',
-      'Professional Life Jackets (Available in all sizes for swimmers and non-swimmers)',
-      'Gourmet Seafood Lunch (Fresh fish, prawns, calamari, and local sides)',
-      'Refreshments (Unlimited bottled mineral water, soft drinks, and fresh tropical fruits)',
-      'All Government Fees (Mnemba Marine Park permits and conservation fees included)',
-      'All Local Entrance Fees (Strictly Zero Hidden Costs)'
+      'Round-trip flights Zanzibar–Nyerere–Zanzibar',
+      'Round-trip hotel transfers in Zanzibar',
+      'Nyerere National Park entrance fees',
+      'Guided safari game drive',
+      'Shared pop-up-roof vehicle',
+      'Professional safari driver-guide',
+      'Lunch and drinking water',
+      'Government taxes and applicable fees'
     ],
     excludes: [
-      'Personal expenses and souvenirs',
-      'Gratuities/Tips for your dedicated ZanStone team (Optional)'
+      'Personal expenses',
+      'Tips and gratuities',
+      'Travel insurance'
     ],
-    status: '2026 Best-Seller',
+    status: '2026 New Experience',
     rating: 5.0,
-    reviewCount: 128,
-    bookingLink: '/book/mnemba-island',
-    featured: true
-  }
+    reviewCount: 0,
+    bookingLink: '/book/nyerere-selous-day-safari',
+    featured: true,
+    photos: generateTourPhotos('nyerere-safari')
+  },
 
+  // 5-Day Serengeti, Ngorongoro & Tarangire Safari from Zanzibar — newest package
+  {
+    id: 'serengeti-ngorongoro-tarangire-5days',
+    name: '5-Day Serengeti, Ngorongoro & Tarangire Safari from Zanzibar',
+    shortDescription: 'Serengeti plains, Ngorongoro Crater and Tarangire elephants — 5 days with flights, lodge stays and all meals',
+    description: 'Tanzania’s three iconic safari destinations in one 5-day adventure from Zanzibar: Serengeti game drives, Ngorongoro Crater Big Five, Tarangire baobabs and elephants — with flights, 4x4 vehicle, accommodation, meals and all fees included.',
+    fullDescription: `Experience Tanzania’s three iconic safari destinations on an unforgettable 5-day adventure from Zanzibar.
+
+Fly to Arusha and journey through legendary Serengeti National Park, Ngorongoro Crater and Tarangire National Park — incredible wildlife, spectacular landscapes and private game drives.
+
+YOUR ITINERARY
+Day 1 – Zanzibar to Arusha to Serengeti: early flight, first game drive en route (lions, leopards, cheetahs, elephants and more), dinner and overnight in Serengeti.
+
+Day 2 – Full-Day Serengeti Game Drive: predators, herds and possibly Great Migration movements; all meals, overnight Serengeti.
+
+Day 3 – Serengeti to Karatu via Ngorongoro Conservation Area: scenery and sightings en route; dinner and overnight Karatu.
+
+Day 4 – Ngorongoro Crater Safari: descend into the crater for lions, elephants, rhinos, hippos and birdlife; lunch on safari; return to Karatu.
+
+Day 5 – Tarangire to Arusha to Zanzibar: baobabs and elephant herds, lunch, evening flight to Zanzibar and hotel transfer. End of safari.
+
+WHAT'S INCLUDED: return flights, hotel pickup & drop-off, all mainland transfers, 4x4 with pop-up roof, professional driver-guide, all park/conservation/crater fees, 4 nights accommodation, meals as indicated, drinking water, all listed game drives, taxes and fees.
+
+NOT INCLUDED: travel insurance, tips & personal expenses, alcohol, optional activities.
+
+PRICE PER PERSON
+2 Guests: $5,659 per person
+4+ Guests: $5,407 per person
+4+ Guests: $5,044 per person
+From $5,044 per person. Final price depends on group size, season and availability — send your travel date, group size and hotel for a personalised quotation.`,
+    price: 'From $5,044',
+    priceNote: 'Per person',
+    image: safari2,
+    duration: '5 Days / 4 Nights',
+    groupSize: 'Private Tour',
+    category: 'safari',
+    isDayTrip: false,
+    location: 'Serengeti & Ngorongoro',
+    tips: [
+      {
+        text: 'Pack layers — crater mornings are cool, midday game drives are hot and dusty.',
+        image: safari2
+      },
+      {
+        text: 'A camera with zoom makes the crater and Serengeti sightings unforgettable.',
+        image: safari3
+      },
+      {
+        text: 'Send your travel date, group size and hotel for an exact personalised quotation.',
+        image: safari1
+      }
+    ],
+    highlights: [
+      'Full-day Serengeti game drives',
+      'Ngorongoro Crater Big Five',
+      'Tarangire elephants & baobabs',
+      'Return flights from Zanzibar',
+      '4 nights, all meals & park fees'
+    ],
+    includes: [
+      'Flights Zanzibar–Arusha–Zanzibar',
+      'Zanzibar hotel pickup & drop-off',
+      'All mainland transfers',
+      '4x4 safari vehicle with pop-up roof',
+      'Professional safari driver-guide',
+      'All park, conservation & crater fees',
+      '4 nights accommodation',
+      'Meals as indicated + drinking water',
+      'All listed game drives, taxes & fees'
+    ],
+    excludes: [
+      'Travel insurance',
+      'Tips & personal expenses',
+      'Alcoholic beverages',
+      'Optional activities'
+    ],
+    status: '2026 New Experience',
+    rating: 5.0,
+    reviewCount: 0,
+    bookingLink: '/book/serengeti-ngorongoro-tarangire-5days',
+    featured: true,
+    photos: generateTourPhotos('serengeti-safari')
+  },
+
+  // 3-Day Tarangire & Ngorongoro Safari from Zanzibar — newest package
+  {
+    id: 'tarangire-ngorongoro-safari-3days',
+    name: '3-Day Tarangire & Ngorongoro Safari from Zanzibar',
+    shortDescription: 'Tarangire elephants, Ngorongoro Crater Big Five, return flights, lodge stays and all meals — 3 days',
+    description: 'Experience Tarangire National Park and the Ngorongoro Conservation Area with a crater game drive finale — return flights from Zanzibar, 4x4 safari vehicle, 2 nights at Chui Hidden Lodge and all meals included.',
+    fullDescription: `Experience two of Tanzania’s most iconic wildlife destinations on an unforgettable 3-day safari from Zanzibar.
+
+Fly from Zanzibar to Arusha and explore Tarangire National Park and the Ngorongoro Conservation Area, finishing with a spectacular game drive inside the world-famous Ngorongoro Crater.
+
+YOUR ITINERARY
+Day 1 – Zanzibar to Arusha to Tarangire: early flight, meet your driver-guide, game drive among baobabs and elephants (lions, giraffes, zebras, wildebeest, buffaloes and more), lunch on safari, dinner and overnight at Chui Hidden Lodge.
+
+Day 2 – Ngorongoro Conservation Area: full-day exploration at a comfortable pace with breakfast, lunch and dinner back at the lodge.
+
+Day 3 – Ngorongoro Crater to Arusha to Zanzibar: descend into the crater for lions, elephants, buffaloes, rhinos, hippos and birdlife; lunch on safari; evening flight to Zanzibar and hotel transfer. End of safari.
+
+WHAT'S INCLUDED: return Zanzibar–Arusha flights, hotel pickup & drop-off, all mainland transfers, 4x4 with pop-up roof, professional driver-guide, all park/conservation/crater fees, 2 nights at Chui Hidden Lodge, meals as indicated, drinking water, taxes and fees.
+
+NOT INCLUDED: travel insurance, tips & personal expenses, alcohol.
+
+PRICE PER PERSON
+2 Guests: $2,468 per person
+3 Guests: $2,312 per person
+4+ Guests: $2,220 per person
+From $2,220 per person. Send your travel date, number of travelers and Zanzibar hotel to check availability — our team confirms your final price before booking. Includes flights, Tarangire, Ngorongoro, crater safari, lodge, meals and transfers.`,
+    price: 'From $2,220',
+    priceNote: 'Per person',
+    image: safari3,
+    duration: '3 Days / 2 Nights',
+    groupSize: 'Private Tour',
+    category: 'safari',
+    isDayTrip: false,
+    location: 'Tarangire & Ngorongoro',
+    tips: [
+      {
+        text: 'Pack neutral-coloured clothing, binoculars and a camera with zoom for the crater day.',
+        image: safari3
+      },
+      {
+        text: 'Early starts maximise wildlife sightings — breakfasts are timed around game drives.',
+        image: safari2
+      },
+      {
+        text: 'Send your travel date, group size and hotel for an exact personalised quotation.',
+        image: safari1
+      }
+    ],
+    highlights: [
+      'Tarangire elephants & baobabs',
+      'Ngorongoro Crater Big Five drive',
+      'Return flights from Zanzibar',
+      '2 nights at Chui Hidden Lodge',
+      '4x4 safari vehicle + all meals'
+    ],
+    includes: [
+      'Return flights Zanzibar–Arusha–Zanzibar',
+      'Zanzibar hotel pickup & drop-off',
+      'All mainland transfers',
+      '4x4 safari vehicle with pop-up roof',
+      'Professional safari driver-guide',
+      'All park, conservation & crater fees',
+      '2 nights at Chui Hidden Lodge',
+      'Meals as indicated + drinking water',
+      'Government taxes & applicable fees'
+    ],
+    excludes: [
+      'Travel insurance',
+      'Tips & personal expenses',
+      'Alcoholic beverages'
+    ],
+    status: '2026 New Experience',
+    rating: 5.0,
+    reviewCount: 0,
+    bookingLink: '/book/tarangire-ngorongoro-safari-3days',
+    featured: true,
+    photos: generateTourPhotos('tarangire-ngorongoro')
+  },
+
+  // 8-Day Zanzibar & Mikumi Safari Experience — newest package
+  {
+    id: 'zanzibar-mikumi-safari-8days',
+    name: '8-Day Zanzibar & Mikumi Safari Experience',
+    shortDescription: 'Zanzibar beaches + ocean adventures + Mikumi safari with return flights — one private 8-day journey',
+    description: 'Discover the best of Zanzibar and Tanzania in one private journey: turquoise waters, sandbanks and famous attractions, then fly to Mikumi National Park for a full-day wildlife safari. Everything arranged.',
+    fullDescription: `Zanzibar Beaches + Ocean Adventures + African Safari.
+
+Discover the best of Zanzibar and Tanzania in one unforgettable private journey. Spend your days exploring turquoise waters, tropical sandbanks and famous attractions — then fly directly to Mikumi National Park for an exciting African wildlife safari. One trip. Two incredible sides of Tanzania.
+
+YOUR 8-DAY ITINERARY
+Day 1 – Arrival in Zanzibar: airport pickup, hotel transfer, day at leisure.
+
+Day 2 – Safari Blue & Kwale Island: dhow sailing in Menai Bay, snorkeling, lagoons, Kwale Island, seafood lunch.
+
+Day 3 – Nakupenda Sandbank & Prison Island: white sand, swimming, snorkeling, seafood lunch, then giant Aldabra tortoises and island history.
+
+Day 4 – Free Day & Kendwa Sunset Cruise: relax at your pace, then evening dhow sunset sail.
+
+Day 5 – Fly to Mikumi National Park: early transfer, return flights, full-day 4x4 game drive (elephants, lions, giraffes, zebras, buffaloes, hippos, antelopes), lunch, fly back to Zanzibar. Flights, 4x4 vehicle, guide, park fees, lunch, water and transfers included.
+
+Day 6 – Mnemba Snorkeling & Dolphin Spotting: early Matemwe departure, snorkeling, possible dolphin encounters, fruits and drinks.
+
+Day 7 – Salaam Cave & Turtle Experience: swim with turtles in the Kizimkazi lagoon, photos and relaxation.
+
+Day 8 – Departure: transfer to Zanzibar International Airport. Asante sana & karibu tena!
+
+WHAT'S INCLUDED: airport transfers, private Zanzibar transport, English-speaking guides, private boats on selected tours, all excursions above, snorkeling equipment, entrance and government fees, meals and refreshments as specified, Mikumi return flights, park fees, game drive and safari guide. No hidden fees.
+
+NOT INCLUDED: Zanzibar accommodation, international flights, travel insurance, visa fees, personal expenses, tips, alcohol.
+
+PRICE: FROM $1,227 PER PERSON. Varies by group size, travel dates and availability. Accommodation not included — ask us for a complete package with your preferred Zanzibar hotel. Daily departures, year-round.`,
+    price: 'From $1,227',
+    priceNote: 'Per person',
+    image: safariBg,
+    duration: '8 Days / 7 Nights',
+    groupSize: 'Private Tour',
+    category: 'safari',
+    isDayTrip: false,
+    location: 'Zanzibar & Mikumi',
+    tips: [
+      {
+        text: 'Pack light beachwear plus a warm layer for early safari mornings and ocean evenings.',
+        image: safariBg
+      },
+      {
+        text: 'Bring sunscreen, hat, sunglasses and a waterproof phone case for the ocean days.',
+        image: mnemba
+      },
+      {
+        text: 'Ask us to include your preferred Zanzibar hotel for one complete package price.',
+        image: safari1
+      }
+    ],
+    highlights: [
+      'Safari Blue & Kwale Island sailing',
+      'Nakupenda Sandbank & Prison Island',
+      'Kendwa sunset dhow cruise',
+      'Full-day Mikumi safari + return flights',
+      'Mnemba snorkeling & Salaam Cave turtles'
+    ],
+    includes: [
+      'Arrival & departure airport transfers',
+      'Private air-conditioned Zanzibar transportation',
+      'Professional English-speaking guides',
+      'Private boats on selected excursions',
+      'All excursions in the itinerary',
+      'Snorkeling equipment, entrance & government fees',
+      'Meals & refreshments as specified',
+      'Mikumi return flights, park fees & game drive',
+      'Professional safari guide — no hidden fees'
+    ],
+    excludes: [
+      'Zanzibar accommodation (available on request)',
+      'International flights',
+      'Travel insurance & visa fees',
+      'Personal expenses, tips & alcohol'
+    ],
+    status: '2026 New Experience',
+    rating: 5.0,
+    reviewCount: 0,
+    bookingLink: '/book/zanzibar-mikumi-safari-8days',
+    featured: true,
+    photos: generateTourPhotos('zanzibar-mikumi')
+  },
+
+  // Kendwa Sunset Dhow Cruise (sharing) — newest package
+  {
+    id: 'kendwa-sunset-dhow-cruise',
+    name: 'Kendwa Sunset Dhow Cruise',
+    shortDescription: 'Sharing sunset sail aboard a traditional dhow — fruits, snacks, Swahili music and golden skies off Kendwa',
+    description: 'End your day sailing across the Indian Ocean aboard a traditional wooden dhow — join other travelers for tropical fruits, refreshments, live Swahili music and spectacular sunset views off Kendwa and Nungwi.',
+    fullDescription: `Experience a Beautiful Zanzibar Sunset.
+
+Experience the beauty of a Zanzibar sunset while sailing across the Indian Ocean aboard a traditional wooden dhow. Join other travelers for a relaxing evening of dhow sailing, tropical fruits, refreshments, music and spectacular sunset views along the Kendwa and Nungwi coastline.
+
+TOUR ITINERARY
+03:30–04:30 PM – Hotel Pickup & Transfer to Kendwa Beach (time depends on hotel location and sunset time).
+
+Traditional Dhow Boarding & Departure — meet the crew and set sail along the northern coastline.
+
+Coastal Sailing, Tropical Fruits, Snacks & Refreshments, Live Swahili Music.
+
+Sunset Experience — gold, orange, pink and purple skies over the Indian Ocean; crew assists with photos.
+
+Return to Kendwa Beach and hotel drop-off.
+
+PRICE (SHARING CRUISE — you join other travelers)
+2 People: $130 total
+3–4 People: $180 total
+5–6 People: $220 total
+7–12 People: $40 per person
+13+ People: $35 per person
+From $35 per person. Approx. 3–4 hours. Daily departures subject to weather and sea conditions. Advance booking recommended.`,
+    price: 'From $35',
+    priceNote: 'Per person',
+    image: sunset1,
+    duration: 'Approx. 3–4 Hours',
+    groupSize: 'Sharing Cruise',
+    category: 'daytrip',
+    isDayTrip: true,
+    location: 'Kendwa, Zanzibar',
+    tips: [
+      {
+        text: 'Bring a light layer — the ocean breeze after sunset can feel cool on the dhow.',
+        image: sunset1
+      },
+      {
+        text: 'Keep your camera ready — the sky changes colour fast in the last 20 minutes.',
+        image: sunset1
+      },
+      {
+        text: 'Pickup time follows the sunset time and varies by season and hotel location.',
+        image: beach4
+      }
+    ],
+    highlights: [
+      'Traditional dhow sailing at sunset',
+      'Kendwa & Nungwi coastline views',
+      'Live Swahili music onboard',
+      'Fruits, snacks & soft drinks',
+      'Sunset photography with crew help'
+    ],
+    includes: [
+      'Hotel pickup and drop-off',
+      'Sharing traditional dhow cruise',
+      'Professional boat crew & licensed guide',
+      'Fresh tropical fruits & local snacks',
+      'Bottled water & soft drinks',
+      'Live Swahili entertainment',
+      'All applicable government fees and taxes'
+    ],
+    excludes: [
+      'Personal expenses',
+      'Alcoholic beverages (arranged on request, extra)',
+      'Tips and gratuities',
+      'Professional photography or drone services'
+    ],
+    status: '2026 New Experience',
+    rating: 5.0,
+    reviewCount: 0,
+    bookingLink: '/book/kendwa-sunset-dhow-cruise',
+    featured: true,
+    photos: generateTourPhotos('kendwa-sunset')
+  },
+
+  // Stone Town & Spice Farm Private Tour — newest package
+  {
+    id: 'stone-town-spice-farm-tour',
+    name: 'Stone Town & Spice Farm Private Tour',
+    shortDescription: 'UNESCO Stone Town walking tour plus Spice Farm tasting — carved doors, history, spices and Swahili lunch',
+    description: 'Step into the heart and soul of Zanzibar: historic Stone Town streets and carved doors, then a working Spice Farm to see, smell and taste the spices of the Spice Island, with traditional Swahili lunch.',
+    fullDescription: `Discover the History, Culture & Flavours of Zanzibar in One Day.
+
+Step into the heart and soul of Zanzibar on a private cultural journey combining the historic streets of Stone Town with the tropical aromas and flavours of a traditional Zanzibar Spice Farm.
+
+YOUR EXPERIENCE
+Stone Town UNESCO Walking Tour — narrow limestone streets, African/Arab/Indian/European heritage, Old Slave Market & Anglican Cathedral, Sultan’s Palace area, House of Wonders exterior, Forodhani Gardens, Old Fort, carved doors, traditional markets and alleys (route depends on access).
+
+Zanzibar Spice Farm Experience — working plantation in the countryside: see, smell and taste cloves, cinnamon, nutmeg, vanilla, cardamom, pepper, lemongrass and coconut, with uses explained.
+
+Fresh Coconut & Tropical Tasting, Traditional Swahili Lunch (spiced pilau rice, local dishes, vegetables, fruits, water), then return transfer to your hotel.
+
+PRICE (PRIVATE TOUR)
+2 People: $175 total
+3–4 People: $220 total
+5–6 People: $50 per person
+7–12 People: $45 per person
+13+ People: $40 per person
+From $40 per person. Full day approx. 9:00 AM–4:30 PM. Daily, year-round. No hidden tour fees.`,
+    price: 'From $40',
+    priceNote: 'Per person',
+    image: stone,
+    duration: 'Full Day',
+    groupSize: 'Private Tour',
+    category: 'daytrip',
+    isDayTrip: true,
+    location: 'Stone Town, Zanzibar',
+    tips: [
+      {
+        text: 'Wear comfortable shoes — a full day of walking Stone Town alleys and the spice plantation.',
+        image: stone
+      },
+      {
+        text: 'Come hungry — Swahili lunch, coconut and fruit tasting are all included.',
+        image: spice
+      },
+      {
+        text: 'Bring a camera for the carved doors, markets and colourful spice displays.',
+        image: mnemba
+      }
+    ],
+    highlights: [
+      'UNESCO-listed Stone Town walking tour',
+      'Authentic Zanzibar Spice Farm visit',
+      'See, smell & taste fresh spices',
+      'Traditional Swahili lunch included',
+      'Carved doors, history & private transfers'
+    ],
+    includes: [
+      'Private hotel pickup & drop-off',
+      'Private air-conditioned transportation',
+      'Professional licensed guide',
+      'Stone Town guided walking tour & entrance fees',
+      'Spice Farm entrance & guided experience',
+      'Traditional Swahili lunch, fruit & spice tasting',
+      'Fresh coconut & bottled water',
+      'All applicable government fees — no hidden fees'
+    ],
+    excludes: [
+      'Personal expenses',
+      'Alcoholic beverages',
+      'Tips & gratuities'
+    ],
+    status: '2026 New Experience',
+    rating: 5.0,
+    reviewCount: 0,
+    bookingLink: '/book/stone-town-spice-farm-tour',
+    featured: true,
+    photos: generateTourPhotos('stone-spice')
+  },
+
+  // Stone Town & Prison Island Private Tour — newest package
+  {
+    id: 'stone-town-prison-island-tour',
+    name: 'Stone Town & Prison Island Private Tour',
+    shortDescription: 'UNESCO Stone Town walking tour plus Prison Island — giant tortoises, history, markets and ocean boat trip',
+    description: 'Discover Zanzibar’s history, culture and island heritage: guided Stone Town exploration plus a boat journey to Prison Island to meet the giant Aldabra tortoises.',
+    fullDescription: `Discover Zanzibar’s fascinating history, culture and island heritage in one memorable private experience.
+
+This tour combines guided exploration of Stone Town, Zanzibar’s UNESCO World Heritage Site, with a boat journey to Prison Island (Changuu Island) — narrow historic streets, carved doors, markets and landmarks, then giant Aldabra tortoises across turquoise water.
+
+TOUR ITINERARY
+08:00 AM – Private Hotel Pickup and transfer to Stone Town.
+
+Boat Trip to Prison Island — motorized boat from the waterfront (approx. 20–30 minutes) with coastal views.
+
+Prison Island & Giant Tortoises — tortoise sanctuary with tortoises of all ages, plus historic buildings, quarantine-station history and Zanzibar heritage. Return boat to Stone Town.
+
+Stone Town Walking Tour — narrow streets, old buildings, shops, homes and famous carved wooden doors with cultural storytelling.
+
+Old Slave Market & Anglican Cathedral Area, Historical Landmarks (House of Wonders, Old Fort, Sultan’s Palace, Forodhani Gardens, Freddie Mercury House exterior, carved doors, waterfront — route depends on access), Darajani Market, Optional Swahili Lunch (extra unless arranged), then return transfer to your hotel.
+
+PRICE (PRIVATE TOUR)
+2 People: $251 total
+3–4 People: $100 per person
+5–6 People: $82 per person
+7–12 People: $75 per person
+13+ People: $70 per person
+From $70 per person. Approx. 6–8 hours. Daily departures subject to weather, sea conditions and attraction opening hours. Lunch arranged on request at extra cost.`,
+    price: 'From $70',
+    priceNote: 'Per person',
+    image: prison,
+    duration: 'Approx. 6–8 Hours',
+    groupSize: 'Private Tour',
+    category: 'daytrip',
+    isDayTrip: true,
+    location: 'Stone Town, Zanzibar',
+    tips: [
+      {
+        text: 'Wear comfortable walking shoes, hat and sunscreen — walking tour plus boat journey.',
+        image: prison
+      },
+      {
+        text: 'Dress respectfully for cultural and religious sites; carry a little cash for market purchases.',
+        image: prison
+      },
+      {
+        text: 'Museum access varies by day — your guide adjusts the route to opening conditions.',
+        image: prison2
+      }
+    ],
+    highlights: [
+      'Stone Town UNESCO World Heritage Site',
+      'Prison Island & giant Aldabra tortoises',
+      'Scenic Indian Ocean boat trip',
+      'Carved doors, markets & landmarks',
+      'Slave Market history & Darajani Market'
+    ],
+    includes: [
+      'Private hotel pickup and drop-off',
+      'Private transportation',
+      'Boat transfers to and from Prison Island',
+      'Professional licensed guide',
+      'Prison Island entrance fee & tortoise sanctuary',
+      'Itinerary entrance fees, water & tropical fruits',
+      'All applicable government fees'
+    ],
+    excludes: [
+      'Lunch (arranged on request, extra cost)',
+      'Personal expenses',
+      'Tips and gratuities',
+      'Alcoholic beverages',
+      'Extra museum fees & drone services'
+    ],
+    status: '2026 New Experience',
+    rating: 5.0,
+    reviewCount: 0,
+    bookingLink: '/book/stone-town-prison-island-tour',
+    featured: true,
+    photos: generateTourPhotos('stone-prison')
+  },
+
+  // Salaam Cave & Maalum Cave Private Tour (Kizimkazi & Paje) — newest package
+  {
+    id: 'salaam-cave-maalum-cave-tour',
+    name: 'Salaam Cave & Maalum Cave Private Tour',
+    shortDescription: 'Two caves in one day — turtle lagoon at Salaam Cave plus the limestone waters of Maalum Cave near Paje',
+    description: 'Discover two unique Zanzibar cave experiences in one private day: Salaam Cave in Kizimkazi with its turtle lagoon, and Maalum Cave near Paje with clear natural waters, limestone formations and tropical vegetation.',
+    fullDescription: `Discover two unique Zanzibar cave experiences in one unforgettable day.
+
+This private tour combines Salaam Cave in Kizimkazi, known for its turtle swimming experience, with beautiful Maalum Cave near Paje, where you can swim and relax in clear natural waters surrounded by tropical vegetation and limestone formations.
+
+TOUR ITINERARY
+09:00 AM – Private Hotel Pickup in a clean, air-conditioned vehicle with your professional guide.
+
+Salaam Cave – Turtle Experience — natural lagoon with sea turtles; observe and, where permitted, swim. Guide assists and helps capture photos. Follow staff instructions for safe, respectful turtle interaction.
+
+Scenic Transfer to Paje — across to the East Coast through villages and tropical vegetation (possible fresh coconut stop).
+
+Maalum Cave Experience — peaceful natural swimming area among limestone formations and lush vegetation; swim, relax and photograph.
+
+Swimming & Relaxation, Fresh Tropical Fruits & Refreshments, then return to your hotel with your guide.
+
+PRICE (PRIVATE TOUR)
+2 People: $215 total
+3–4 People: $284 total
+5–6 People: $70 per person
+7–12 People: $65 per person
+13+ People: $60 per person
+From $60 per person. Includes both entrance fees, private transportation, guide, fruits, water and fees. Lunch can be arranged on request at extra cost. For larger groups, contact us for a personalised quotation.`,
+    price: 'From $60',
+    priceNote: 'Per person',
+    image: maa1,
+    heroFilter: 'brightness(1.6) saturate(1.08)',
+    duration: 'Approx. 6–7 Hours',
+    groupSize: 'Private Tour',
+    category: 'daytrip',
+    isDayTrip: true,
+    location: 'Kizimkazi, Zanzibar',
+    tips: [
+      {
+        text: 'Bring swimwear, towel, sunscreen and a waterproof phone case — two swims in one day.',
+        image: maa1
+      },
+      {
+        text: 'Follow guide and staff instructions closely, especially around the turtles.',
+        image: maa1
+      },
+      {
+        text: 'Wear water-friendly footwear for the cave paths and limestone areas.',
+        image: maa2
+      }
+    ],
+    highlights: [
+      'Salaam Cave turtle lagoon',
+      'Maalum Cave limestone swim',
+      'Two attractions in one day',
+      'Scenic south-to-east island drive',
+      'Fruits, coconut & photo opportunities'
+    ],
+    includes: [
+      'Private hotel pickup and drop-off',
+      'Private transportation',
+      'Professional licensed guide',
+      'Salaam Cave + Maalum Cave entrances',
+      'Turtle experience at Salaam Cave',
+      'Fresh tropical fruits, water & coconut where available',
+      'All applicable government fees'
+    ],
+    excludes: [
+      'Lunch (arranged on request, extra cost)',
+      'Personal expenses',
+      'Tips and gratuities',
+      'Professional photography or drone services',
+      'Alcoholic beverages'
+    ],
+    status: '2026 New Experience',
+    rating: 5.0,
+    reviewCount: 0,
+    bookingLink: '/book/salaam-cave-maalum-cave-tour',
+    featured: true,
+    photos: generateTourPhotos('salaam-maalum')
+  },
+
+  // Jozani Forest & Salaam Cave Turtle Experience — newest package
+  {
+    id: 'jozani-forest-salaam-cave-turtles',
+    name: 'Jozani Forest & Salaam Cave Turtle Experience',
+    shortDescription: 'Red Colobus Monkeys in Jozani Forest, mangrove boardwalk, then swimming with sea turtles at Salaam Cave',
+    description: 'Two of Zanzibar’s unique nature attractions in one private tour — walk Jozani Forest with a local guide in search of Red Colobus Monkeys and mangroves, then swim with sea turtles at Salaam Cave in Kizimkazi.',
+    fullDescription: `Discover Zanzibar’s Wildlife, Forest & Natural Lagoon.
+
+Experience two of Zanzibar’s unique nature attractions in one private tour combining the tropical beauty of Jozani Forest with the turquoise waters and sea turtles of Salaam Cave.
+
+YOUR EXPERIENCE
+Private Hotel Pickup — pickup from your hotel in a clean, comfortable air-conditioned vehicle toward Jozani Forest.
+
+Jozani Forest Experience — guided walk through Jozani Chwaka Bay National Park to see the famous Zanzibar Red Colobus Monkeys and learn about the forest, wildlife and vegetation.
+
+Mangrove Boardwalk — walk the wooden boardwalk through the mangrove ecosystem and learn how mangroves support Zanzibar’s environment and marine life.
+
+Scenic Transfer to Kizimkazi — drive through villages and tropical countryside to Salaam Cave.
+
+Salaam Cave Turtle Experience — enter the turquoise lagoon and swim alongside sea turtles, with time for photos and videos.
+
+Tropical Fruits & Refreshments, then a comfortable private return transfer to your hotel.
+
+PRICE (PRIVATE TOUR)
+2 People: $191 total for both guests
+3–4 People: $85 per person
+5–6 People: $70 per person
+7–12 People: $60 per person
+Starting from $60 per person. Includes private transportation, both entrance fees, professional guide, tropical fruits and bottled water. For 12+ guests, contact us for a customised quotation. Wildlife sightings cannot be guaranteed.`,
+    price: 'From $60',
+    priceNote: 'Per person',
+    image: jozani,
+    duration: 'Approx. 6–7 Hours',
+    groupSize: 'Private Tour',
+    category: 'daytrip',
+    isDayTrip: true,
+    location: 'Jozani, Zanzibar',
+    tips: [
+      {
+        text: 'Wear comfortable walking shoes for the forest and boardwalk, plus swimwear for the cave.',
+        image: jozani
+      },
+      {
+        text: 'Bring a waterproof phone case and camera — monkeys, mangroves and turtles in one day.',
+        image: sal1
+      },
+      {
+        text: 'Respect the animals and their environment; sightings follow conservation guidelines.',
+        image: mnemba5
+      }
+    ],
+    highlights: [
+      'Red Colobus Monkeys in Jozani Forest',
+      'Guided tropical forest walk',
+      'Mangrove boardwalk ecosystem',
+      'Swimming with sea turtles at Salaam Cave',
+      'Natural lagoon + wildlife photography'
+    ],
+    includes: [
+      'Private hotel pickup & drop-off',
+      'Private air-conditioned transportation',
+      'Professional local guide',
+      'Jozani Forest entrance fee & guided walk',
+      'Mangrove boardwalk visit',
+      'Salaam Cave entrance fee & turtle swim',
+      'Fresh tropical fruits & bottled water',
+      'Applicable government fees'
+    ],
+    excludes: [
+      'Lunch',
+      'Personal expenses',
+      'Tips and gratuities',
+      'Personal travel insurance'
+    ],
+    status: '2026 New Experience',
+    rating: 5.0,
+    reviewCount: 0,
+    bookingLink: '/book/jozani-forest-salaam-cave-turtles',
+    featured: true,
+    photos: generateTourPhotos('jozani-salaam')
+  },
+
+  // Swim with Sea Turtles at Salaam Cave (Kizimkazi) — newest package
+  {
+    id: 'swim-sea-turtles-salaam-cave',
+    name: 'Swim with Sea Turtles at Salaam Cave',
+    shortDescription: 'Swim alongside sea turtles in the turquoise lagoon of Salaam Cave, Kizimkazi — private trip with transfers',
+    description: 'Discover Salaam Cave, a beautiful natural lagoon in Kizimkazi where you can swim alongside sea turtles in clear turquoise water, with private hotel transfers, entrance fees and a professional guide included.',
+    fullDescription: `A Unique Turtle Swimming Experience in Kizimkazi, Zanzibar.
+
+Discover Salaam Cave, a beautiful natural lagoon in Kizimkazi where you can swim alongside sea turtles in clear turquoise water. Enjoy an unforgettable experience surrounded by natural rock formations and tropical scenery, with plenty of time to swim, observe the turtles and capture beautiful photos and videos.
+
+YOUR EXPERIENCE
+Private Hotel Pickup — pickup directly from your hotel in a clean, comfortable air-conditioned vehicle with a scenic drive through villages and countryside toward southern Zanzibar.
+
+Arrival at Salaam Cave — your guide assists with entrance arrangements and gives a short introduction before you enter the lagoon.
+
+Swim with the Sea Turtles — enter the clear turquoise water and swim alongside the turtles, observing them at close range with plenty of time to relax and capture photos and videos.
+
+Time for Photos & Relaxation — no rushing; enjoy the lagoon surroundings at a comfortable private pace.
+
+Private Return Transfer — comfortable journey back to your hotel.
+
+PRICE (PRIVATE TOUR)
+1 Person: $175 total
+2 People: $95 per person
+3–4 People: $75 per person
+5–6 People: $60 per person
+7–12 People: $50 per person
+13+ People: $45 per person
+Starting from only $45 per person. Includes private transportation, entrance fees, guide and hotel pickup & drop-off. Prices may vary by hotel location — exact total always confirmed before booking.
+
+GOOD TO KNOW: approx. 3–4 hours including transfers depending on hotel location. Guests should be comfortable entering the water; children under adult supervision. Pickup across Zanzibar; combinable with Jozani Forest, Maalum Cave, Mtende Beach or The Rock Restaurant on request.`,
+    price: 'From $45',
+    priceNote: 'Per person',
+    image: sal2,
+    duration: 'Approx. 5–7 Hours',
+    groupSize: 'Private Tour',
+    category: 'daytrip',
+    isDayTrip: true,
+    location: 'Kizimkazi, Zanzibar',
+    tips: [
+      {
+        text: 'Bring swimwear, sunscreen and a waterproof phone case or camera for turtle photos.',
+        image: sal2
+      },
+      {
+        text: 'Children are welcome but must stay under adult supervision in the water.',
+        image: beach1
+      },
+      {
+        text: 'Ask us about combining Salaam Cave with Jozani Forest, Maalum Cave or Mtende Beach.',
+        image: mnemba5
+      }
+    ],
+    highlights: [
+      'Swim with sea turtles',
+      'Natural turquoise lagoon & rock formations',
+      'Amazing above & below water photos',
+      'Scenic southern Zanzibar drive',
+      'Private hotel transfers + guide'
+    ],
+    includes: [
+      'Private hotel pickup & drop-off',
+      'Private air-conditioned transportation',
+      'Salaam Cave entrance fees',
+      'Professional guide',
+      'Turtle swimming experience',
+      'Bottled mineral water',
+      'All applicable government fees'
+    ],
+    excludes: [
+      'Lunch and additional food',
+      'Personal expenses',
+      'Tips and gratuities',
+      'Personal travel insurance'
+    ],
+    status: '2026 New Experience',
+    rating: 5.0,
+    reviewCount: 0,
+    bookingLink: '/book/swim-sea-turtles-salaam-cave',
+    featured: true,
+    photos: generateTourPhotos('salaam-cave')
+  },
+
+  // Private Safari Blue Experience (Menai Bay) — newest package
+  {
+    id: 'private-safari-blue-experience',
+    name: 'Private Safari Blue Experience',
+    shortDescription: 'Iconic full-day ocean adventure — dhow sailing, sandbank, snorkeling, Kwale Island and seafood BBQ in Menai Bay',
+    description: 'Discover one of Zanzibar’s most iconic sea adventures: a full-day private trip through Menai Bay Conservation Area with traditional dhow sailing, snorkeling, sandbank, Kwale Island, mangrove lagoon and famous seafood barbecue.',
+    fullDescription: `Discover one of Zanzibar’s most iconic sea adventures with ZanStone Tours & Safaris.
+
+Safari Blue is a full-day ocean experience through the beautiful Menai Bay Conservation Area, combining traditional dhow sailing, snorkeling, swimming, sandbanks, tropical islands and Zanzibar’s famous seafood barbecue.
+
+TOUR ITINERARY
+07:30–08:30 AM – Hotel Pickup & Transfer to Fumba Village, the main departure point (exact time depends on hotel location).
+
+Traditional Dhow Sailing — meet your guide and crew, board a traditional wooden dhow and sail across Menai Bay.
+
+Sandbank Swimming & Relaxation — first stop at a natural sandbank: swimming, sunbathing, photos, fruits and refreshments.
+
+Snorkeling in Menai Bay — explore tropical marine life with provided equipment and guide assistance.
+
+Kwale Island & Seafood BBQ — relax in natural shade and enjoy lobster, prawns, calamari, octopus, fresh fish, rice, local dishes, tropical fruits, water and soft drinks (selection varies seasonally).
+
+Ancient Baobab Tree — visit Kwale’s famous landmark with free time to explore and photograph.
+
+Natural Lagoon & Mangrove Experience — swim in the lagoon surrounded by mangroves (tide dependent).
+
+Return Sailing to Fumba and hotel drop-off.
+
+PRICE (PRIVATE TOUR)
+2 People: $250 total
+3–4 People: $90 per person
+5–6 People: $75 per person
+7–12 People: $65 per person
+13+ People: $60 per person
+From $60 per person. Full day approx. 7:30 AM–5:00 PM. Daily departures subject to weather and sea conditions — itinerary may vary with tides. Advance booking recommended.`,
+    price: 'From $60',
+    priceNote: 'Per person',
+    image: blue1,
+    duration: 'Full Day',
+    groupSize: 'Private Tour',
+    category: 'daytrip',
+    isDayTrip: true,
+    location: 'Menai Bay, Zanzibar',
+    tips: [
+      {
+        text: 'Bring swimwear, sunscreen, sunglasses and a waterproof camera — it is a full ocean day.',
+        image: blue1
+      },
+      {
+        text: 'Eat a light breakfast — a big seafood BBQ lunch awaits on Kwale Island.',
+        image: blue2
+      },
+      {
+        text: 'Sandbank and lagoon visits depend on tides — trust the crew’s order of activities.',
+        image: blue3
+      }
+    ],
+    highlights: [
+      'Traditional dhow sailing in Menai Bay',
+      'Sandbank swimming & relaxation',
+      'Snorkeling among fish & coral',
+      'Kwale Island + seafood BBQ with lobster',
+      'Mangrove lagoon & ancient baobab tree'
+    ],
+    includes: [
+      'Hotel pickup and drop-off',
+      'Traditional dhow boat trip',
+      'Professional licensed guide',
+      'Seafood BBQ lunch (lobster subject to availability)',
+      'Fresh tropical fruits, bottled water & soft drinks',
+      'Snorkeling equipment',
+      'Marine conservation & government fees'
+    ],
+    excludes: [
+      'Personal expenses',
+      'Alcoholic beverages',
+      'Tips and gratuities',
+      'Professional photography or drone services'
+    ],
+    status: '2026 New Experience',
+    rating: 5.0,
+    reviewCount: 0,
+    bookingLink: '/book/private-safari-blue-experience',
+    featured: true,
+    photos: generateTourPhotos('safari-blue')
+  },
+
+  // Private Pungume Sandbank & Snorkeling Experience (Kizimkazi) — newest package
+  {
+    id: 'private-pungume-sandbank-snorkeling',
+    name: 'Private Pungume Sandbank & Snorkeling Experience',
+    shortDescription: 'Southern Zanzibar escape — private boat, snorkeling, Pungume Sandbank and seafood BBQ from Kizimkazi',
+    description: 'Escape to the beautiful waters of southern Zanzibar for a private day at Pungume Sandbank — scenic boat journey, snorkeling, swimming, white-sand relaxation and a freshly prepared seafood BBQ.',
+    fullDescription: `Discover Southern Zanzibar Away from the Crowds.
+
+Escape to the beautiful waters of southern Zanzibar for a private day at Pungume Sandbank, combining a scenic boat journey, snorkeling, swimming, white-sand relaxation and a freshly prepared seafood BBQ. Departing from the Kizimkazi area, your private boat takes you across turquoise waters toward Pungume, a peaceful sandbank surrounded by beautiful tropical scenery.
+
+YOUR EXPERIENCE
+Private Hotel Pickup — pickup directly from your hotel in a clean, comfortable air-conditioned vehicle; travel through villages and countryside toward Kizimkazi. Exact pickup time confirmed by hotel location and sea conditions.
+
+Private Boat Journey to Pungume — meet your guide and experienced captain in Kizimkazi and cruise across southern waters.
+
+Snorkeling Experience — stop at a suitable spot and enter clear water with provided equipment and guide assistance (location varies with visibility, tides, currents and sea conditions).
+
+Pungume Sandbank — white sand surrounded by turquoise water: swimming, relaxing, snorkeling, photos, walking the sandbank, at your own comfortable pace.
+
+SEAFOOD BBQ LUNCH — fresh Zanzibar-style seafood BBQ: lobster, prawns, calamari, fresh fish, local accompaniments, tropical fruits, water and soft drinks (depending on seasonal availability). Tell us beforehand about any food allergies.
+
+More Time to Swim & Relax, then return by boat to Kizimkazi and a comfortable private transfer to your hotel.
+
+PRICE (PRIVATE TOUR)
+2 People: $250 total ($125 per person)
+3–4 People: $100 per person
+5–6 People: $85 per person
+7–12 People: $70 per person
+13+ People: $60 per person
+Starting from $60 per person. Includes transfers, private boat, snorkeling equipment, guide, seafood BBQ, fruits, drinks and applicable fees. A supplement may apply for distant hotels — confirmed before booking.`,
+    price: 'From $60',
+    priceNote: 'Per person',
+    image: pung1,
+    duration: 'Approx. 7–8 Hours',
+    groupSize: 'Private Tour',
+    category: 'daytrip',
+    isDayTrip: true,
+    location: 'Kizimkazi, Zanzibar',
+    tips: [
+      {
+        text: 'Bring swimwear, sunscreen, hat, sunglasses and a waterproof phone case for the full ocean day.',
+        image: pung1
+      },
+      {
+        text: 'Tell us beforehand about any food allergies — lunch is a freshly prepared seafood BBQ.',
+        image: blue1
+      },
+      {
+        text: 'Pickup time is confirmed by your hotel location and the day’s sea conditions.',
+        image: blue2
+      }
+    ],
+    highlights: [
+      'Private Pungume Sandbank escape',
+      'Snorkeling in clear tropical waters',
+      'Fresh seafood BBQ lunch',
+      'Private boat with captain & guide',
+      'Swimming, relaxation & photo stops'
+    ],
+    includes: [
+      'Private hotel pickup & drop-off',
+      'Private air-conditioned transportation',
+      'Private boat with experienced captain',
+      'Professional local guide',
+      'Snorkeling equipment',
+      'Seafood BBQ lunch, tropical fruits, water & soft drinks',
+      'Applicable government and marine fees'
+    ],
+    excludes: [
+      'Alcoholic beverages',
+      'Personal expenses',
+      'Tips and gratuities',
+      'Personal travel insurance'
+    ],
+    status: '2026 New Experience',
+    rating: 5.0,
+    reviewCount: 0,
+    bookingLink: '/book/private-pungume-sandbank-snorkeling',
+    featured: true,
+    photos: generateTourPhotos('pungume-sandbank')
+  },
+
+  // Private Nyange Sandbank Experience (Stone Town) — newest package
+  {
+    id: 'private-nyange-sandbank-experience',
+    name: 'Private Nyange Sandbank Experience',
+    shortDescription: 'Hidden sandbank escape — white sand, turquoise water, private boat, snorkeling and seafood BBQ with lobster',
+    description: 'Escape to Nyange Sandbank, also known as Small Nakupenda — a peaceful private day of swimming, snorkeling, relaxing beneath your sunshade and a freshly prepared Zanzibar seafood BBQ with lobster, prawns, calamari and fresh fish.',
+    fullDescription: `Escape to one of Zanzibar’s beautiful hidden sandbanks with ZanStone Tours & Safaris.
+
+Nyange Sandbank, also known as Small Nakupenda or Nakupenda Bis, is a stunning white-sand escape surrounded by the turquoise waters of the Indian Ocean. Perfect for couples, families, friends and private groups looking for a peaceful day on the ocean.
+
+TOUR ITINERARY
+07:30–08:30 AM – Private Hotel Pickup in a clean, air-conditioned vehicle (exact time depends on your hotel location and ocean tides).
+
+Private Boat Trip to Nyange Sandbank — meet your guide in Stone Town and cruise across turquoise waters as the white sandbank appears on the horizon.
+
+Sandbank Relaxation & Swimming — swim, walk the white sand or relax; our team prepares a private shaded relaxation area with refreshments.
+
+Zanzibar Seafood BBQ Lunch served on the sandbank: lobster, prawns, calamari, fresh fish, local accompaniments, seasonal tropical fruits, bottled water and soft drinks (seafood selection may vary with seasonal availability).
+
+Photography & Free Time — more swimming, relaxing and photos; your guide can assist with pictures on your phone or camera.
+
+Return to Your Hotel — private boat back to Stone Town and comfortable transfer.
+
+PRICE (PRIVATE TOUR)
+2 People: $230 total for both guests
+3–4 People: $280 total group price
+5–6 People: $65 per person
+7–12 People: $60 per person
+13+ People: $55 per person
+From $55 per person. Daily departures subject to weather, tides and sea conditions — departure times may be adjusted for the best experience. Advance booking recommended.`,
+    price: 'From $55',
+    priceNote: 'Per person',
+    image: nakupenda3,
+    duration: 'Approx. 6–7 Hours',
+    groupSize: 'Private Tour',
+    category: 'daytrip',
+    isDayTrip: true,
+    location: 'Stone Town, Zanzibar',
+    tips: [
+      {
+        text: 'Pickup time depends on the ocean tides — we confirm the best departure time for your date.',
+        image: nakupenda3
+      },
+      {
+        text: 'Bring swimwear, sunscreen, snorkel gear if you like, and a waterproof phone case.',
+        image: beach3
+      },
+      {
+        text: 'Tell us beforehand about dietary requirements — lunch is a freshly prepared seafood BBQ.',
+        image: blue2
+      }
+    ],
+    highlights: [
+      'Private Nyange hidden sandbank',
+      'Private boat charter from Stone Town',
+      'Seafood BBQ — lobster, prawns, calamari',
+      'Swimming & snorkeling in clear water',
+      'Private shaded area + photo assistance'
+    ],
+    includes: [
+      'Private hotel pickup and drop-off',
+      'Private boat',
+      'Professional licensed guide',
+      'Seafood BBQ lunch (lobster subject to availability)',
+      'Fresh tropical fruits, bottled water & soft drinks',
+      'Private sunshade on the sandbank',
+      'All applicable government fees'
+    ],
+    excludes: [
+      'Personal expenses',
+      'Tips and gratuities',
+      'Professional camera or drone photography',
+      'Alcoholic beverages'
+    ],
+    status: '2026 New Experience',
+    rating: 5.0,
+    reviewCount: 0,
+    bookingLink: '/book/private-nyange-sandbank-experience',
+    featured: true,
+    photos: generateTourPhotos('nyange-sandbank')
+  },
+
+  // Nakupenda Sandbank Experience (Stone Town) — newest package
+  {
+    id: 'nakupenda-sandbank-experience',
+    name: 'Nakupenda Sandbank Experience',
+    shortDescription: 'Private sandbank escape — white sand, turquoise water, private boat, shaded relaxation area and seafood BBQ with lobster',
+    description: 'Escape to one of Zanzibar’s most famous tropical sandbanks. Swim in warm crystal-clear waters, relax beneath your private sunshade and enjoy a freshly prepared Zanzibar seafood BBQ with lobster, prawns, calamari and fresh fish.',
+    fullDescription: `Escape to one of Zanzibar’s most famous tropical sandbanks with ZanStone Tours & Safaris.
+
+Nakupenda Sandbank is a beautiful white-sand paradise surrounded by the turquoise waters of the Indian Ocean, just off the coast of Stone Town. Perfect for couples, families, friends and private groups looking for a relaxing day surrounded by clear water, white sand and beautiful ocean scenery.
+
+TOUR ITINERARY
+07:30–08:30 AM – Private Hotel Pickup in a clean, air-conditioned vehicle (exact time depends on your hotel location and ocean tides).
+
+Private Boat Trip to Nakupenda Sandbank — meet your guide in Stone Town and cruise across turquoise waters toward the white sand surrounded completely by blue ocean.
+
+Sandbank Relaxation & Swimming — swim, walk the white sand or relax; our team prepares a private shaded relaxation area with refreshments.
+
+ZANZIBAR SEAFOOD BBQ LUNCH served on the sandbank: lobster, prawns, calamari, fresh fish, local accompaniments, seasonal tropical fruits, bottled water and soft drinks (seafood selection may vary with seasonal availability).
+
+Photography & Free Time — more swimming, relaxing and photos; your guide can assist with pictures on your phone or camera.
+
+Return to Your Hotel — private boat back to Stone Town and comfortable transfer. Approximate finish 2:00–3:00 PM (varies with tides, sea conditions and hotel location).
+
+PRICE (PRIVATE TOUR)
+2 People: $230 total for both guests
+3–4 People: $280 total group price
+5–6 People: $65 per person
+7–12 People: $60 per person
+13+ People: $55 per person
+From $55 per person. Daily departures subject to weather, tides and sea conditions — departure times may be adjusted for the best experience. Advance booking recommended.`,
+    price: 'From $55',
+    priceNote: 'Per person',
+    image: nakupenda1,
+    duration: 'Approx. 6–7 Hours',
+    groupSize: 'Private Tour',
+    category: 'daytrip',
+    isDayTrip: true,
+    location: 'Stone Town, Zanzibar',
+    tips: [
+      {
+        text: 'Pickup time depends on the ocean tides — we confirm the best departure time for your date.',
+        image: nakupenda1
+      },
+      {
+        text: 'Bring swimwear, sunscreen, sunglasses and a waterproof phone case for the sandbank.',
+        image: beach4
+      },
+      {
+        text: 'Tell us beforehand about dietary requirements — lunch is a freshly prepared seafood BBQ.',
+        image: nakupenda2
+      }
+    ],
+    highlights: [
+      'Nakupenda Sandbank white-sand escape',
+      'Private boat charter from Stone Town',
+      'Swimming in crystal-clear water',
+      'Seafood BBQ — lobster, prawns, calamari',
+      'Private shaded relaxation area + photo assistance'
+    ],
+    includes: [
+      'Private hotel pickup and drop-off',
+      'Private air-conditioned transportation',
+      'Private boat charter',
+      'Professional local guide',
+      'Seafood BBQ lunch (lobster subject to availability)',
+      'Prawns, calamari and fresh fish',
+      'Fresh tropical fruits, bottled water & soft drinks',
+      'Private sunshade on the sandbank',
+      'Applicable government and local fees'
+    ],
+    excludes: [
+      'Personal expenses',
+      'Tips and gratuities',
+      'Professional camera or drone photography',
+      'Alcoholic beverages',
+      'Personal travel insurance'
+    ],
+    status: '2026 New Experience',
+    rating: 5.0,
+    reviewCount: 0,
+    bookingLink: '/book/nakupenda-sandbank-experience',
+    featured: true,
+    photos: generateTourPhotos('nakupenda-sandbank')
+  },
+
+  // Nakupenda Sandbank & Prison Island Private Tour (Stone Town) — newest package
+  {
+    id: 'nakupenda-prison-island-private-tour',
+    name: 'Nakupenda Sandbank & Prison Island Private Tour',
+    shortDescription: 'Giant tortoises, Prison Island history, Nakupenda Sandbank swimming and fresh seafood BBQ — private full-day trip',
+    description: 'Discover the beauty, history and turquoise waters of Zanzibar on a private full-day adventure combining Nakupenda Sandbank and Prison Island — tortoises, snorkeling, white sand and a freshly prepared seafood lunch.',
+    fullDescription: `Two of Zanzibar's Most Iconic Experiences in One Day.
+
+Discover the beauty, history and turquoise waters of Zanzibar on a private full-day adventure combining Nakupenda Sandbank and Prison Island. Meet the famous giant Aldabra tortoises, discover the history of Prison Island, swim and snorkel in crystal-clear waters, then relax on a beautiful white-sand bank while enjoying a freshly prepared Zanzibar seafood lunch.
+
+YOUR EXPERIENCE
+Prison Island & Giant Tortoises — scenic boat ride from Stone Town to historic Prison Island (Changuu Island). Meet the giant Aldabra tortoises, some over a century old — see them up close, take photos and learn the island's fascinating history from your guide.
+
+Nakupenda Sandbank — continue by boat to the spectacular white-sand bank surrounded by turquoise water. Swimming, snorkeling, sunbathing, photography and relaxing on the sand.
+
+Fresh Seafood Lunch on the Sandbank — Zanzibar-style seafood freshly prepared while you relax: lobster, prawns, fresh fish, calamari, local accompaniments, tropical fruits, soft drinks and water (depending on availability).
+
+Return to Stone Town — boat back and a comfortable private transfer to your hotel. Everything arranged: transportation, boat, guide, entrance fees and lunch.
+
+PRICE (PRIVATE TOUR)
+2 People: $270 total for two
+3–4 People: $116 per person
+5–6 People: $88 per person
+7–12 People: $80 per person
+13+ People: $75 per person
+Price per person depends on group size. Daily departures, year-round. Suitable for couples, families, friends and groups.`,
+    price: 'From $75',
+    priceNote: 'Per person',
+    image: nakupenda,
+    duration: 'Full Day',
+    groupSize: 'Private Tour',
+    category: 'daytrip',
+    isDayTrip: true,
+    location: 'Stone Town, Zanzibar',
+    tips: [
+      {
+        text: 'Bring swimwear, sunscreen and a camera — you will swim, snorkel and meet the giant tortoises.',
+        image: nakupenda
+      },
+      {
+        text: 'Go early in the day for the calmest water and the most beautiful sandbank photos.',
+        image: nakupenda2
+      },
+      {
+        text: 'Wear comfortable sandals — you will step from boat to sand and walk the historic island.',
+        image: prison
+      }
+    ],
+    highlights: [
+      'Meet the giant Aldabra tortoises',
+      'Relax on Nakupenda Sandbank',
+      'Swim & snorkel in clear waters',
+      'Fresh seafood BBQ on the sand',
+      'Prison Island history + private boat trip'
+    ],
+    includes: [
+      'Private hotel pickup & drop-off',
+      'Private air-conditioned vehicle',
+      'Boat transfers',
+      'Professional local guide',
+      'Prison Island entrance fees',
+      'Nakupenda Sandbank experience',
+      'Seafood lunch, tropical fruits, water & soft drinks',
+      'Snorkeling equipment',
+      'All applicable government fees — no hidden fees'
+    ],
+    excludes: [
+      'Personal expenses',
+      'Alcoholic beverages',
+      'Tips & gratuities'
+    ],
+    status: '2026 New Experience',
+    rating: 5.0,
+    reviewCount: 0,
+    bookingLink: '/book/nakupenda-prison-island-private-tour',
+    featured: true,
+    photos: generateTourPhotos('nakupenda-prison-private')
+  },
+
+  // Mnemba Island Snorkeling Experience (Matemwe/Muyuni) — newest package
+  {
+    id: 'mnemba-island-snorkeling-experience',
+    name: 'Mnemba Island Snorkeling Experience',
+    shortDescription: 'Dolphin spotting, snorkeling around Mnemba Atoll, swimming and a fresh seafood lunch — private trip from Matemwe',
+    description: 'Experience one of Zanzibar’s most popular ocean adventures with a private trip to the beautiful waters surrounding Mnemba Atoll — dolphin spotting, snorkeling, swimming, tropical fruits and a fresh seafood lunch, with private hotel transfers included.',
+    fullDescription: `Discover Zanzibar’s Turquoise Waters & Marine Life.
+
+Experience one of Zanzibar’s most popular ocean adventures with a private trip to the beautiful waters surrounding Mnemba Atoll. Your experience combines dolphin spotting, snorkeling, swimming, tropical fruits and a fresh seafood lunch, with private transportation from your hotel and an experienced local team taking care of the arrangements.
+
+Depart early from the Matemwe/Muyuni area and explore the clear waters surrounding Mnemba, where you can snorkel among colorful tropical fish and coral before relaxing and enjoying your Zanzibar-style seafood lunch.
+
+YOUR EXPERIENCE
+Private Hotel Pickup — pickup directly from your hotel in a clean, comfortable air-conditioned vehicle; early morning departure recommended. Your exact pickup time is confirmed according to your hotel location.
+
+Boat Journey Toward Mnemba — meet your professional local guide and experienced boat captain at the beach, then cruise across turquoise waters toward Mnemba Atoll.
+
+Dolphin Spotting — your captain will look for wild dolphins while respecting their movement and natural behavior. Please note: dolphins are wild animals, so sightings cannot be guaranteed.
+
+Snorkeling Around Mnemba Atoll — snorkel in clear water among colorful tropical fish and coral formations with guide assistance; life jackets available. The exact spot may vary with visibility, currents, tides and sea conditions.
+
+Swimming & Relaxation — extra time to swim, relax on the boat and take photos.
+
+SEAFOOD LUNCH — freshly prepared Zanzibar-style seafood meal (prawns, calamari, fresh fish, local accompaniments, tropical fruits, water and soft drinks depending on seasonal availability). Tell us beforehand about any food allergies or dietary requirements.
+
+Private Return Transfer — boat back to the departure beach and a comfortable private drive to your hotel.
+
+PRICING
+2 People: $225 Total (for both guests)
+3–4 People: $280 Total (group price)
+5–6 People: $70 Per Person
+7–12 People: $65 Per Person
+Starting from $65 per person. Price includes transportation, boat excursion, snorkeling equipment, guide, seafood lunch, tropical fruits, refreshments and applicable fees. For 12+ guests, contact us for a customised quotation.
+
+WHAT TO BRING: swimwear, towel, sunscreen, sunglasses, hat, comfortable beachwear, waterproof phone case and a change of clothes.
+
+Marine activities are subject to weather, tides and sea conditions and may be adjusted or rescheduled for safety. Dolphins and other marine animals are wild, therefore sightings cannot be guaranteed.`,
+    price: 'From $65',
+    priceNote: 'Per person',
+    image: mnemba,
+    duration: 'Approx. 6–7 Hours',
+    groupSize: 'Private Tour',
+    category: 'daytrip',
+    isDayTrip: true,
+    location: 'Matemwe, Zanzibar',
+    tips: [
+      {
+        text: 'Depart early in the morning for calmer seas, better visibility and more time on the ocean.',
+        image: mnemba
+      },
+      {
+        text: 'Tell us before the tour about any food allergies — lunch is freshly prepared seafood.',
+        image: beach1
+      },
+      {
+        text: 'Bring a waterproof phone case and sunscreen — you will spend most of the day on the water.',
+        image: mnemba1
+      }
+    ],
+    highlights: [
+      'Dolphin spotting in the wild',
+      'Snorkeling around Mnemba Atoll',
+      'Tropical marine life & coral',
+      'Swimming in turquoise waters',
+      'Fresh seafood lunch + tropical fruits'
+    ],
+    includes: [
+      'Private hotel pickup & drop-off',
+      'Private air-conditioned transportation',
+      'Boat excursion with experienced captain',
+      'Professional local guide',
+      'Snorkeling equipment & life jackets',
+      'Dolphin spotting opportunity',
+      'Mnemba snorkeling experience',
+      'Seafood lunch, fresh tropical fruits, water & soft drinks',
+      'Applicable marine and government fees'
+    ],
+    excludes: [
+      'Personal expenses',
+      'Alcoholic beverages',
+      'Tips and gratuities',
+      'Personal travel insurance',
+      'Services not specifically mentioned as included'
+    ],
+    status: '2026 New Experience',
+    rating: 5.0,
+    reviewCount: 0,
+    bookingLink: '/book/mnemba-island-snorkeling-experience',
+    featured: true,
+    photos: generateTourPhotos('mnemba-snorkeling')
+  },
+
+  // Clear Kayak, Drone, Jet Ski & Jet Car Experience (Kendwa) — newest package
+  {
+    id: 'clear-kayak-drone-jetski-jetcar',
+    name: 'Clear Kayak, Drone, Jet Ski & Jet Car Experience',
+    shortDescription: 'Build your ultimate Zanzibar beach day — transparent kayak, Jet Ski, Jet Car and a professional drone shoot in Kendwa',
+    description: 'Combine beautiful Zanzibar scenery, exciting watersports and professional aerial content in one unforgettable experience in Kendwa. Choose a single activity or combine your favourites into one complete package.',
+    fullDescription: `Create Your Ultimate Zanzibar Beach Experience in Kendwa.
+
+Combine beautiful Zanzibar scenery, exciting watersports and professional aerial content in one unforgettable experience. Enjoy a transparent Clear Kayak session, capture beautiful aerial photos and videos with a professional drone, ride across the ocean on a Jet Ski, or experience the unique Jet Car.
+
+Choose a single experience or combine your favourite activities into one complete package. Whether you are travelling solo or as a couple, this experience gives you exciting moments on the water and memorable Zanzibar content to take home.
+
+CHOOSE YOUR EXPERIENCE (total package price — same for 1 or 2 guests):
+
+🌊 JET SKI — $65 TOTAL
+An exciting Jet Ski ride across the waters of Kendwa/Nungwi with safety briefing, safety equipment and activity assistance.
+
+🛶 CLEAR KAYAK + DRONE — $120 TOTAL
+Transparent Clear Kayak session combined with a professional drone operator, aerial photography, drone video clips and digital media.
+
+🌊🚁 JET SKI + DRONE — $150 TOTAL
+Jet Ski experience plus professional aerial action photos, drone video clips and digital media.
+
+🛶🚁🌊 CLEAR KAYAK + DRONE + JET SKI — $250 TOTAL
+Clear Kayak content with professional drone photography and video, plus a Jet Ski ride.
+
+🛶🚁🚤 CLEAR KAYAK + DRONE + JET CAR — $280 TOTAL
+Clear Kayak drone session combined with a unique Jet Car experience.
+
+⭐ COMPLETE EXPERIENCE — $350 TOTAL
+Clear Kayak + Jet Ski + Jet Car + 30-minute professional drone photoshoot with aerial photographs, aerial video clips and digital media. Extra drone time available on request at an additional charge.
+
+IMPORTANT PRICING INFORMATION
+All prices are package prices, not per-person prices — the same whether you book for 1 guest or 2 guests. For groups of 3 or more guests, contact us for a customised group quotation.
+
+Private hotel pickup and drop-off can be arranged from anywhere in Zanzibar — send us your hotel name and we will confirm the transfer price before booking.
+
+WHAT TO BRING: swimwear, towel, sunscreen, sunglasses, comfortable beachwear, a change of clothes and a waterproof phone case. For the drone session, wear clothing that stands out clearly against the turquoise water.
+
+Activities are subject to availability, weather and sea conditions and may be adjusted or rescheduled for safety. Drone photography is subject to suitable weather, wind and safe operating conditions.`,
+    price: 'From $65',
+    priceNote: 'Same price for 1 or 2 guests',
+    image: kayaking,
+    duration: 'Varies by Package',
+    groupSize: '1-2 Guests',
+    category: 'daytrip',
+    isDayTrip: true,
+    location: 'Kendwa, Zanzibar',
+    tips: [
+      {
+        text: 'Wear bright clothing that stands out against the turquoise water for the best drone photos and videos.',
+        image: kayaking
+      },
+      {
+        text: 'Bring a waterproof phone case, sunscreen and a change of clothes — you will get in the water.',
+        image: beach4
+      },
+      {
+        text: 'Send us your hotel name when inquiring so we can confirm the private transfer price before booking.',
+        image: pung1
+      }
+    ],
+    highlights: [
+      'Transparent Clear Kayak session on turquoise water',
+      'Professional drone operator — aerial photos & video',
+      'Jet Ski ride across the waters of Kendwa/Nungwi',
+      'Unique Jet Car experience on the ocean',
+      'Packages from $65 — same price for 1 or 2 guests'
+    ],
+    includes: [
+      'Selected watersports activities per your package',
+      'Clear Kayak equipment where applicable',
+      'Jet Ski where applicable',
+      'Jet Car where applicable',
+      'Professional drone operator where applicable',
+      'Digital photos and videos according to the selected package',
+      'Safety equipment and professional activity briefing',
+      'Local activity assistance',
+      'Bottled mineral water'
+    ],
+    excludes: [
+      'Hotel transportation unless specifically added',
+      'Lunch',
+      'Additional activity or drone shooting time',
+      'Special media editing unless confirmed',
+      'Personal expenses, tips and travel insurance'
+    ],
+    status: '2026 New Experience',
+    rating: 5.0,
+    reviewCount: 0,
+    bookingLink: '/book/clear-kayak-drone-jetski-jetcar',
+    featured: true,
+    photos: generateTourPhotos('clear-kayak-drone')
+  },
 
 ];
 
@@ -1876,6 +2006,51 @@ export const getDayTripById = (id) => {
 
 export const getFeaturedDayTrips = (limit = 6) => {
   return dayTripsData.filter(trip => trip.featured).slice(0, limit);
+};
+
+// Interleave safari and Zanzibar packages so featured sections stay balanced
+export const getMixedFeaturedDayTrips = (limit = 8) => {
+  const featured = dayTripsData.filter(trip => trip.featured);
+  const safaris = featured.filter(trip => trip.category === 'safari');
+  const zanzibar = featured.filter(trip => trip.category !== 'safari');
+  const mixed = [];
+  let safariIndex = 0;
+  let zanzibarIndex = 0;
+  while (mixed.length < limit && (safariIndex < safaris.length || zanzibarIndex < zanzibar.length)) {
+    if (zanzibarIndex < zanzibar.length) mixed.push(zanzibar[zanzibarIndex++]);
+    if (mixed.length < limit && safariIndex < safaris.length) mixed.push(safaris[safariIndex++]);
+  }
+  return mixed;
+};
+
+// Hand-picked, most eye-catching packages for the home page showcase
+// (alternating Zanzibar and safari so the grid looks vibrant)
+const homeShowcaseIds = [
+  'nakupenda-sandbank-experience',
+  'serengeti-balloon-4days',
+  'mnemba-island-snorkeling-experience',
+  'nyerere-2day-boat-safari',
+  'nakupenda-prison-island-private-tour',
+  'serengeti-safari-3days',
+  'kendwa-sunset-dhow-cruise',
+  'mikumi-day-safari'
+];
+
+export const getHomeShowcaseDayTrips = (limit = 8) => {
+  const showcase = homeShowcaseIds
+    .map(id => dayTripsData.find(trip => trip.id === id))
+    .filter(Boolean);
+  if (showcase.length >= limit) return showcase.slice(0, limit);
+  // Fall back to the balanced mix if fewer curated items are available
+  const seen = new Set(showcase.map(trip => trip.id));
+  for (const trip of getMixedFeaturedDayTrips(limit)) {
+    if (showcase.length >= limit) break;
+    if (!seen.has(trip.id)) {
+      showcase.push(trip);
+      seen.add(trip.id);
+    }
+  }
+  return showcase;
 };
 
 export const getAllDayTrips = () => {
@@ -1890,4 +2065,164 @@ export const getDayTripsByLocation = (location) => {
 
 export const getDayTripsByDuration = (isDayTrip) => {
   return dayTripsData.filter(trip => trip.isDayTrip === isDayTrip);
+};
+
+// Section helpers: safaris vs Zanzibar.
+// A combined package (Zanzibar + mainland safari) belongs to BOTH sections.
+export const isSafariPackage = (tour) => tour.category === 'safari';
+
+export const isZanzibarPackage = (tour) =>
+  tour.category !== 'safari' || /zanzibar/i.test(tour.location || '');
+
+// Price-per-person tier data for the detail page price table.
+// Bands are exactly as published for each package; unit is "Per Person" or "Total".
+const priceTiersById = {
+  'nyerere-2day-boat-safari': [
+    { label: '2 Travellers', price: '$750', unit: 'Per Person' },
+    { label: '3 Travellers', price: '$720', unit: 'Per Person' },
+    { label: '4+ Travellers', price: '$700', unit: 'Per Person' }
+  ],
+  'serengeti-balloon-4days': [
+    { label: '2 Guests', price: '$5,194', unit: 'Per Person' },
+    { label: '3 Guests', price: '$4,705', unit: 'Per Person' },
+    { label: '4+ Guests', price: '$4,694', unit: 'Per Person' }
+  ],
+  'ngorongoro-safari-2days': [
+    { label: '2 Travellers', price: '$1,648', unit: 'Per Person' },
+    { label: '3 Travellers', price: '$1,600', unit: 'Per Person' },
+    { label: '4+ Travellers', price: '$1,513', unit: 'Per Person' }
+  ],
+  'serengeti-safari-3days': [
+    { label: '2 Travellers', price: '$3,352', unit: 'Per Person' },
+    { label: '3 Travellers', price: '$3,000', unit: 'Per Person' },
+    { label: '4+ Travellers', price: '$2,996', unit: 'Per Person' }
+  ],
+  'mikumi-day-safari': [
+    { label: '1–2 People', price: '$450', unit: 'Per Person' },
+    { label: '3 People', price: '$430', unit: 'Per Person' },
+    { label: '4+ People', price: '$420', unit: 'Per Person' }
+  ],
+  'nyerere-selous-day-safari': [
+    { label: '1–2 People', price: '$470', unit: 'Per Person' },
+    { label: '3 People', price: '$440', unit: 'Per Person' },
+    { label: '4+ People', price: '$430', unit: 'Per Person' }
+  ],
+  'serengeti-ngorongoro-tarangire-5days': [
+    { label: '2 Guests', price: '$5,659', unit: 'Per Person' },
+    { label: '3 Guests', price: '$5,407', unit: 'Per Person' },
+    { label: '4+ Guests', price: '$5,044', unit: 'Per Person' }
+  ],
+  'tarangire-ngorongoro-safari-3days': [
+    { label: '2 Guests', price: '$2,468', unit: 'Per Person' },
+    { label: '3 Guests', price: '$2,312', unit: 'Per Person' },
+    { label: '4+ Guests', price: '$2,220', unit: 'Per Person' }
+  ],
+  'kendwa-sunset-dhow-cruise': [
+    { label: '2 People', price: '$130', unit: 'Total' },
+    { label: '3–4 People', price: '$180', unit: 'Total' },
+    { label: '5–6 People', price: '$220', unit: 'Total' },
+    { label: '7–12 People', price: '$40', unit: 'Per Person' },
+    { label: '13+ People', price: '$35', unit: 'Per Person' }
+  ],
+  'stone-town-spice-farm-tour': [
+    { label: '2 People', price: '$175', unit: 'Total' },
+    { label: '3–4 People', price: '$220', unit: 'Total' },
+    { label: '5–6 People', price: '$50', unit: 'Per Person' },
+    { label: '7–12 People', price: '$45', unit: 'Per Person' },
+    { label: '13+ People', price: '$40', unit: 'Per Person' }
+  ],
+  'stone-town-prison-island-tour': [
+    { label: '2 People', price: '$251', unit: 'Total' },
+    { label: '3–4 People', price: '$100', unit: 'Per Person' },
+    { label: '5–6 People', price: '$82', unit: 'Per Person' },
+    { label: '7–12 People', price: '$75', unit: 'Per Person' },
+    { label: '13+ People', price: '$70', unit: 'Per Person' }
+  ],
+  'salaam-cave-maalum-cave-tour': [
+    { label: '2 People', price: '$215', unit: 'Total' },
+    { label: '3–4 People', price: '$284', unit: 'Total' },
+    { label: '5–6 People', price: '$70', unit: 'Per Person' },
+    { label: '7–12 People', price: '$65', unit: 'Per Person' },
+    { label: '13+ People', price: '$60', unit: 'Per Person' }
+  ],
+  'jozani-forest-salaam-cave-turtles': [
+    { label: '2 People', price: '$191', unit: 'Total' },
+    { label: '3–4 People', price: '$85', unit: 'Per Person' },
+    { label: '5–6 People', price: '$70', unit: 'Per Person' },
+    { label: '7–12 People', price: '$60', unit: 'Per Person' }
+  ],
+  'swim-sea-turtles-salaam-cave': [
+    { label: '1 Person', price: '$175', unit: 'Total' },
+    { label: '2 People', price: '$95', unit: 'Per Person' },
+    { label: '3–4 People', price: '$75', unit: 'Per Person' },
+    { label: '5–6 People', price: '$60', unit: 'Per Person' },
+    { label: '7–12 People', price: '$50', unit: 'Per Person' },
+    { label: '13+ People', price: '$45', unit: 'Per Person' }
+  ],
+  'private-safari-blue-experience': [
+    { label: '2 People', price: '$250', unit: 'Total' },
+    { label: '3–4 People', price: '$90', unit: 'Per Person' },
+    { label: '5–6 People', price: '$75', unit: 'Per Person' },
+    { label: '7–12 People', price: '$65', unit: 'Per Person' },
+    { label: '13+ People', price: '$60', unit: 'Per Person' }
+  ],
+  'private-pungume-sandbank-snorkeling': [
+    { label: '2 People', price: '$250', unit: 'Total' },
+    { label: '3–4 People', price: '$100', unit: 'Per Person' },
+    { label: '5–6 People', price: '$85', unit: 'Per Person' },
+    { label: '7–12 People', price: '$70', unit: 'Per Person' },
+    { label: '13+ People', price: '$60', unit: 'Per Person' }
+  ],
+  'private-nyange-sandbank-experience': [
+    { label: '2 People', price: '$230', unit: 'Total' },
+    { label: '3–4 People', price: '$280', unit: 'Total' },
+    { label: '5–6 People', price: '$65', unit: 'Per Person' },
+    { label: '7–12 People', price: '$60', unit: 'Per Person' },
+    { label: '13+ People', price: '$55', unit: 'Per Person' }
+  ],
+  'nakupenda-sandbank-experience': [
+    { label: '2 People', price: '$230', unit: 'Total' },
+    { label: '3–4 People', price: '$280', unit: 'Total' },
+    { label: '5–6 People', price: '$65', unit: 'Per Person' },
+    { label: '7–12 People', price: '$60', unit: 'Per Person' },
+    { label: '13+ People', price: '$55', unit: 'Per Person' }
+  ],
+  'nakupenda-prison-island-private-tour': [
+    { label: '2 People', price: '$270', unit: 'Total' },
+    { label: '3–4 People', price: '$116', unit: 'Per Person' },
+    { label: '5–6 People', price: '$88', unit: 'Per Person' },
+    { label: '7–12 People', price: '$80', unit: 'Per Person' },
+    { label: '13+ People', price: '$75', unit: 'Per Person' }
+  ],
+  'mnemba-island-snorkeling-experience': [
+    { label: '2 People', price: '$225', unit: 'Total' },
+    { label: '3–4 People', price: '$280', unit: 'Total' },
+    { label: '5–6 People', price: '$70', unit: 'Per Person' },
+    { label: '7–12 People', price: '$65', unit: 'Per Person' }
+  ],
+  'clear-kayak-drone-jetski-jetcar': [
+    { label: 'Jet Ski', price: '$65', unit: 'Total' },
+    { label: 'Clear Kayak + Drone', price: '$120', unit: 'Total' },
+    { label: 'Jet Ski + Drone', price: '$150', unit: 'Total' },
+    { label: 'Kayak + Drone + Jet Ski', price: '$250', unit: 'Total' },
+    { label: 'Kayak + Drone + Jet Car', price: '$280', unit: 'Total' },
+    { label: 'Complete Experience', price: '$350', unit: 'Total' }
+  ]
+};
+
+export const getPriceTiersForTour = (tour) => {
+  if (!tour) return [];
+  const tiers = priceTiersById[tour.id];
+  const list = tiers && tiers.length
+    ? tiers
+    : [{
+        label: tour.groupSize || 'Per Person',
+        price: typeof tour.price === 'string' ? tour.price.replace(/^From\s+/i, '') : (tour.price || 'Contact'),
+        unit: 'Per Person'
+      }];
+  const toNumber = (value) => {
+    const n = parseFloat(String(value).replace(/[^0-9.]/g, ''));
+    return Number.isNaN(n) ? Infinity : n;
+  };
+  return [...list].sort((a, b) => toNumber(a.price) - toNumber(b.price));
 };

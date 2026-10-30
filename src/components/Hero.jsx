@@ -1,9 +1,7 @@
 // src/components/Hero.js
 import React, { useState, useEffect } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-import { motion, AnimatePresence } from 'framer-motion';
-import { FaWhatsapp, FaCalendarAlt } from "react-icons/fa";
-import BookingFormModal from './BookingFormModal';
+import { motion } from 'framer-motion';
 
 // Import images - using your actual images
 import p1 from "../assets/image/folder2/p1.jpg";
@@ -63,34 +61,34 @@ const floatAnimation = `
 const glowAnimation = `
   @keyframes glow {
     0%, 100% {
-      background: rgba(255, 255, 255, 0.15);
-      border-color: rgba(255, 255, 255, 0.4);
+      background: rgba(255, 255, 255, 0.92);
+      border-color: rgba(255, 255, 255, 1);
     }
     50% {
-      background: rgba(255, 255, 255, 0.25);
-      border-color: rgba(255, 255, 255, 0.6);
+      background: rgba(255, 255, 255, 1);
+      border-color: rgba(255, 255, 255, 1);
     }
   }
 `;
 
 const HeroContainer = styled.section`
   position: relative;
-  height: 50vh;
-  min-height: 450px;
+  height: 62vh;
+  min-height: 560px;
 
   @media (max-width: ${breakpoints.mobile}) {
-    height: 55vh;
-    min-height: 380px;
+    height: 60vh;
+    min-height: 480px;
   }
 
   @media (max-width: 480px) {
-    height: 50vh;
-    min-height: 450px;
+    height: 58vh;
+    min-height: 520px;
   }
 
   @media (max-width: 360px) {
-    height: 45vh;
-    min-height: 400px;
+    height: 55vh;
+    min-height: 480px;
   }
 `;
 
@@ -109,6 +107,7 @@ const Slide = styled(motion.div)`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  filter: brightness(1.25) saturate(1.08);
 `;
 
 const ContentOverlay = styled.div`
@@ -117,171 +116,54 @@ const ContentOverlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.2) 0%,
-    rgba(0, 0, 0, 0.4) 50%,
-    rgba(0, 0, 0, 0.6) 100%
-  );
+  background: transparent;
   z-index: 4;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  padding: 60px 20px 0 20px;
+  padding: 132px 20px 0 20px;
 
   @media (max-width: ${breakpoints.mobile}) {
-    padding: 50px 20px 0 20px;
+    padding: 96px 20px 0 20px;
   }
 
   @media (max-width: 480px) {
-    padding: 40px 20px 0 20px;
-  }
-`;
-
-const HeroTitle = styled(motion.h1)`
-  color: white;
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
-  font-weight: 800;
-  margin-bottom: 15px;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-  max-width: 800px;
-
-  @media (max-width: ${breakpoints.mobile}) {
-    font-size: clamp(2.2rem, 5vw, 2.8rem);
-    margin-bottom: 12px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: clamp(2rem, 4.5vw, 2.4rem);
+    padding: 88px 20px 0 20px;
   }
 
   @media (max-width: 360px) {
-    font-size: clamp(1.8rem, 4vw, 2.2rem);
+    padding: 80px 20px 0 20px;
+  }
+
+  @media (min-width: 1024px) {
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 60px;
+    justify-content: center;
   }
 `;
 
-const HeroSubtitle = styled(motion.p)`
-  color: white;
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  font-weight: 400;
-  margin-bottom: 25px;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-  max-width: 600px;
-
-  @media (max-width: ${breakpoints.mobile}) {
-    font-size: clamp(1rem, 2.2vw, 1.4rem);
-    margin-bottom: 20px;
-    max-width: 500px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
-    margin-bottom: 18px;
-  }
-
-  @media (max-width: 360px) {
-    font-size: clamp(0.85rem, 1.8vw, 1.1rem);
-  }
+const HeroRoot = styled.div`
+  position: relative;
 `;
 
-// Book Now Button
-const BookNowLink = styled(motion.button)`
-  background: linear-gradient(135deg, #FF7D33, #E56C2B);
-  color: white;
-  border: none;
-  padding: 24px 65px;
-  border-radius: 60px;
-  font-size: 1.6rem;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0 12px 35px rgba(255, 125, 51, 0.6);
-  transition: all 0.3s ease;
-  z-index: 5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  margin-bottom: 15px;
-  text-decoration: none;
+const HeroCardSlot = styled.div`
+  margin: 16px;
+  z-index: 6;
 
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 18px 40px rgba(255, 125, 51, 0.8);
-    background: linear-gradient(135deg, #FF8D43, #E57C3B);
-  }
-
-  &:active {
-    transform: translateY(-2px);
-  }
-
-  @media (max-width: ${breakpoints.mobile}) {
-    padding: 20px 50px;
-    font-size: 1.35rem;
-    margin-bottom: 20px;
-  }
-
-  @media (max-width: 480px) {
-    padding: 18px 42px;
-    font-size: 1.2rem;
-    margin-bottom: 25px;
-  }
-
-  @media (max-width: 360px) {
-    padding: 16px 36px;
-    font-size: 1.1rem;
-  }
-`;
-
-// WhatsApp Button
-const WhatsAppButton = styled(motion.a)`
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #25D366, #128C7E);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.8rem;
-  box-shadow: 0 12px 35px rgba(37, 211, 102, 0.6);
-  z-index: 7;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.3s ease;
-
-  @media (max-width: ${breakpoints.mobile}) {
-    width: 80px;
-    height: 80px;
-    font-size: 2.5rem;
-    bottom: 25px;
-    right: 25px;
-  }
-
-  @media (max-width: 480px) {
-    width: 70px;
-    height: 70px;
-    font-size: 2.2rem;
-  }
-
-  @media (max-width: 360px) {
-    width: 65px;
-    height: 65px;
-    font-size: 2rem;
-  }
-
-  &:hover {
-    transform: scale(1.15);
-    box-shadow: 0 18px 45px rgba(37, 211, 102, 0.8);
-    background: linear-gradient(135deg, #34E377, #139D8E);
-  }
-
-  &:active {
-    transform: scale(1.05);
+  @media (min-width: 1024px) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 40px;
+    width: 420px;
+    margin: 0;
+    padding-top: 118px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 `;
 
@@ -349,6 +231,7 @@ const ThumbnailImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(1.25) saturate(1.08);
 `;
 
 const LocationName = styled(motion.div)`
@@ -455,70 +338,44 @@ const ExploreButton = styled(motion.button)`
   }
 `;
 
-// Google Reviews Button
-const GoogleReviewsButton = styled(motion.button)`
-  background: rgba(255, 255, 255, 0.15);
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  padding: 16px 40px;
-  border-radius: 50px;
-  font-size: 1.25rem;
-  font-weight: 700;
-  cursor: pointer;
-  backdrop-filter: blur(15px);
-  transition: all 0.3s ease;
-  margin-top: 15px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  animation: pulse 2.5s infinite, float 3s ease-in-out infinite, glow 2.5s ease-in-out infinite;
+// TripAdvisor text block (like reference hero)
+const HeroTripAdvisor = styled(motion.a)`
+  display: none;
   position: relative;
-  overflow: hidden;
+  z-index: 5;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(
-      45deg,
-      transparent 30%,
-      rgba(255, 255, 255, 0.1) 50%,
-      transparent 70%
-    );
-    transform: rotate(45deg);
-    animation: shimmer 3s infinite;
+  .ta-title {
+    font-size: 1.9rem;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
   }
+
+  .ta-choice {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-top: 2px;
+    line-height: 1.25;
+  }
+
+  .ta-stars {
+    color: #FDB022;
+    font-size: 1.35rem;
+    letter-spacing: 4px;
+    margin-top: 8px;
+  }
+
+  transition: opacity 0.3s ease;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.25);
-    border-color: rgba(255, 255, 255, 0.7);
-    transform: translateY(-6px) scale(1.05);
-    box-shadow: 0 16px 48px rgba(255, 255, 255, 0.4);
-    animation: pulse 1.5s infinite, float 2s ease-in-out infinite, glow 1.5s ease-in-out infinite;
+    opacity: 0.85;
   }
 
-  &:active {
-    transform: translateY(-3px) scale(1.02);
-  }
-
-  @keyframes shimmer {
-    0% {
-      transform: translateX(-100%) translateY(-100%) rotate(45deg);
-    }
-    100% {
-      transform: translateX(100%) translateY(100%) rotate(45deg);
-    }
-  }
-
-  @media (max-width: ${breakpoints.mobile}) {
-    padding: 14px 35px;
-    font-size: 1.1rem;
-  }
-
-  @media (max-width: 480px) {
-    padding: 12px 30px;
-    font-size: 1rem;
+  @media (min-width: 1024px) {
+    display: block;
   }
 `;
 
@@ -555,11 +412,10 @@ const assets = [
   { src: p23, name: "Forodhan" },
 ];
 
-const Hero = () => {
+const Hero = ({ bookingCard }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const [showBookingModal, setShowBookingModal] = useState(false);
 
   useEffect(() => {
     const checkMobile = () => {
@@ -614,10 +470,6 @@ const Hero = () => {
     document.getElementById('tours')?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const handleGoogleReviewsClick = () => {
-    document.getElementById('google-reviews')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   const visible = [
     (currentSlide - 1 + assets.length) % assets.length,
     currentSlide,
@@ -626,6 +478,7 @@ const Hero = () => {
 
   return (<>
     <GlobalStyle/>
+    <HeroRoot>
     <HeroContainer>
       <SlideshowContainer>
         {/* Main slides with fade transitions */}
@@ -649,77 +502,25 @@ const Hero = () => {
         ))}
         
         <ContentOverlay>
-          <HeroTitle
+          {/* TripAdvisor text block */}
+          <HeroTripAdvisor
+            href="https://www.tripadvisor.com/zanstone_tours_and_safaris"
+            target="_blank"
+            rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
           >
-            ZanStone Tours & Safaris
-          </HeroTitle>
-          
-          <HeroSubtitle
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            Step Into Paradise & Wildlife – Discover Zanzibar & Tanzania With Us!
-          </HeroSubtitle>
-          
-          {/* Book Now Button - Link to booking form */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
-            <BookNowLink
-              type="button"
-              whileHover={{ scale: 1.08 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => setShowBookingModal(true)}
-            >
-              <FaCalendarAlt size={24} />
-              Book Now
-            </BookNowLink>
-          </motion.div>
-
-          {/* Google Reviews Button */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
-          >
-            <GoogleReviewsButton
-              type="button"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={handleGoogleReviewsClick}
-            >
-               See Google Reviews
-            </GoogleReviewsButton>
-          </motion.div>
+            <div className="ta-title">TripAdvisor</div>
+            <div className="ta-choice">
+              Travelers'
+              <br />
+              Choice
+            </div>
+            <div className="ta-stars">★★★★★</div>
+          </HeroTripAdvisor>
         </ContentOverlay>
-        
-        {/* WhatsApp Button */}
-        <WhatsAppButton
-          href="https://wa.me/255616543216?text=Hello%20ZanStone%20Tours%20%26%20Safaris!%20I%20want%20to%20book%20a%20tour%20to%20Zanzibar/Tanzania."
-          target="_blank"
-          rel="noopener noreferrer"
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ 
-            scale: [1, 1.1, 1],
-            opacity: 1
-          }}
-          transition={{
-            duration: 1.5,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-          whileHover={{ scale: 1.15 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <FaWhatsapp />
-        </WhatsAppButton>
-        
+
         {/* Thumbnail Carousel */}
         <ThumbnailCarousel
           initial={{ opacity: 0, y: 30 }}
@@ -752,9 +553,8 @@ const Hero = () => {
         </ThumbnailCarousel>
       </SlideshowContainer>
     </HeroContainer>
-    <AnimatePresence>
-      <BookingFormModal open={showBookingModal} onClose={() => setShowBookingModal(false)} />
-    </AnimatePresence>
+    <HeroCardSlot id="booking">{bookingCard}</HeroCardSlot>
+    </HeroRoot>
   </>
   );
 };

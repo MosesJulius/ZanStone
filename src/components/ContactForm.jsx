@@ -7,33 +7,48 @@ import { addComment } from '../comments';
 
 const FormContainer = styled.div`
   max-width: 500px;
+  width: 100%;
   margin: 0 auto;
   padding: 32px;
   background: ${color.white};
-  border-radius: 16px;
-  border: 1px solid #f1f5f9;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 14px;
+  border: 1px solid ${color.border};
+  box-shadow: 0 10px 30px rgba(42, 38, 34, 0.07);
 `;
 
 const FormTitle = styled.h3`
   font-size: 1.5rem;
   margin-bottom: 24px;
-  color: ${color.textDark};
+  color: ${color.heading};
   text-align: center;
-  font-weight: 600;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 14px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background: ${color.primary};
+    border-radius: 2px;
+  }
 `;
 
 const RatingContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 24px;
-  gap: 4px;
+  gap: 6px;
 `;
 
 const RatingStar = styled(FiStar)`
   font-size: 2rem;
   cursor: pointer;
-  color: ${props => props.filled ? color.primary : '#e2e8f0'};
+  color: ${props => props.filled ? '#F5A623' : color.border};
   transition: all 0.2s ease;
   
   &:hover {
@@ -49,17 +64,18 @@ const FormGroup = styled.div`
 const FormLabel = styled.label`
   display: block;
   margin-bottom: 8px;
-  font-weight: 500;
-  color: ${color.textDark};
+  font-weight: 600;
+  color: ${color.heading};
   font-size: 0.9rem;
 `;
 
-const FormInput = styled.input`
+const fieldStyles = `
   width: 100%;
   padding: 12px 16px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid ${color.border};
   border-radius: 8px;
   font-size: 1rem;
+  color: ${color.heading};
   transition: all 0.2s ease;
   background: #fafbfc;
 
@@ -67,46 +83,44 @@ const FormInput = styled.input`
     outline: none;
     border-color: ${color.primary};
     background: ${color.white};
-    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.08);
+    box-shadow: 0 0 0 3px rgba(255, 125, 51, 0.15);
+  }
+
+  &::placeholder {
+    color: ${color.textMuted};
   }
 `;
 
+const FormInput = styled.input`
+  ${fieldStyles}
+`;
+
 const FormTextarea = styled.textarea`
-  width: 100%;
-  padding: 12px 16px;
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  font-size: 1rem;
+  ${fieldStyles}
   min-height: 120px;
   resize: vertical;
-  transition: all 0.2s ease;
-  background: #fafbfc;
   line-height: 1.5;
-
-  &:focus {
-    outline: none;
-    border-color: ${color.primary};
-    background: ${color.white};
-    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.08);
-  }
 `;
 
 const SubmitButton = styled.button`
   background: ${color.primary};
-  color: ${color.textLight};
+  color: ${color.white};
   border: none;
   padding: 14px 28px;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 500;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   cursor: pointer;
   transition: all 0.2s ease;
   width: 100%;
+  box-shadow: 0 6px 16px rgba(255, 125, 51, 0.25);
   
   &:hover {
     background: ${color.primaryDark};
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+    box-shadow: 0 8px 20px rgba(229, 108, 43, 0.32);
   }
 
   &:active {

@@ -2,10 +2,10 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { FaGoogle, FaStar } from 'react-icons/fa';
-import { FiBook, FiCheck, FiChevronUp, FiClock, FiEye, FiMapPin, FiMessageSquare, FiStar, FiUsers, FiX } from 'react-icons/fi';
+import { FiBook, FiCheck, FiClock, FiEye, FiMapPin, FiMessageSquare, FiStar, FiUsers } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { dayTripsData, getFeaturedDayTrips } from '../DataTripsData';
+import { dayTripsData, getHomeShowcaseDayTrips } from '../DataTripsData';
 import adobe1 from "../assets/image/more/adobe1.jpg";
 import adobe10 from "../assets/image/more/adobe10.jpg";
 import adobe12 from "../assets/image/more/adobe12.jpg";
@@ -20,14 +20,19 @@ import sec33 from "../assets/image/more/sec33.jpg";
 import sec35 from "../assets/image/more/sec35.jpg";
 import sec38 from "../assets/image/more/sec38.jpg";
 import sec8 from "../assets/image/more/sec8.jpg";
-import safariBg from "../assets/image/safariBG.jpg";
+import zanstoneLogo from "../assets/zanstoneLogo.png";
+import BookingFormModal from "../components/BookingFormModal";
 import ContactForm from "../components/ContactForm";
+import CtaBanner from '../components/CtaBanner';
 import Footer from '../components/Footer';
+import GetInspired from '../components/GetInspired';
 import Hero from '../components/Hero';
-import Partners from '../components/Partners';
+import QuickLinks from '../components/QuickLinks';
 import SafariExperience from '../components/SafariExperience';
 import Testimonials from '../components/Testimonials';
+import UspBar from '../components/UspBar';
 import VideoGallery from '../components/VideoGallery';
+import WhyChoose from '../components/WhyChoose';
 import { supabase } from '../supabase';
 import { allTours } from '../tourData';
 
@@ -258,180 +263,18 @@ const ErrorMessage = styled(motion.div)`
   margin-top: 15px;
 `;
 
-// Navigation Buttons Section
-const NavigationButtonsSection = styled.div`
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-
-  @media (max-width: ${breakpoints.mobile}) {
-    gap: 15px;
-  }
-`;
-
-const NavButton = styled(motion.button)`
-  padding: 15px 40px;
-  font-size: 1.1rem;
-  font-weight: 700;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: ${props => props.$safari ? 'linear-gradient(135deg, #FF7D33, #FF6B6B)' : 'linear-gradient(135deg, #4CAF50, #45a049)'};
-  color: white;
-  box-shadow: ${props => props.$safari ? '0 8px 25px rgba(255, 125, 51, 0.3)' : '0 8px 25px rgba(76, 175, 80, 0.3)'};
-
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: ${props => props.$safari ? '0 12px 35px rgba(255, 125, 51, 0.4)' : '0 12px 35px rgba(76, 175, 80, 0.4)'};
-  }
-
-  @media (max-width: ${breakpoints.mobile}) {
-    padding: 12px 25px;
-    font-size: 1rem;
-  }
-
-  @media (max-width: 560px) {
-    width: 100%;
-    max-width: 360px;
-    justify-content: center;
-    padding: 13px 18px;
-    font-size: 0.95rem;
-    white-space: nowrap;
-  }
-`;
-
-const BookingShowcaseSection = styled.section`
-  min-height: auto;
-  display: flex;
-  align-items: center;
-  background: linear-gradient(135deg, #fff7f0 0%, #f5fbf8 100%);
-  padding: 52px 20px;
-  position: relative;
-  overflow: hidden;
-
-  @media (max-width: ${breakpoints.mobile}) {
-    padding: 36px 16px;
-  }
-
-  @media (max-width: 420px) {
-    padding: 36px 12px;
-  }
-`;
-
-const BookingShowcaseInner = styled.div`
-  max-width: 1180px;
-  width: 100%;
-  margin: 0 auto;
-`;
-
-const BookingShowcaseGrid = styled.div`
-  display: grid;
-  grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
-  gap: 36px;
-  align-items: center;
-
-  @media (max-width: ${breakpoints.tablet}) {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 24px;
-  }
-
-  @media (max-width: ${breakpoints.mobile}) {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-`;
-
-const BookingImagePanel = styled(motion.div)`
-  min-height: 0;
-  max-height: 440px;
-  border-radius: 24px;
-  aspect-ratio: 16 / 10;
-  background:
-    linear-gradient(180deg, rgba(8, 19, 24, 0.08), rgba(8, 19, 24, 0.28)),
-    url(${safariBg}) center/cover no-repeat;
-  box-shadow: 0 20px 44px rgba(34, 50, 42, 0.15);
-  overflow: hidden;
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    inset: 18px;
-    border: 1px solid rgba(255, 255, 255, 0.45);
-    border-radius: 24px;
-    pointer-events: none;
-  }
-
-  @media (max-width: ${breakpoints.tablet}) {
-    max-height: none;
-    aspect-ratio: 4 / 3;
-  }
-
-  @media (max-width: ${breakpoints.mobile}) {
-    display: none;
-  }
-
-  @media (max-width: 420px) {
-    aspect-ratio: 16 / 11;
-    border-radius: 18px;
-
-    &::after {
-      inset: 12px;
-      border-radius: 18px;
-    }
-  }
-`;
-
-const BookingFormThumbnail = styled.div`
-  display: none;
-
-  @media (max-width: ${breakpoints.mobile}) {
-    display: block;
-    position: absolute;
-    top: 14px;
-    right: 14px;
-    width: clamp(82px, 28vw, 112px);
-    aspect-ratio: 4 / 3;
-    border-radius: 16px;
-    background:
-      linear-gradient(180deg, rgba(8, 19, 24, 0), rgba(8, 19, 24, 0.16)),
-      url(${safariBg}) center/cover no-repeat;
-    border: 2px solid #ffffff;
-    box-shadow: 0 12px 26px rgba(24, 37, 45, 0.18);
-    z-index: 1;
-  }
-
-  @media (max-width: 420px) {
-    top: 12px;
-    right: 12px;
-    width: clamp(76px, 30vw, 96px);
-    border-radius: 14px;
-  }
-`;
-
-const BookingFormShell = styled.div`
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
-  min-width: 0;
-`;
-
-const BookingJumpButtons = styled(NavigationButtonsSection)`
-  margin-top: 28px;
-
-  @media (max-width: 560px) {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
+const DreamAvatar = styled.img`
+  position: absolute;
+  top: -22px;
+  right: -22px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 4px solid #FF7D33;
+  object-fit: cover;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  z-index: 3;
 `;
 
 const AboutSection = styled.section`
@@ -1268,14 +1111,23 @@ const TourCard = styled(motion.div)`
 
 const ImageContainer = styled.div`
   position: relative;
-  height: ${props => props.$isMobile ? '130px' : '180px'};
+  overflow: hidden;
+  height: ${props => props.$isMobile ? '150px' : '230px'};
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(42, 38, 34, 0.35) 0%, rgba(42, 38, 34, 0) 45%);
+    pointer-events: none;
+  }
 
   @media (max-width: ${breakpoints.mobile}) {
-    height: 120px;
+    height: 150px;
   }
 
   @media (max-width: 480px) {
-    height: 110px;
+    height: 135px;
   }
 `;
 
@@ -1283,6 +1135,7 @@ const TourImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(1.12) saturate(1.05);
   transition: transform 0.5s ease;
   
   ${TourCard}:hover & {
@@ -1321,19 +1174,23 @@ const VIPBadge = styled.div`
 `;
 
 const TourContent = styled.div`
-  padding: ${props => props.$isMobile ? '14px' : '20px'};
+  padding: ${props => props.$isMobile ? '5px 10px' : '8px 14px'};
   display: flex;
   flex-direction: column;
   flex: 1;
   justify-content: space-between;
 
   @media (max-width: ${breakpoints.mobile}) {
-    padding: 12px;
+    padding: 5px 10px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 4px 8px;
   }
 `;
 
 const TourHeader = styled.div`
-  margin-bottom: ${props => props.$isMobile ? '8px' : '12px'};
+  margin-bottom: ${props => props.$isMobile ? '3px' : '4px'};
 `;
 
 const TourTitle = styled.h3`
@@ -1346,7 +1203,7 @@ const TourTitle = styled.h3`
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  height: ${props => props.$isMobile ? '2.8em' : '3em'};
+  height: ${props => props.$isMobile ? '2.8em' : '2.8em'};
   background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1365,13 +1222,13 @@ const TourTitle = styled.h3`
 const TourPrice = styled.div`
   background: transparent;
   color: #FF7D33;
-  padding: ${props => props.$isMobile ? '8px 0' : '10px 0'};
+  padding: ${props => props.$isMobile ? '2px 0' : '4px 0'};
   border-radius: 0;
   font-weight: 700;
   font-size: ${props => props.$isMobile ? '0.85rem' : '1.05rem'};
   display: inline-block;
   box-shadow: none;
-  margin-bottom: ${props => props.$isMobile ? '10px' : '12px'};
+  margin-bottom: ${props => props.$isMobile ? '6px' : '8px'};
   transition: all 0.3s ease;
 
   &:hover {
@@ -1380,7 +1237,7 @@ const TourPrice = styled.div`
 
   @media (max-width: ${breakpoints.mobile}) {
     font-size: 0.8rem;
-    padding: 6px 0;
+    padding: 2px 0;
   }
 `;
 
@@ -1404,7 +1261,7 @@ const TourFeatures = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: ${props => props.$isMobile ? '4px' : '8px'};
-  margin-bottom: ${props => props.$isMobile ? '10px' : '15px'};
+  margin-bottom: ${props => props.$isMobile ? '3px' : '4px'};
 `;
 
 const Feature = styled.div`
@@ -1436,16 +1293,28 @@ const CardFooter = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   margin-top: ${props => props.$isMobile ? '8px' : '15px'};
   width: 100%;
 `;
-const DetailsButton = styled(Link)`
+
+const CardActions = styled.div`
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 4px;
+  border-top: 1px solid #f1ece6;
+`;
+
+const BookNowButton = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #FF7D33, #E56C2B);
-  color: white;
-  padding: ${props => props.$isMobile ? '8px 16px' : '10px 20px'};
+  color: #ffffff;
+  border: none;
+  padding: ${props => props.$isMobile ? '6px 12px' : '6px 16px'};
   border-radius: 10px;
   text-decoration: none;
   font-weight: 700;
@@ -1453,12 +1322,43 @@ const DetailsButton = styled(Link)`
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   min-width: ${props => props.$isMobile ? '70px' : '100px'};
   box-shadow: 0 4px 15px rgba(255, 125, 51, 0.3);
-  width: 100%;
+  flex: 1;
   text-align: center;
-  
+  cursor: pointer;
+
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(255, 125, 51, 0.5);
+    letter-spacing: 0.5px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 7px 12px;
+    font-size: 0.7rem;
+    min-width: 60px;
+  }
+`;
+
+const DetailsButton = styled(Link)`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 2px solid #FF7D33;
+  color: #FF7D33;
+  padding: ${props => props.$isMobile ? '6px 12px' : '6px 16px'};
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: ${props => props.$isMobile ? '0.75rem' : '0.9rem'};
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: ${props => props.$isMobile ? '70px' : '100px'};
+  text-align: center;
+  flex: 1;
+
+  &:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 125, 51, 0.08);
     letter-spacing: 0.5px;
   }
 
@@ -1758,82 +1658,6 @@ const AboutImage = styled.img`
   }
 `;
 
-// Floating Action Button (FAB) Styles
-const FloatingActionButton = styled(motion.button)`
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #FF7D33, #E56C2B);
-  border: none;
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 6px 20px rgba(255, 125, 51, 0.4);
-
-  @media (max-width: ${breakpoints.mobile}) {
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    font-size: 1.3rem;
-  }
-`;
-
-const ActionButtonsContainer = styled(motion.div)`
-  position: fixed;
-  bottom: 100px;
-  right: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  z-index: 999;
-
-  @media (max-width: ${breakpoints.mobile}) {
-    bottom: 80px;
-    right: 20px;
-    gap: 12px;
-  }
-`;
-
-const ActionButton = styled(motion.a)`
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-decoration: none;
-  font-size: 1.3rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-
-  @media (max-width: ${breakpoints.mobile}) {
-    width: 45px;
-    height: 45px;
-    font-size: 1.2rem;
-  }
-`;
-
-const WhatsAppButton = styled(ActionButton)`
-  background: linear-gradient(135deg, #25D366, #128C7E);
-`;
-
-const BookingButton = styled(ActionButton)`
-  background: linear-gradient(135deg, #4285F4, #0D47A1);
-`;
-
 // Tour Category Toggle Styles
 const TourToggleSection = styled.div`
   display: flex;
@@ -1884,6 +1708,7 @@ const TourToggleButton = styled.button`
 const DayTripSection = () => {
   const [dayTrips, setDayTrips] = useState([]);
   const [isMobile, setIsMobile] = useState(false);
+  const [showBookingModal, setShowBookingModal] = useState(false);
 
   useEffect(() => {
     const checkMobile = () => {
@@ -1893,9 +1718,9 @@ const DayTripSection = () => {
     checkMobile();
     window.addEventListener('resize', checkMobile);
 
-    // Get featured day trips or first 6 tours
-    const featured = getFeaturedDayTrips(isMobile ? 4 : 6);
-    setDayTrips(featured.length > 0 ? featured : dayTripsData.slice(0, isMobile ? 4 : 6));
+    // Get eye-catching showcase day trips (safaris + Zanzibar) or first 8 tours
+    const featured = getHomeShowcaseDayTrips(isMobile ? 6 : 8);
+    setDayTrips(featured.length > 0 ? featured : dayTripsData.slice(0, isMobile ? 6 : 8));
   }, [isMobile]);
 
   // Helper function to format price display
@@ -1919,6 +1744,7 @@ const DayTripSection = () => {
   };
 
   return (
+    <>
     <VerticalToursSection id="day-trips" style={{ background: 'linear-gradient(135deg, #fff9f0 0%, #fff 100%)' }}>
       <ToursContainer>
         <SectionTitle style={{ background: 'linear-gradient(135deg, #4CAF50, #45a049)', WebkitBackgroundClip: 'text' }}>
@@ -1983,26 +1809,29 @@ const DayTripSection = () => {
                   display: 'flex', 
                   justifyContent: 'space-between', 
                   alignItems: 'center',
-                  marginTop: 'auto',
-                  paddingTop: '10px'
+                  paddingTop: '2px'
                 }}>
                   <TourPrice $isMobile={isMobile} style={{ marginBottom: 0 }}>
                     {formatPrice(trip.price)}
                   </TourPrice>
+                </div>
+
+                <CardActions>
+                  <BookNowButton
+                    type="button"
+                    $isMobile={isMobile}
+                    onClick={() => setShowBookingModal(true)}
+                  >
+                    Book Now
+                  </BookNowButton>
 
                   <DetailsButton 
                     to={`/TripsDetails/${trip.id}`}
                     $isMobile={isMobile}
-                    style={{ 
-                      background: 'linear-gradient(135deg, #4CAF50, #45a049)',
-                      width: 'auto',
-                      minWidth: isMobile ? '70px' : '100px',
-                      padding: isMobile ? '6px 12px' : '8px 16px'
-                    }}
                   >
                     View Details
                   </DetailsButton>
-                </div>
+                </CardActions>
               </TourContent>
             </TourCard>
           ))}
@@ -2013,6 +1842,10 @@ const DayTripSection = () => {
         </ViewAllButton>
       </ToursContainer>
     </VerticalToursSection>
+    <AnimatePresence>
+      <BookingFormModal open={showBookingModal} onClose={() => setShowBookingModal(false)} />
+    </AnimatePresence>
+    </>
   );
 };
 
@@ -2162,7 +1995,7 @@ const VerticalTours = () => {
             onClick={handleSafariClick}
             as="button"
           >
-            🦁 Safari Tours
+            🦁 Safari Tanzania
           </TourToggleButton>
         </TourToggleSection>
         
@@ -2196,7 +2029,7 @@ const VerticalTours = () => {
                   }}
                 />
                 {isVipTour(tour) && <VIPBadge>⭐ Special</VIPBadge>}
-                {isDayTrip(tour) && <VIPBadge style={{ background: 'linear-gradient(135deg, #4CAF50, #45a049)' }}>☀️ Day Trip</VIPBadge>}
+                                {isDayTrip(tour) && <VIPBadge style={{ background: 'linear-gradient(135deg, #4CAF50, #45a049)' }}>☀️ Day Trip</VIPBadge>}
               </ImageContainer>
 
               <TourContent $isMobile={isMobile}>
@@ -2227,7 +2060,7 @@ const VerticalTours = () => {
         </motion.div>
 
         {tourType === 'daytrip' ? (
-          <ViewAllButton to="/day-trips" style={{ background: 'linear-gradient(135deg, #4CAF50, #45a049)' }}>
+                        <ViewAllButton to="/day-trips" style={{ background: 'linear-gradient(135deg, #4CAF50, #45a049)' }}>
             View All Day Trips
           </ViewAllButton>
         ) : (
@@ -2316,23 +2149,15 @@ const BookingFormComponent = () => {
     }));
   };
 
-  const scrollToSection = (sectionId) => {
-    document.getElementById(sectionId)?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    });
-  };
-
   const inputStyle = (field) => ({
     width: '100%',
     boxSizing: 'border-box',
-    padding: isMobile ? '11px 12px' : '12px 13px',
-    border: 'none',
-    borderBottom: `2px solid ${activeField === field ? '#FF7D33' : '#dfe7ec'}`,
-    borderRadius: '8px 8px 0 0',
-    background: activeField === field ? 'rgba(255, 125, 51, 0.06)' : '#f7faf9',
+    padding: isMobile ? '9px 11px' : '10px 12px',
+    border: `1px solid ${activeField === field ? '#FF7D33' : '#EFE3D6'}`,
+    borderRadius: '6px',
+    background: activeField === field ? 'rgba(255, 125, 51, 0.05)' : '#ffffff',
     color: '#18252d',
-    fontSize: isMobile ? '0.92rem' : '0.98rem',
+    fontSize: isMobile ? '0.92rem' : '0.95rem',
     fontWeight: 600,
     outline: 'none',
     transition: 'background 0.2s ease, border-color 0.2s ease'
@@ -2340,11 +2165,12 @@ const BookingFormComponent = () => {
 
   const labelStyle = {
     display: 'block',
-    color: '#52616b',
-    fontSize: isMobile ? '0.72rem' : '0.78rem',
-    fontWeight: 800,
-    letterSpacing: '0.8px',
-    marginBottom: '7px'
+    color: '#FF7D33',
+    textTransform: 'uppercase',
+    fontSize: isMobile ? '0.68rem' : '0.72rem',
+    fontWeight: 700,
+    letterSpacing: '0.06em',
+    marginBottom: '5px'
   };
 
   const fieldShellStyle = {
@@ -2352,35 +2178,36 @@ const BookingFormComponent = () => {
   };
 
   const formCardStyle = {
-    background: '#ffffff',
-    border: '1px solid rgba(24, 37, 45, 0.08)',
-    borderRadius: isMobile ? '18px' : '22px',
-    padding: isMobile ? '18px' : '28px',
+    background: 'rgba(255, 255, 255, 0.97)',
+    backdropFilter: 'blur(8px)',
+    border: 'none',
+    borderRadius: isMobile ? '12px' : '12px',
+    padding: isMobile ? '22px 18px' : '28px',
     width: '100%',
     boxSizing: 'border-box',
-    boxShadow: '0 18px 42px rgba(24, 37, 45, 0.1)',
-    position: 'relative',
-    overflow: 'hidden'
+    boxShadow: '0 25px 60px rgba(0, 0, 0, 0.3)',
+    position: 'relative'
   };
 
   const submitStyle = {
     width: '100%',
-    minHeight: isMobile ? '44px' : '48px',
-    background: 'linear-gradient(135deg, #FF7D33, #FF6B6B)',
+    minHeight: isMobile ? '46px' : '50px',
+    background: 'linear-gradient(135deg, #FF7D33, #E56C2B)',
     border: 'none',
-    borderRadius: '12px',
+    borderRadius: '8px',
     color: 'white',
-    fontSize: isMobile ? '0.9rem' : '0.98rem',
-    fontWeight: 800,
+    fontSize: isMobile ? '0.92rem' : '1rem',
+    fontWeight: 700,
+    letterSpacing: '0.04em',
     cursor: isSubmitting ? 'not-allowed' : 'pointer',
     opacity: isSubmitting ? 0.75 : 1,
     transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-    boxShadow: '0 12px 24px rgba(255, 125, 51, 0.28)'
+    boxShadow: '0 10px 25px rgba(255, 125, 51, 0.4)'
   };
 
   const trustTextStyle = {
-    color: '#6b7b86',
-    fontSize: isMobile ? '0.76rem' : '0.82rem',
+    color: '#9ca3af',
+    fontSize: isMobile ? '0.7rem' : '0.72rem',
     margin: '12px 0 0',
     textAlign: 'center',
     lineHeight: 1.45
@@ -2389,62 +2216,30 @@ const BookingFormComponent = () => {
   const formGridStyle = {
     display: 'grid',
     gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(2, minmax(0, 1fr))',
-    gap: isMobile ? '10px' : '12px',
+    gap: isMobile ? '10px' : '14px',
     marginBottom: isMobile ? '12px' : '14px'
   };
 
-  const fullWidthFieldStyle = {
-    ...fieldShellStyle,
-    marginBottom: isMobile ? '16px' : '18px'
-  };
-
   return (
-    <BookingShowcaseSection id="booking">
-      <BookingShowcaseInner>
-        <BookingShowcaseGrid>
-          <BookingImagePanel
-            initial={{ opacity: 0, x: -24 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.35 }}
-            transition={{ duration: 0.65, ease: "easeOut" }}
-            aria-label="Safari landscape"
-          />
-          <BookingFormShell>
-            <div style={formCardStyle}>
-              <BookingFormThumbnail aria-hidden="true" />
+    <>
+    <div style={formCardStyle}>
+              <DreamAvatar src={zanstoneLogo} alt="ZanStone" />
               <div style={{
                 marginBottom: isMobile ? '16px' : '22px',
-                paddingRight: isMobile ? '112px' : 0,
                 position: 'relative',
                 zIndex: 2
               }}>
-                <p style={{
-                  margin: '0 0 5px',
-                  color: '#FF7D33',
-                  fontSize: isMobile ? '0.72rem' : '0.78rem',
-                  fontWeight: 900,
-                  letterSpacing: '1.4px'
-                }}>
-                  PLAN YOUR
-                </p>
                 <h2 style={{
-                  color: '#18252d',
-                  fontSize: isMobile ? '1.45rem' : '2rem',
-                  lineHeight: 1.1,
+                  color: '#2A2622',
+                  fontSize: isMobile ? '1.3rem' : '1.5rem',
+                  lineHeight: 1.25,
                   margin: 0,
-                  fontWeight: 900
+                  fontWeight: 800
                 }}>
-                  Dream Trip
+                  LET'S PLAN YOUR
+                  <br />
+                  DREAM TRIP TOGETHER!
                 </h2>
-                <p style={{
-                  color: '#6b7b86',
-                  fontSize: isMobile ? '0.82rem' : '0.95rem',
-                  lineHeight: 1.5,
-                  margin: '9px 0 0',
-                  paddingRight: isMobile ? '12px' : 0
-                }}>
-                  Tell us your group size and arrival date. We will reply on WhatsApp.
-                </p>
               </div>
 
               <form onSubmit={handleSubmit}>
@@ -2484,7 +2279,7 @@ const BookingFormComponent = () => {
                   </div>
                 </div>
 
-                <div style={fullWidthFieldStyle}>
+                <div style={{ ...fieldShellStyle, marginBottom: isMobile ? '16px' : '18px' }}>
                   <label htmlFor="booking-arrival" style={labelStyle}>ARRIVAL DATE</label>
                   <input
                     id="booking-arrival"
@@ -2515,17 +2310,17 @@ const BookingFormComponent = () => {
                     e.currentTarget.style.boxShadow = '0 12px 24px rgba(255, 125, 51, 0.28)';
                   }}
                 >
-                  {isSubmitting ? 'Opening WhatsApp...' : 'Start Planning'}
+                  {isSubmitting ? 'Opening WhatsApp...' : 'START CUSTOMIZING'}
                 </button>
 
                 <p style={trustTextStyle}>
-                  No cost. No pressure. 100% tailor-made.
+                  No strings attached. We'll design your trip - no cost, no commitment.
                 </p>
               </form>
             </div>
 
         {/* Success Toast - Slim */}
-        {showSuccess && (
+          {showSuccess && (
           <div style={{
             position: 'fixed',
             bottom: '24px',
@@ -2545,27 +2340,6 @@ const BookingFormComponent = () => {
             ✓ WhatsApp opened!
           </div>
         )}
-          </BookingFormShell>
-        </BookingShowcaseGrid>
-
-        <BookingJumpButtons>
-          <NavButton
-            type="button"
-            $safari
-            onClick={() => scrollToSection('safari-experience')}
-            whileTap={{ scale: 0.97 }}
-          >
-            <FiMapPin /> Safari Experience
-          </NavButton>
-          <NavButton
-            type="button"
-            onClick={() => scrollToSection('day-trips')}
-            whileTap={{ scale: 0.97 }}
-          >
-            <FiClock /> Zanzibar Special Excursions
-          </NavButton>
-        </BookingJumpButtons>
-      </BookingShowcaseInner>
 
       <style>
         {`
@@ -2594,7 +2368,7 @@ const BookingFormComponent = () => {
           }
         `}
       </style>
-    </BookingShowcaseSection>
+    </>
   );
 };
 // Google Reviews Component
@@ -2914,7 +2688,6 @@ const CombinedGallery = () => {
 const Home = () => {
   const [activeTab, setActiveTab] = useState('intro');
   const [commentsUpdated, setCommentsUpdated] = useState(false);
-  const [showActionButtons, setShowActionButtons] = useState(false);
 
   const tabs = [
     { id: 'intro', label: 'About Us' },
@@ -2925,20 +2698,6 @@ const Home = () => {
 
   const handleCommentAdded = () => {
     setCommentsUpdated(prev => !prev);
-  };
-
-  const toggleActionButtons = () => {
-    setShowActionButtons(!showActionButtons);
-  };
-
-  const handleWhatsAppClick = () => {
-    const phoneNumber = '+255616543216';
-    const message = 'Hello! I would like to inquire about your tours in Zanzibar.';
-    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
-  };
-
-  const handleBookingClick = () => {
-    document.getElementById('reviews')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   // Increment global visitor counter for home page visits via Supabase
@@ -2983,17 +2742,15 @@ const Home = () => {
   return (
     <>
       <HeroAboutWrapper>
-        <Hero />
+        <Hero bookingCard={<BookingFormComponent />} />
+        <UspBar />
+        <QuickLinks />
 
-        {/* Added BookingFormComponent here */}
-        <BookingFormComponent />
-
-        <SafariExperience />
-
-        {/* Add Day Trip Section here */}
+        {/* Day trips grid */}
         <DayTripSection />
 
-        <GoogleReviews />
+        {/* Safaris strip */}
+        <SafariExperience />
 
         <AboutSection id="about">
           <AboutContent>
@@ -3305,11 +3062,10 @@ Discover the best of Zanzibar and Tanzania safaris with ZanStone Tours & Safaris
       
       </AboutContent>
     </AboutSection>
-
-        <Partners />
       </HeroAboutWrapper>
       
       <Testimonials key={commentsUpdated}/>
+      <GoogleReviews />
       <CommentSection id="reviews">
         <CommentSectionTitle
           initial={{ opacity: 0, y: 20 }}
@@ -3321,82 +3077,15 @@ Discover the best of Zanzibar and Tanzania safaris with ZanStone Tours & Safaris
         <ContactForm onCommentAdded={handleCommentAdded} />
       </CommentSection>
 
-     
+      <WhyChoose />
+
+      <GetInspired />
+
       <SectionDivider />
 
       <CombinedGallery />
 
-      <AnimatePresence>
-        <FloatingActionButton
-          initial={{ scale: 0, rotate: 180 }}
-          animate={{ 
-            scale: 1, 
-            rotate: showActionButtons ? 180 : 0 
-          }}
-          exit={{ scale: 0, rotate: 180 }}
-          transition={{ 
-            type: "spring", 
-            stiffness: 300, 
-            damping: 20,
-            ease: "easeInOut" 
-          }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={toggleActionButtons}
-        >
-          {showActionButtons ? <FiX /> : <FiChevronUp />}
-        </FloatingActionButton>
-
-        {showActionButtons && (
-          <ActionButtonsContainer
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 20 }}
-            transition={{ 
-              duration: 0.3,
-              ease: "easeInOut",
-              staggerChildren: 0.1 
-            }}
-          >
-            <WhatsAppButton
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                handleWhatsAppClick();
-              }}
-              initial={{ opacity: 0, scale: 0.5, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.5, y: 20 }}
-              transition={{ 
-                duration: 0.3,
-                ease: "easeInOut" 
-              }}
-              whileHover={{ scale: 1.1 }}
-            >
-              <FiMessageSquare />
-            </WhatsAppButton>
-
-            <BookingButton
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                handleBookingClick();
-              }}
-              initial={{ opacity: 0, scale: 0.5, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.5, y: 20 }}
-              transition={{ 
-                duration: 0.3,
-                delay: 0.1,
-                ease: "easeInOut" 
-              }}
-              whileHover={{ scale: 1.1 }}
-            >
-              <FiBook />
-            </BookingButton>
-          </ActionButtonsContainer>
-        )}
-      </AnimatePresence>
+      <CtaBanner />
       
       <Footer />
     </>

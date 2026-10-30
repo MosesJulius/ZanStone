@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FiClock, FiStar, FiMapPin, FiUsers, FiSearch } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import SectionTitle from '../components/SectionTitle';
+import BookingFormModal from '../components/BookingFormModal';
 import { allTours } from '../tourData';
 
 const Section = styled.section`
@@ -140,12 +141,12 @@ const TourCard = styled(motion.div)`
 
 const ImageContainer = styled.div`
   position: relative;
-  height: 150px;
+  height: 210px;
   overflow: hidden;
   flex-shrink: 0;
 
   @media (max-width: 480px) {
-    height: 140px;
+    height: 190px;
   }
 `;
 
@@ -196,13 +197,13 @@ const VIPBadge = styled.div`
 `;
 
 const TourContent = styled.div`
-  padding: 16px;
+  padding: 9px;
   flex: 1;
   display: flex;
   flex-direction: column;
 
   @media (max-width: 480px) {
-    padding: 14px;
+    padding: 8px;
   }
 `;
 
@@ -210,7 +211,7 @@ const TourHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   gap: 8px;
 `;
 
@@ -254,7 +255,7 @@ const TourDescription = styled.p`
   color: #64748b;
   font-size: 0.8rem;
   line-height: 1.4;
-  margin-bottom: 12px;
+  margin-bottom: 7px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -264,7 +265,7 @@ const TourDescription = styled.p`
 
   @media (max-width: 480px) {
     font-size: 0.75rem;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     min-height: 2rem;
   }
 `;
@@ -273,12 +274,12 @@ const TourFeatures = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 14px;
+  margin-bottom: 6px;
   flex-shrink: 0;
 
   @media (max-width: 480px) {
     gap: 6px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
   }
 `;
 
@@ -311,14 +312,22 @@ const CardFooter = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-top: auto;
-  padding-top: 14px;
+  padding-top: 7px;
   border-top: 1px solid #f1f5f9;
   flex-shrink: 0;
 
   @media (max-width: 480px) {
-    padding-top: 12px;
+    padding-top: 6px;
   }
+`;
+
+const CardActions = styled.div`
+  display: flex;
+  gap: 8px;
+  align-items: center;
 `;
 
 const Rating = styled.div`
@@ -351,27 +360,55 @@ const ReviewCount = styled.span`
   }
 `;
 
-const DetailsButton = styled(Link)`
+const BookNowButton = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #FF7D33, #E56C2B);
   color: white;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.75rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  line-height: 1;
+  box-shadow: 0 4px 12px rgba(255, 125, 51, 0.3);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 125, 51, 0.45);
+  }
+
+  @media (max-width: 480px) {
+    padding: 6px 10px;
+    font-size: 0.7rem;
+  }
+`;
+
+const DetailsButton = styled(Link)`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 2px solid #FF7D33;
+  color: #FF7D33;
   padding: 5px 10px;
   border-radius: 6px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.75rem;
   transition: all 0.3s ease;
   min-width: 60px;
-  border: none;
   cursor: pointer;
   line-height: 1;
   
   &:hover {
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(255, 125, 51, 0.4);
-    color: white;
+    background: rgba(255, 125, 51, 0.08);
+    color: #FF7D33;
   }
 
   @media (max-width: 480px) {
@@ -414,6 +451,7 @@ const ResultsCount = styled.div`
 
 const ToursSection = () => {
   const [searchQuery, setSearchQuery] = useState('');
+  const [showBookingModal, setShowBookingModal] = useState(false);
 
   // Get all tours (excluding transfer)
   const getToursToShow = () => {
@@ -580,9 +618,14 @@ const ToursSection = () => {
                           {getRandomRating(tour.id)}
                         </ReviewCount>
                       </Rating>
-                      <DetailsButton to={`/tours/${tour.id}`}>
-                        View
-                      </DetailsButton>
+                      <CardActions>
+                        <BookNowButton type="button" onClick={() => setShowBookingModal(true)}>
+                          Book Now
+                        </BookNowButton>
+                        <DetailsButton to={`/tours/${tour.id}`}>
+                          View
+                        </DetailsButton>
+                      </CardActions>
                     </CardFooter>
                   </TourContent>
                 </TourCard>
@@ -604,6 +647,8 @@ const ToursSection = () => {
           )}
         </AnimatePresence>
       </ToursContainer>
+
+      <BookingFormModal open={showBookingModal} onClose={() => setShowBookingModal(false)} />
     </Section>
   );
 };

@@ -1,10 +1,11 @@
 // src/components/Tours/SafarisSection.js
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import SectionTitle from '../components/SectionTitle';
+import BookingFormModal from '../components/BookingFormModal';
 import { allSafaris } from '../safariData';
 
 const Section = styled.section`
@@ -54,25 +55,25 @@ const SafariCard = styled(motion.div)`
 
 const SafariImage = styled.img`
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
 `;
 
 const SafariContent = styled.div`
-  padding: 20px;
+  padding: 12px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 `;
 
 const SafariTitle = styled.h3`
-  margin: 0 0 10px 0;
+  margin: 0 0 6px 0;
   font-size: 1.4rem;
   color: #333;
 `;
 
 const SafariDescription = styled.p`
-  margin: 0 0 15px 0;
+  margin: 0 0 8px 0;
   color: #666;
   font-size: 0.95rem;
   flex-grow: 1;
@@ -81,7 +82,7 @@ const SafariDescription = styled.p`
 const SafariMeta = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   font-size: 0.9rem;
   color: #555;
 `;
@@ -91,21 +92,51 @@ const SafariPrice = styled.div`
   color: #FF7D33;
 `;
 
-const DetailsButton = styled(Link)`
+const CardActions = styled.div`
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+`;
+
+const BookNowButton = styled.button`
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #FF7D33;
+  background: linear-gradient(135deg, #FF7D33, #E56C2B);
   color: white;
-  padding: 12px;
+  border: none;
+  padding: 9px;
   border-radius: 6px;
   text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
-  margin-top: auto;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(255, 125, 51, 0.3);
 
   &:hover {
-    background: #E56C2B;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 125, 51, 0.45);
+  }
+`;
+
+const DetailsButton = styled(Link)`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 2px solid #FF7D33;
+  color: #FF7D33;
+  padding: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(255, 125, 51, 0.08);
+    transform: translateY(-2px);
   }
 `;
 
@@ -147,6 +178,7 @@ const NextButton = styled(NavButton)`
 
 const SafariExperience = ({ selectedCategory }) => {
   const scrollRef = useRef(null);
+  const [showBookingModal, setShowBookingModal] = useState(false);
 
   const scroll = (direction) => {
     if (scrollRef.current) {
@@ -160,6 +192,8 @@ const SafariExperience = ({ selectedCategory }) => {
   const safarisToShow = selectedCategory 
     ? allSafaris[selectedCategory] 
     : Object.values(allSafaris).flat();
+
+  if (!safarisToShow || safarisToShow.length === 0) return null;
 
   return (
     <Section id="safari-experience">
@@ -193,9 +227,14 @@ const SafariExperience = ({ selectedCategory }) => {
                         <span>{safari.duration}</span>
                         <SafariPrice>{safari.price}</SafariPrice>
                       </SafariMeta>
-                      <DetailsButton to={`/safaris/${safari.id}`}>
-                        View Details
-                      </DetailsButton>
+                      <CardActions>
+                        <BookNowButton type="button" onClick={() => setShowBookingModal(true)}>
+                          Book Now
+                        </BookNowButton>
+                        <DetailsButton to={`/safaris/${safari.id}`}>
+                          View Details
+                        </DetailsButton>
+                      </CardActions>
                     </SafariContent>
                   </SafariCard>
                 ))}
@@ -212,6 +251,8 @@ const SafariExperience = ({ selectedCategory }) => {
           </p>
         )}
       </SafarisContainer>
+
+      <BookingFormModal open={showBookingModal} onClose={() => setShowBookingModal(false)} />
     </Section>
   );
 };

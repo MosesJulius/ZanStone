@@ -33,6 +33,7 @@ import SectionTitle from '../components/SectionTitle';
 import Footer from '../components/Footer';
 import TeamBg from '../assets/image/teamBg.jpg';
 import { teamMembers } from '../data';
+import { color } from '../styles/color';
 
 // Responsive breakpoints
 const breakpoints = {
@@ -42,17 +43,12 @@ const breakpoints = {
 };
 
 const AboutContainer = styled.div`
-  padding-top: 80px;
   background: linear-gradient(180deg, #f9f9f9 0%, #ffffff 100%);
   min-height: 100vh;
-
-  @media (max-width: ${breakpoints.mobile}) {
-    padding-top: 70px;
-  }
 `;
 
 const HeroSection = styled.section`
-  padding: 100px 20px 60px;
+  padding: 158px 20px 90px;
   background: linear-gradient(135deg, rgba(44, 85, 48, 0.95), rgba(76, 175, 80, 0.85)),
               url(${TeamBg}) center/cover no-repeat;
   color: white;
@@ -71,7 +67,7 @@ const HeroSection = styled.section`
   }
 
   @media (max-width: ${breakpoints.mobile}) {
-    padding: 80px 15px 40px;
+    padding: 118px 15px 60px;
   }
 `;
 
@@ -81,6 +77,7 @@ const HeroTitle = styled(motion.h1)`
   margin-bottom: 20px;
   position: relative;
   z-index: 2;
+  color: #ffffff;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 
   @media (max-width: ${breakpoints.tablet}) {
@@ -99,43 +96,44 @@ const HeroTitle = styled(motion.h1)`
 const HeroSubtitle = styled(motion.p)`
   font-size: 1.3rem;
   max-width: 800px;
-  margin: 0 auto 40px;
+  margin: 0 auto;
   line-height: 1.6;
   opacity: 0.95;
   position: relative;
   z-index: 2;
   font-weight: 300;
+  font-style: italic;
+  color: #fff8f0;
 
   @media (max-width: ${breakpoints.mobile}) {
     font-size: 1.1rem;
-    margin-bottom: 30px;
     padding: 0 10px;
   }
 `;
 
 const ContentWrapper = styled.div`
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  width: 100%;
+`;
+
+// Full-width alternating section band (white / cream)
+const SectionBand = styled.section`
+  width: 100%;
+  padding: 80px 20px;
 
   @media (max-width: ${breakpoints.mobile}) {
-    padding: 30px 15px;
+    padding: 55px 15px;
   }
 `;
 
 // Section Wrapper
-const SectionWrapper = styled(motion.section)`
-  margin: 80px 0;
-  padding: 60px 40px;
-  background: white;
-  border-radius: 25px;
-  box-shadow: 0 20px 60px rgba(44, 85, 48, 0.08);
-  border: 1px solid rgba(76, 175, 80, 0.1);
+const SectionWrapper = styled(motion.div)`
+  max-width: 1200px;
+  margin: 0 auto;
 
-  @media (max-width: ${breakpoints.mobile}) {
-    padding: 40px 25px;
-    margin: 60px 0;
-    border-radius: 20px;
+  > * {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 `;
 
@@ -146,29 +144,49 @@ const SectionHeader = styled.div`
 
   h2 {
     font-size: 2.5rem;
-    color: #2c5530;
-    margin-bottom: 15px;
-    background: linear-gradient(135deg, #2c5530, #4CAF50);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: ${color.heading};
+    margin-bottom: 20px;
     font-weight: 700;
+    position: relative;
+    padding-bottom: 18px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 3px;
+      background: ${color.primary};
+      border-radius: 2px;
+    }
 
     @media (max-width: ${breakpoints.mobile}) {
       font-size: 2rem;
     }
   }
 
-  .section-subtitle {
+  .section-subtitle,
+  h5.section-subtitle {
     font-size: 1.2rem;
-    color: #666;
+    color: ${color.textMuted};
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.6;
+    font-style: italic;
 
     @media (max-width: ${breakpoints.mobile}) {
       font-size: 1.1rem;
     }
+  }
+
+  p {
+    font-size: 1.05rem;
+    color: ${color.textDark};
+    max-width: 850px;
+    margin: 12px auto 0;
+    line-height: 1.7;
   }
 `;
 
@@ -180,8 +198,9 @@ const ContentWithIcon = styled(motion.div)`
   margin-bottom: 40px;
   padding: 30px;
   background: rgba(248, 249, 250, 0.6);
-  border-radius: 20px;
-  border-left: 5px solid #4CAF50;
+  border-radius: 14px;
+  border: 1px solid ${color.border};
+  box-shadow: 0 8px 24px rgba(42, 38, 34, 0.05);
 
   @media (max-width: ${breakpoints.mobile}) {
     flex-direction: column;
@@ -191,12 +210,18 @@ const ContentWithIcon = styled(motion.div)`
 
   .content-icon {
     flex-shrink: 0;
-    font-size: 3rem;
-    color: #4CAF50;
-    margin-top: 10px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    color: ${color.primary};
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
 
     @media (max-width: ${breakpoints.mobile}) {
-      font-size: 2.5rem;
+      font-size: 1.6rem;
       margin-top: 0;
     }
   }
@@ -206,7 +231,7 @@ const ContentWithIcon = styled(motion.div)`
 
     h3 {
       font-size: 1.8rem;
-      color: #2c5530;
+      color: ${color.heading};
       margin-bottom: 15px;
       font-weight: 600;
 
@@ -218,7 +243,7 @@ const ContentWithIcon = styled(motion.div)`
     p {
       font-size: 1.1rem;
       line-height: 1.8;
-      color: #555;
+      color: ${color.textDark};
       margin-bottom: 15px;
 
       @media (max-width: ${breakpoints.mobile}) {
@@ -233,7 +258,7 @@ const ContentWithIcon = styled(motion.div)`
       li {
         margin-bottom: 10px;
         line-height: 1.6;
-        color: #555;
+        color: ${color.textDark};
         font-size: 1.05rem;
 
         @media (max-width: ${breakpoints.mobile}) {
@@ -264,33 +289,41 @@ const ServicesGrid = styled.div`
 
 const ServiceCard = styled(motion.div)`
   background: white;
-  border-radius: 20px;
+  border-radius: 14px;
   padding: 40px 30px;
   text-align: center;
-  box-shadow: 0 15px 40px rgba(44, 85, 48, 0.1);
-  border: 2px solid rgba(76, 175, 80, 0.1);
+  box-shadow: 0 8px 24px rgba(42, 38, 34, 0.06);
+  border: 1px solid ${color.border};
   transition: all 0.4s ease;
   height: 100%;
 
   &:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 25px 60px rgba(44, 85, 48, 0.15);
-    border-color: rgba(76, 175, 80, 0.3);
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(42, 38, 34, 0.12);
+    border-color: ${color.accent};
   }
 
   .service-icon {
-    font-size: 3.5rem;
-    color: #4CAF50;
-    margin-bottom: 25px;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    color: ${color.primary};
+    font-size: 2rem;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @media (max-width: ${breakpoints.mobile}) {
-      font-size: 3rem;
+      width: 66px;
+      height: 66px;
+      font-size: 1.8rem;
     }
   }
 
   h4 {
     font-size: 1.6rem;
-    color: #2c5530;
+    color: ${color.heading};
     margin-bottom: 15px;
     font-weight: 700;
 
@@ -300,7 +333,7 @@ const ServiceCard = styled(motion.div)`
   }
 
   p {
-    color: #666;
+    color: ${color.textMuted};
     line-height: 1.7;
     font-size: 1.05rem;
     margin-bottom: 20px;
@@ -317,9 +350,13 @@ const ServiceCard = styled(motion.div)`
     li {
       margin-bottom: 8px;
       padding-left: 5px;
-      color: #555;
+      color: ${color.textDark};
       font-size: 1rem;
       line-height: 1.5;
+
+      &::marker {
+        color: ${color.primary};
+      }
     }
   }
 `;
@@ -329,76 +366,56 @@ const StatsContainer = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  margin: 80px 0;
-  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
   background: linear-gradient(135deg, #ffffff, #f8f9fa);
-  border-radius: 25px;
-  box-shadow: 0 15px 40px rgba(44, 85, 48, 0.1);
-  border: 2px solid rgba(76, 175, 80, 0.15);
-  position: relative;
-  overflow: hidden;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 5px;
-    background: linear-gradient(90deg, #2c5530, #4CAF50);
-    border-radius: 25px 25px 0 0;
-  }
 
   @media (max-width: ${breakpoints.tablet}) {
     grid-template-columns: repeat(2, 1fr);
-    padding: 40px 30px;
-    margin: 60px 0;
   }
 
   @media (max-width: ${breakpoints.mobile}) {
     grid-template-columns: 1fr;
     gap: 25px;
-    padding: 30px 20px;
-    margin: 40px 0;
   }
 `;
 
 const StatItem = styled(motion.div)`
   text-align: center;
-  padding: 20px;
+  padding: 30px 20px;
   background: white;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(44, 85, 48, 0.08);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(42, 38, 34, 0.06);
   transition: all 0.3s ease;
-  border: 1px solid rgba(76, 175, 80, 0.1);
+  border: 1px solid ${color.border};
 
   &:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(44, 85, 48, 0.15);
-    border-color: rgba(76, 175, 80, 0.3);
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(42, 38, 34, 0.12);
+    border-color: ${color.accent};
   }
 
   .stat-icon {
-    font-size: 3rem;
-    color: #4CAF50;
-    margin-bottom: 20px;
-    opacity: 0.9;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    color: ${color.primary};
+    font-size: 1.7rem;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @media (max-width: ${breakpoints.mobile}) {
-      font-size: 2.5rem;
       margin-bottom: 15px;
     }
   }
 
   h3 {
     font-size: 2.8rem;
-    color: #2c5530;
+    color: ${color.primary};
     margin-bottom: 10px;
     font-weight: 800;
-    background: linear-gradient(135deg, #2c5530, #4CAF50);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
 
     @media (max-width: ${breakpoints.mobile}) {
       font-size: 2.3rem;
@@ -406,7 +423,7 @@ const StatItem = styled(motion.div)`
   }
 
   p {
-    color: #666;
+    color: ${color.textMuted};
     font-size: 1.1rem;
     font-weight: 600;
     margin: 0;
@@ -419,11 +436,8 @@ const StatItem = styled(motion.div)`
 
 // Team Section
 const TeamSection = styled.section`
-  margin: 120px 0;
-
-  @media (max-width: ${breakpoints.mobile}) {
-    margin: 100px 0;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
 `;
 
 const TeamGrid = styled.div`
@@ -450,19 +464,19 @@ const TeamGrid = styled.div`
 
 const TeamMember = styled(motion.div)`
   background: white;
-  border-radius: 25px;
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 25px 50px rgba(44, 85, 48, 0.12);
+  box-shadow: 0 8px 24px rgba(42, 38, 34, 0.06);
   text-align: center;
   padding-bottom: 30px;
   transition: all 0.4s ease;
-  border: 2px solid rgba(76, 175, 80, 0.1);
+  border: 1px solid ${color.border};
   position: relative;
 
   &:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 35px 70px rgba(44, 85, 48, 0.2);
-    border-color: rgba(76, 175, 80, 0.3);
+    transform: translateY(-10px);
+    box-shadow: 0 22px 48px rgba(42, 38, 34, 0.14);
+    border-color: ${color.accent};
   }
 `;
 
@@ -497,7 +511,7 @@ const TeamInfo = styled.div`
 
 const TeamName = styled.h4`
   font-size: 1.6rem;
-  color: #2c5530;
+  color: ${color.heading};
   margin-bottom: 8px;
   font-weight: 700;
 
@@ -507,7 +521,7 @@ const TeamName = styled.h4`
 `;
 
 const TeamRole = styled.p`
-  color: #4CAF50;
+  color: ${color.primary};
   font-weight: 600;
   margin-bottom: 15px;
   font-size: 1.1rem;
@@ -519,13 +533,14 @@ const TeamRole = styled.p`
 
 // Subscription Section
 const SubscriptionSection = styled(motion.section)`
-  margin: 100px 0;
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 80px 60px;
   background: white;
-  border-radius: 35px;
+  border-radius: 14px;
   text-align: center;
-  box-shadow: 0 30px 80px rgba(44, 85, 48, 0.15);
-  border: 2px solid rgba(76, 175, 80, 0.2);
+  box-shadow: 0 12px 36px rgba(42, 38, 34, 0.08);
+  border: 1px solid ${color.border};
   position: relative;
   overflow: hidden;
 
@@ -535,7 +550,7 @@ const SubscriptionSection = styled(motion.section)`
     top: 0;
     left: 0;
     right: 0;
-    height: 8px;
+    height: 4px;
     background: linear-gradient(90deg, #2c5530, #4CAF50);
   }
 
@@ -545,20 +560,30 @@ const SubscriptionSection = styled(motion.section)`
 
   @media (max-width: ${breakpoints.mobile}) {
     padding: 50px 25px;
-    margin: 80px 0;
-    border-radius: 25px;
+    border-radius: 12px;
   }
 `;
 
 const SubscriptionTitle = styled.h2`
   font-size: 2.8rem;
   margin-bottom: 25px;
-  color: #2c5530;
+  color: ${color.heading};
   font-weight: 800;
-  background: linear-gradient(135deg, #2c5530, #4CAF50);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  position: relative;
+  padding-bottom: 18px;
+  display: inline-block;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background: ${color.primary};
+    border-radius: 2px;
+  }
 
   @media (max-width: ${breakpoints.mobile}) {
     font-size: 2.2rem;
@@ -569,7 +594,7 @@ const SubscriptionTitle = styled.h2`
 const SubscriptionText = styled.p`
   font-size: 1.2rem;
   margin-bottom: 50px;
-  color: #666;
+  color: ${color.textMuted};
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -596,49 +621,53 @@ const SubscriptionForm = styled.form`
 
 const EmailInput = styled.input`
   flex: 1;
-  padding: 20px 25px;
-  border: 2px solid rgba(76, 175, 80, 0.3);
-  border-radius: 50px;
-  font-size: 1.1rem;
+  padding: 18px 22px;
+  border: 1px solid ${color.border};
+  border-radius: 8px;
+  font-size: 1.05rem;
   outline: none;
   transition: all 0.3s ease;
   background: rgba(248, 249, 250, 0.8);
+  color: ${color.heading};
 
   &:focus {
-    border-color: #4CAF50;
-    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+    border-color: ${color.primary};
+    box-shadow: 0 0 0 3px rgba(255, 125, 51, 0.15);
     background: white;
   }
 
   &::placeholder {
-    color: #999;
+    color: ${color.textMuted};
   }
 
   @media (max-width: ${breakpoints.mobile}) {
-    padding: 18px 22px;
+    padding: 16px 20px;
     font-size: 1rem;
   }
 `;
 
 const SubscribeButton = styled(motion.button)`
-  padding: 20px 45px;
+  padding: 18px 40px;
   background: linear-gradient(135deg, #2c5530, #4CAF50);
-  color: white;
+  color: ${color.white};
   border: none;
-  border-radius: 50px;
-  font-size: 1.1rem;
+  border-radius: 6px;
+  font-size: 1rem;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   transition: all 0.3s ease;
-  box-shadow: 0 10px 25px rgba(44, 85, 48, 0.3);
+  box-shadow: 0 8px 20px rgba(255, 125, 51, 0.28);
 
   &:hover:not(:disabled) {
     background: linear-gradient(135deg, #4CAF50, #2c5530);
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(44, 85, 48, 0.4);
+    box-shadow: 0 12px 28px rgba(229, 108, 43, 0.35);
   }
 
   &:disabled {
@@ -648,7 +677,7 @@ const SubscribeButton = styled(motion.button)`
 
   @media (max-width: ${breakpoints.mobile}) {
     width: 100%;
-    padding: 18px 35px;
+    padding: 16px 30px;
     font-size: 1rem;
     justify-content: center;
   }
@@ -656,13 +685,13 @@ const SubscribeButton = styled(motion.button)`
 
 const SuccessMessage = styled(motion.div)`
   background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
-  color: #2c5530;
+  color: ${color.primaryDark};
   padding: 25px;
-  border-radius: 20px;
+  border-radius: 12px;
   margin-top: 30px;
   font-weight: 600;
-  box-shadow: 0 15px 35px rgba(76, 175, 80, 0.15);
-  border: 2px solid rgba(76, 175, 80, 0.3);
+  box-shadow: 0 8px 20px rgba(255, 125, 51, 0.12);
+  border: 1px solid ${color.accent};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -682,10 +711,10 @@ const ErrorMessage = styled(motion.div)`
   background: linear-gradient(135deg, #ffebee, #ffcdd2);
   color: #c62828;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 12px;
   margin-top: 25px;
   font-weight: 500;
-  border: 2px solid #ffcdd2;
+  border: 1px solid #ffcdd2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -884,6 +913,7 @@ const About = () => {
 
         <ContentWrapper>
           {/* Our Story Section */}
+          <SectionBand $tone="white">
           <SectionWrapper
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -912,7 +942,7 @@ const About = () => {
               <div className="content-text">
                 <h3>Authentic Zanzibar Experiences</h3>
                 <p>
-                 ZanStone Tours & Safaris is a proudly locally owned and operated company based in the historic heart of Stone Town, Zanzibar. We are more than just a tour operator; we are ambassadors of our land, culture, and wildlife. Our story is rooted in a deep passion for sharing the authentic beauty of East Africa with the world in a responsible, inspiring, and professional way.</p>
+                 ZanStone Tours & Safaris is a proudly locally owned and operated company based in Fuoni Uwandani, Zanzibar. We are more than just a tour operator; we are ambassadors of our land, culture, and wildlife. Our story is rooted in a deep passion for sharing the authentic beauty of East Africa with the world in a responsible, inspiring, and professional way.</p>
               
                 <p>
                   Our expertise lies in crafting well-planned, personalized journeys that seamlessly blend stunning 
@@ -950,8 +980,10 @@ const About = () => {
               </div>
             </ContentWithIcon>
           </SectionWrapper>
+          </SectionBand>
 
           {/* Who We Are Section */}
+          <SectionBand $tone="cream">
           <SectionWrapper
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -1016,8 +1048,10 @@ At ZanStone, we go beyond standard, pre-packaged itineraries. We design experien
               </div>
             </ContentWithIcon>
           </SectionWrapper>
+          </SectionBand>
 
           {/* Stats Section */}
+          <SectionBand $tone="white">
           <StatsContainer
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -1038,8 +1072,10 @@ At ZanStone, we go beyond standard, pre-packaged itineraries. We design experien
               </StatItem>
             ))}
           </StatsContainer>
+          </SectionBand>
 
           {/* What We Do Section */}
+          <SectionBand $tone="cream">
           <SectionWrapper
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -1074,8 +1110,10 @@ Crafted Experiences for Every Traveler              </h5>
               ))}
             </ServicesGrid>
           </SectionWrapper>
+          </SectionBand>
 
           {/* Our Commitment Section */}
+          <SectionBand $tone="white">
           <SectionWrapper
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -1121,8 +1159,10 @@ Crafted Experiences for Every Traveler              </h5>
               </div>
             </ContentWithIcon>
           </SectionWrapper>
+          </SectionBand>
 
           {/* Team Section */}
+          <SectionBand $tone="cream">
           <TeamSection>
             <SectionHeader>
               <h2>Meet Our Expert Team</h2>
@@ -1151,8 +1191,10 @@ Crafted Experiences for Every Traveler              </h5>
               ))}
             </TeamGrid>
           </TeamSection>
+          </SectionBand>
 
           {/* Subscription Section */}
+          <SectionBand $tone="white">
           <SubscriptionSection
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -1212,6 +1254,7 @@ Crafted Experiences for Every Traveler              </h5>
               </SuccessMessage>
             )}
           </SubscriptionSection>
+          </SectionBand>
         </ContentWrapper>
       </AboutContainer>
 

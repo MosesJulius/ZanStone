@@ -181,6 +181,46 @@ const SubmitButton = styled(motion.button)`
   }
 `;
 
+const TermsRow = styled.div`
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 13px 15px;
+  border-radius: 12px;
+  background: rgba(59, 130, 246, 0.06);
+  border: 1px solid rgba(59, 130, 246, 0.22);
+  font-size: 0.88rem;
+  color: #374151;
+  line-height: 1.5;
+
+  input {
+    margin-top: 3px;
+    width: 18px;
+    height: 18px;
+    accent-color: #1d4ed8;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  a {
+    color: #1d4ed8;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+`;
+
+const TermsError = styled.p`
+  margin: 8px 2px 0;
+  color: #dc2626;
+  font-size: 0.83rem;
+  font-weight: 600;
+`;
+
 // ✅ Success Animation Container - FIXED for perfect centering
 const SuccessOverlay = styled(motion.div)`
   position: fixed;
@@ -242,6 +282,8 @@ const CheckMark = styled(motion.div)`
 
 const BookingFormModal = ({ open, onClose }) => {
   const [success, setSuccess] = useState(false);
+  const [agreed, setAgreed] = useState(false);
+  const [termsError, setTermsError] = useState(false);
 
   const [form, setForm] = useState({
     name: "",
@@ -259,12 +301,18 @@ const BookingFormModal = ({ open, onClose }) => {
   };
 
   const sendEmail = () => {
+    if (!agreed) {
+      setTermsError(true);
+      return;
+    }
+
     emailjs.send(
       "service_bt3me1c",   // <-- Replace
       "template_zay2l3n",    // <-- Replace
       {
         to_email: "zanstonetoursandsafaris@gmail.com",
         ...form,
+        termsAccepted: "Yes",
       },
       "_SwJMh2T_pbkd6wMJ"   // <-- Replace
     );
@@ -440,32 +488,57 @@ const BookingFormModal = ({ open, onClose }) => {
                     <Icon><FaMapMarkedAlt /></Icon>
                     <Select onChange={(e) => update("tourType", e.target.value)}>
                       <option value="" selected>Select Tour Type</option>
-                      <option value="Zanzibar & Mikumi Safari Adventure">Zanzibar & Mikumi Safari Adventure</option>
-                      <option value="VIP Special Parkage">VIP Special Parkage</option>
-                      <option value="Kilimanjaro Machame Route Expedition">Kilimanjaro Machame Route Expedition</option>
-                      <option value="Kendwa Sunset Cruise">Kendwa Sunset Cruise</option>
-                      <option value="Salaam Cave & Maalum Cave Experience">Salaam Cave & Maalum Cave Experience</option>
-                      <option value="Prison Island & Nakupenda Sandbank">Prison Island & Nakupenda Sandbank</option>
-                      <option value="Nyange Private Sandbank Escape">Nyange Private Sandbank Escape</option>
-                      <option value="StoneTown & Prison Island Heritage Tour">StoneTown & Prison Island Heritage Tour</option>
-                      <option value="Salaam Cave: Swimming with Turtles">Salaam Cave: Swimming with Turtles</option>
-                      <option value="Stone Town & Spice Farm Discovery">Stone Town & Spice Farm Discovery</option>
-                      <option value="The Legendary Safari Blue Adventure">The Safari Blue Adventure</option>
-                      <option value="ZanStone Grand Slam VIP Experience">ZanStone Grand Slam VIP Experience</option>
-                      <option value="Pungume Island Hidden Sandbank">Pungume Island Hidden Sandbank</option>
-                      <option value="Selous Safari & Zanzibar Beach Escape">Selous Safari & Zanzibar Beach Escape</option>
-                      <option value="Exclusive Zanzibar 5-Day Escape">Exclusive Zanzibar 5-Day Escape</option>
-                      <option value="ZanStone Signature Package">ZanStone Signature Package</option>
-                      <option value="Grand Island Odyssey">Grand Island Odyssey</option>
-                      <option value="Safari Fusion">Safari Fusion</option>
-                      <option value="Zanzibar Cave Wonders: Salaam & Maalum">Zanzibar Cave Wonders: Salaam & Maalum</option>
-                      <option value="Elite Media Experience">Elite Media Experience</option>
-                      <option value="Salaam Cave & Jozani Forest Expedition">Salaam Cave & Jozani Forest Expedition</option>
-                      <option value="Mnemba Island Snorkeling Trip">Mnemba Island Snorkeling Trip</option>
+                      <option value="2-Day Nyerere National Park (Selous) Safari from Zanzibar">2-Day Nyerere National Park (Selous) Safari from Zanzibar</option>
+                      <option value="4-Day Serengeti Fly-in Safari with Hot-Air Balloon">4-Day Serengeti Fly-in Safari with Hot-Air Balloon</option>
+                      <option value="3-Day Mikumi National Park Safari from Zanzibar">3-Day Mikumi National Park Safari from Zanzibar</option>
+                      <option value="2-Day Ngorongoro Safari from Zanzibar">2-Day Ngorongoro Safari from Zanzibar</option>
+                      <option value="3-Day Serengeti Safari from Zanzibar">3-Day Serengeti Safari from Zanzibar</option>
+                      <option value="Mikumi National Park Day Safari from Zanzibar">Mikumi National Park Day Safari from Zanzibar</option>
+                      <option value="Nyerere National Park (Selous) Day Safari from Zanzibar">Nyerere National Park (Selous) Day Safari from Zanzibar</option>
+                      <option value="5-Day Serengeti, Ngorongoro & Tarangire Safari from Zanzibar">5-Day Serengeti, Ngorongoro & Tarangire Safari from Zanzibar</option>
+                      <option value="3-Day Tarangire & Ngorongoro Safari from Zanzibar">3-Day Tarangire & Ngorongoro Safari from Zanzibar</option>
+                      <option value="8-Day Zanzibar & Mikumi Safari Experience">8-Day Zanzibar & Mikumi Safari Experience</option>
+                      <option value="Kendwa Sunset Dhow Cruise">Kendwa Sunset Dhow Cruise</option>
+                      <option value="Stone Town & Spice Farm Private Tour">Stone Town & Spice Farm Private Tour</option>
+                      <option value="Stone Town & Prison Island Private Tour">Stone Town & Prison Island Private Tour</option>
+                      <option value="Salaam Cave & Maalum Cave Private Tour">Salaam Cave & Maalum Cave Private Tour</option>
+                      <option value="Jozani Forest & Salaam Cave Turtle Experience">Jozani Forest & Salaam Cave Turtle Experience</option>
+                      <option value="Swim with Sea Turtles at Salaam Cave">Swim with Sea Turtles at Salaam Cave</option>
+                      <option value="Private Safari Blue Experience">Private Safari Blue Experience</option>
+                      <option value="Private Pungume Sandbank & Snorkeling Experience">Private Pungume Sandbank & Snorkeling Experience</option>
+                      <option value="Private Nyange Sandbank Experience">Private Nyange Sandbank Experience</option>
+                      <option value="Nakupenda Sandbank Experience">Nakupenda Sandbank Experience</option>
+                      <option value="Nakupenda Sandbank & Prison Island Private Tour">Nakupenda Sandbank & Prison Island Private Tour</option>
+                      <option value="Mnemba Island Snorkeling Experience">Mnemba Island Snorkeling Experience</option>
+                      <option value="Clear Kayak, Drone, Jet Ski & Jet Car Experience">Clear Kayak, Drone, Jet Ski & Jet Car Experience</option>
                     </Select>
                   </InputWrapper>
                 </FullWidth>
               </FormGrid>
+
+              <TermsRow>
+                <input
+                  id="booking-terms"
+                  type="checkbox"
+                  checked={agreed}
+                  onChange={(e) => {
+                    setAgreed(e.target.checked);
+                    if (e.target.checked) setTermsError(false);
+                  }}
+                />
+                <label htmlFor="booking-terms">
+                  I have read and agree to the{' '}
+                  <a href="/terms" target="_blank" rel="noopener noreferrer">
+                    Terms &amp; Conditions
+                  </a>
+                  .
+                </label>
+              </TermsRow>
+              {termsError && (
+                <TermsError>
+                  Please read and accept the Terms &amp; Conditions before booking.
+                </TermsError>
+              )}
 
               <SubmitButton
                 whileHover={{ scale: 1.05, boxShadow: "0 15px 40px rgba(59, 130, 246, 0.5)" }}

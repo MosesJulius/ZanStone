@@ -19,6 +19,7 @@ import SocialMediaButton from './components/SocialMediaButtonHover'; // Import t
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import DayTripsPage from './pages/DayTrips';
 import DayTripDetails from './pages/DayTripDetails';
+import Terms from './pages/Terms';
 
 const AppContainer = styled.div`
   font-family: 'Poppins', sans-serif;
@@ -48,6 +49,7 @@ const App = () => {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/dayTrips" element={<DayTripsPage />} />
             <Route path="/TripsDetails/:id" element={<DayTripDetails />} />
+            <Route path="/terms" element={<Terms />} />
           </Routes>
           <WhatsAppButton />
         </AppContainer>

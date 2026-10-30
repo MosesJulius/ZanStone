@@ -3,11 +3,14 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { FiClock, FiUsers, FiMapPin, FiStar, FiFilter, FiSearch } from 'react-icons/fi';
 import { FaStar } from 'react-icons/fa';
-import { dayTripsData, getAllDayTrips, getFeaturedDayTrips } from '../DataTripsData';
+import { dayTripsData, getAllDayTrips, getFeaturedDayTrips, isZanzibarPackage } from '../DataTripsData';
+import { safaris as parkSafaris } from './Safaris';
+import BookingFormModal from '../components/BookingFormModal';
 import Footer from '../components/Footer';
+import { color } from '../styles/color';
 
 // Responsive breakpoints
 const breakpoints = {
@@ -23,7 +26,7 @@ const PageContainer = styled.div`
 
 const HeroSection = styled.section`
   background: linear-gradient(135deg, #4CAF50, #2E7D32);
-  padding: 100px 20px 80px;
+  padding: 158px 20px 90px;
   color: white;
   text-align: center;
   position: relative;
@@ -50,34 +53,41 @@ const HeroSection = styled.section`
   }
 
   @media (max-width: ${breakpoints.mobile}) {
-    padding: 80px 15px 60px;
+    padding: 118px 15px 60px;
   }
 `;
 
 const HeroTitle = styled(motion.h1)`
-  font-size: 3.5rem;
-  margin-bottom: 20px;
+  font-size: 3.4rem;
+  margin-bottom: 18px;
   font-weight: 800;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  color: ${color.white};
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.28);
 
   @media (max-width: ${breakpoints.mobile}) {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 
   @media (max-width: 480px) {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 `;
 
 const HeroSubtitle = styled(motion.p)`
-  font-size: 1.3rem;
+  font-size: 1.25rem;
+  font-style: italic;
   max-width: 800px;
   margin: 0 auto;
+  color: #FFF8F0;
   opacity: 0.95;
   line-height: 1.6;
+  position: relative;
+  z-index: 2;
 
   @media (max-width: ${breakpoints.mobile}) {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 `;
 
@@ -93,26 +103,28 @@ const ContentContainer = styled.div`
 
 const SectionTitle = styled.h2`
   font-size: 2.5rem;
-  color: #1a202c;
-  margin-bottom: 40px;
+  color: ${color.heading};
+  margin-bottom: 44px;
   font-weight: 700;
+  text-align: center;
   position: relative;
-  display: inline-block;
+  display: block;
 
   &::after {
     content: '';
     position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 80px;
-    height: 4px;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 46px;
+    height: 3px;
     background: linear-gradient(90deg, #4CAF50, #2E7D32);
     border-radius: 2px;
   }
 
   @media (max-width: ${breakpoints.mobile}) {
     font-size: 2rem;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
   }
 `;
 
@@ -124,9 +136,10 @@ const FilterBar = styled.div`
   flex-wrap: wrap;
   gap: 20px;
   background: white;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  border: 1px solid ${color.border};
+  padding: 18px 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(42, 38, 34, 0.05);
 
   @media (max-width: ${breakpoints.mobile}) {
     flex-direction: column;
@@ -138,13 +151,20 @@ const SearchBox = styled.div`
   display: flex;
   align-items: center;
   background: #f1f5f9;
-  border-radius: 10px;
+  border: 1px solid ${color.border};
+  border-radius: 8px;
   padding: 0 15px;
   flex: 1;
   max-width: 400px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+  &:focus-within {
+    border-color: ${color.primary};
+    box-shadow: 0 0 0 3px rgba(255, 125, 51, 0.12);
+  }
 
   svg {
-    color: #64748b;
+    color: ${color.textMuted};
     font-size: 1.2rem;
   }
 
@@ -155,9 +175,10 @@ const SearchBox = styled.div`
     width: 100%;
     font-size: 1rem;
     outline: none;
+    color: ${color.textDark};
 
     &::placeholder {
-      color: #94a3b8;
+      color: ${color.textMuted};
     }
   }
 
@@ -174,10 +195,10 @@ const FilterButtons = styled.div`
 
 const FilterButton = styled.button`
   padding: 10px 20px;
-  border: 2px solid ${props => props.active ? '#4CAF50' : '#e2e8f0'};
-  background: ${props => props.active ? '#4CAF50' : 'white'};
-  color: ${props => props.active ? 'white' : '#64748b'};
-  border-radius: 8px;
+  border: 1px solid ${props => (props.active ? color.primary : color.border)};
+  background: ${props => (props.active ? '#4CAF50' : 'white')};
+  color: ${props => (props.active ? 'white' : color.textDark)};
+  border-radius: 999px;
   font-weight: 600;
   font-size: 0.9rem;
   cursor: pointer;
@@ -188,8 +209,9 @@ const FilterButton = styled.button`
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
-    border-color: #4CAF50;
+    box-shadow: 0 6px 14px rgba(255, 125, 51, 0.22);
+    border-color: ${color.primary};
+    color: ${props => (props.active ? 'white' : color.primary)};
   }
 
   svg {
@@ -221,39 +243,44 @@ const ToursGrid = styled.div`
 
 const TourCard = styled(motion.div)`
   background: white;
-  border-radius: 20px;
+  border: 1px solid ${color.border};
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-  transition: all 0.4s ease;
+  box-shadow: 0 6px 18px rgba(42, 38, 34, 0.06);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: pointer;
   position: relative;
+  display: flex;
+  flex-direction: column;
 
   &:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 60px rgba(76, 175, 80, 0.2);
+    transform: translateY(-6px);
+    box-shadow: 0 18px 36px rgba(255, 125, 51, 0.18);
   }
 
   @media (max-width: ${breakpoints.mobile}) {
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    
+    box-shadow: 0 4px 14px rgba(42, 38, 34, 0.08);
+
     &:hover {
-      transform: translateY(-5px);
+      transform: translateY(-4px);
     }
   }
 `;
 
 const CardImageContainer = styled.div`
   position: relative;
-  height: 240px;
+  height: 300px;
   overflow: hidden;
+  border-radius: 14px 14px 0 0;
 
   @media (max-width: ${breakpoints.mobile}) {
-    height: 140px;
+    height: 180px;
+    border-radius: 12px 12px 0 0;
   }
 
   @media (max-width: 480px) {
-    height: 120px;
+    height: 150px;
   }
 `;
 
@@ -261,10 +288,11 @@ const CardImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s ease;
+  filter: brightness(1.12) saturate(1.05);
+  transition: transform 0.5s ease;
 
   ${TourCard}:hover & {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   @media (max-width: ${breakpoints.mobile}) {
@@ -279,39 +307,44 @@ const StatusBadge = styled.div`
   top: 15px;
   right: 15px;
   background: ${props => props.color || 'linear-gradient(135deg, #FFD700, #FFA500)'};
-  color: ${props => props.textColor || '#000'};
-  padding: 8px 15px;
-  border-radius: 25px;
-  font-size: 0.8rem;
+  color: ${props => props.textColor || (props.$vip ? color.white : color.heading)};
+  border: 1px solid ${props => (props.$vip ? 'transparent' : 'rgba(255, 125, 51, 0.35)')};
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 0.75rem;
   font-weight: 700;
   z-index: 2;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(42, 38, 34, 0.14);
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
 
   @media (max-width: ${breakpoints.mobile}) {
     padding: 4px 8px;
-    font-size: 0.6rem;
+    font-size: 0.55rem;
     top: 8px;
     right: 8px;
   }
 `;
 
 const CardContent = styled.div`
-  padding: 25px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 
   @media (max-width: ${breakpoints.mobile}) {
-    padding: 12px;
+    padding: 8px;
   }
 
   @media (max-width: 480px) {
-    padding: 10px;
+    padding: 7px;
   }
 `;
 
 const TourName = styled.h3`
   font-size: 1.4rem;
-  color: #1a202c;
+  color: ${color.heading};
   margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.4;
@@ -334,10 +367,10 @@ const TourName = styled.h3`
 `;
 
 const TourShortDesc = styled.p`
-  color: #64748b;
+  color: ${color.textMuted};
   font-size: 0.95rem;
   line-height: 1.6;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -359,9 +392,9 @@ const TourMeta = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid ${color.border};
 
   @media (max-width: ${breakpoints.mobile}) {
     gap: 8px;
@@ -374,12 +407,12 @@ const MetaItem = styled.div`
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #4a5568;
+  color: ${color.textDark};
   font-size: 0.9rem;
   font-weight: 500;
 
   svg {
-    color: #4CAF50;
+    color: ${color.primary};
     font-size: 1rem;
   }
 
@@ -405,7 +438,7 @@ const Rating = styled.div`
   display: flex;
   align-items: center;
   gap: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 
   .stars {
     display: flex;
@@ -414,12 +447,12 @@ const Rating = styled.div`
 
   .rating-number {
     font-weight: 700;
-    color: #1a202c;
+    color: ${color.heading};
     margin-left: 5px;
   }
 
   .reviews {
-    color: #64748b;
+    color: ${color.textMuted};
     font-size: 0.85rem;
   }
 
@@ -442,17 +475,60 @@ const Rating = styled.div`
 `;
 
 const Star = styled(FaStar)`
-  color: ${props => props.filled ? '#FFD700' : '#e2e8f0'};
+  color: ${props => props.filled ? '#FFC107' : color.border};
 `;
 
 const PriceSection = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 8px;
 
   @media (max-width: ${breakpoints.mobile}) {
     margin-top: 8px;
+  }
+`;
+
+const CardActions = styled.div`
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 10px;
+`;
+
+const BookNowButton = styled.button`
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, ${color.primary}, ${color.primaryDark});
+  color: white;
+  border: none;
+  padding: 11px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(255, 125, 51, 0.3);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(255, 125, 51, 0.45);
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 7px 12px;
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+  }
+
+  @media (max-width: 480px) {
+    padding: 6px 10px;
+    font-size: 0.62rem;
   }
 `;
 
@@ -460,12 +536,12 @@ const Price = styled.div`
   .amount {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #4CAF50;
+    color: ${color.primary};
   }
 
   .note {
     font-size: 0.8rem;
-    color: #94a3b8;
+    color: ${color.textMuted};
     display: block;
   }
 
@@ -487,37 +563,51 @@ const Price = styled.div`
 `;
 
 const ViewDetailsButton = styled(Link)`
-  background: linear-gradient(135deg, #4CAF50, #2E7D32);
-  color: white;
-  padding: 12px 25px;
-  border-radius: 10px;
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 2px solid ${color.primary};
+  color: ${color.primary};
+  padding: 9px 16px;
+  border-radius: 8px;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
+  font-weight: 700;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   transition: all 0.3s ease;
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.4);
+    background: rgba(255, 125, 51, 0.08);
   }
 
   @media (max-width: ${breakpoints.mobile}) {
     padding: 6px 12px;
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     border-radius: 6px;
+    letter-spacing: 0.04em;
   }
 
   @media (max-width: 480px) {
     padding: 5px 10px;
-    font-size: 0.65rem;
+    font-size: 0.62rem;
   }
 `;
 
 const FeaturedSection = styled.section`
+  border: 1px solid ${color.border};
+  border-radius: 16px;
+  padding: 48px 30px 40px;
+  box-shadow: 0 8px 26px rgba(42, 38, 34, 0.05);
   margin-bottom: 60px;
 
   @media (max-width: ${breakpoints.mobile}) {
+    padding: 32px 14px 24px;
     margin-bottom: 30px;
+    border-radius: 14px;
   }
 `;
 
@@ -525,17 +615,18 @@ const NoResults = styled.div`
   text-align: center;
   padding: 60px 20px;
   background: white;
-  border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  border: 1px solid ${color.border};
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(42, 38, 34, 0.05);
 
   h3 {
     font-size: 1.8rem;
-    color: #1a202c;
+    color: ${color.heading};
     margin-bottom: 10px;
   }
 
   p {
-    color: #64748b;
+    color: ${color.textMuted};
     font-size: 1.1rem;
   }
 
@@ -551,6 +642,51 @@ const NoResults = styled.div`
     }
   }
 `;
+
+const isSafariTour = (tour) =>
+  /mikumi|selous|nyerere|ruaha/i.test(`${tour.location} ${tour.name}`) ||
+  (/safari/i.test(tour.name) && !/safari blue/i.test(tour.name));
+
+const mapSafariToCard = (safari) => ({
+  id: `safari-${safari.id}`,
+  name: safari.title,
+  shortDescription: safari.description,
+  description: safari.description,
+  duration: safari.duration,
+  groupSize: safari.groupSize || 'Private tour',
+  location: safari.location || 'Tanzania',
+  rating: safari.rating || 5,
+  reviewCount: safari.reviewCount || 0,
+  price: safari.price,
+  priceNote: safari.priceNote || 'Price based on',
+  status: safari.status || 'Safari',
+  image: safari.image,
+  whatsappMessage: safari.whatsappMessage,
+  detailPath: safari.detailPath || null,
+});
+
+const FILTER_META = {
+  zanzibar: {
+    title: 'All Zanzibar Tours 🏝️',
+    subtitle: 'Every Zanzibar experience — island day tours and ocean adventures.',
+    section: 'All Zanzibar Tours',
+  },
+  safari: {
+    title: 'Tanzania Safaris 🦁',
+    subtitle: 'Our ZanStone experiences in Zanzibar — ocean adventures led by local experts.',
+    section: 'All Safaris',
+  },
+  daytrip: {
+    title: 'Day Trips in Zanzibar ☀️',
+    subtitle: 'Discover the best of Zanzibar in a single day! From marine adventures to cultural tours, we offer unforgettable experiences tailored just for you.',
+    section: 'All Day Trips',
+  },
+  all: {
+    title: 'Zanzibar & Safaris 🌍',
+    subtitle: 'All our tours in one place — every ZanStone experience.',
+    section: 'All Tours',
+  },
+};
 
 // Helper function to format price display
 const formatPrice = (price) => {
@@ -572,12 +708,41 @@ const formatPrice = (price) => {
   return 'Contact';
 };
 
+// Merge lists without showing the same package twice
+// (safari cards reuse the same tours with a `safari-` id prefix)
+const dedupeById = (tours) => {
+  const seen = new Set();
+  return tours.filter(tour => {
+    const key = String(tour.id).replace(/^safari-/, '');
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+};
+
 const DayTripsPage = () => {
+  const [searchParams] = useSearchParams();
+  const filterParam = searchParams.get('filter');
+  const meta = FILTER_META[filterParam];
+
+  const safariCards = parkSafaris.map(mapSafariToCard);
+  const baseTours =
+    filterParam === 'safari'
+      ? dedupeById([...dayTripsData.filter(isSafariTour), ...safariCards])
+      : filterParam === 'zanzibar'
+        ? dayTripsData.filter(isZanzibarPackage)
+        : filterParam === 'daytrip'
+          ? dayTripsData.filter(tour => tour.isDayTrip)
+          : filterParam === 'all'
+            ? dedupeById([...dayTripsData, ...safariCards])
+            : dayTripsData;
+
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredTours, setFilteredTours] = useState(dayTripsData);
   const [activeFilter, setActiveFilter] = useState('all');
   const [featuredTours, setFeaturedTours] = useState([]);
   const [isMobile, setIsMobile] = useState(false);
+  const [showBookingModal, setShowBookingModal] = useState(false);
 
   useEffect(() => {
     // Check if mobile
@@ -597,7 +762,7 @@ const DayTripsPage = () => {
 
   useEffect(() => {
     // Filter tours based on search term and active filter
-    let filtered = dayTripsData;
+    let filtered = baseTours;
 
     if (searchTerm) {
       filtered = filtered.filter(tour => 
@@ -611,10 +776,14 @@ const DayTripsPage = () => {
       filtered = filtered.filter(tour => tour.featured);
     } else if (activeFilter === 'best-seller') {
       filtered = filtered.filter(tour => tour.status?.includes('Best-Seller'));
+    } else if (!filterParam && !searchTerm) {
+      // Featured tours are already shown in the section above — don't repeat them
+      const featuredIds = new Set(featuredTours.map(tour => tour.id));
+      filtered = filtered.filter(tour => !featuredIds.has(tour.id));
     }
 
     setFilteredTours(filtered);
-  }, [searchTerm, activeFilter]);
+  }, [searchTerm, activeFilter, filterParam, featuredTours]);
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
@@ -635,20 +804,24 @@ const DayTripsPage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Zanzibar Day Trips ☀️
+          {meta ? meta.title : 'Zanzibar Day Trips ☀️'}
         </HeroTitle>
         <HeroSubtitle
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Discover the best of Zanzibar in a single day! From marine adventures to cultural tours,
-          we offer unforgettable experiences tailored just for you.
+          {meta ? meta.subtitle : (
+            <>
+              Discover the best of Zanzibar in a single day! From marine adventures to cultural tours,
+              we offer unforgettable experiences tailored just for you.
+            </>
+          )}
         </HeroSubtitle>
       </HeroSection>
 
       <ContentContainer>
-        {featuredTours.length > 0 && (
+        {!filterParam && activeFilter === 'all' && !searchTerm && featuredTours.length > 0 && (
           <FeaturedSection>
             <SectionTitle>Featured Day Trips</SectionTitle>
             <ToursGrid>
@@ -663,7 +836,7 @@ const DayTripsPage = () => {
                   <CardImageContainer>
                     <CardImage src={tour.image} alt={tour.name} />
                     {tour.status && (
-                      <StatusBadge>⭐ {isMobile ? tour.status.split(' ')[0] : tour.status}</StatusBadge>
+                      <StatusBadge $vip={tour.status.includes('VIP')}>⭐ {tour.status}</StatusBadge>
                     )}
                   </CardImageContainer>
                   
@@ -673,13 +846,13 @@ const DayTripsPage = () => {
                     
                     <TourMeta>
                       <MetaItem>
-                        <FiClock /> {isMobile ? tour.duration.split(' ')[0] : tour.duration}
+                        <FiClock /> {tour.duration}
                       </MetaItem>
                       <MetaItem>
                         <FiUsers /> {isMobile ? tour.groupSize.split(' ')[0] : tour.groupSize}
                       </MetaItem>
                       <MetaItem>
-                        <FiMapPin /> {isMobile ? tour.location.split(' ')[0] : tour.location}
+                        <FiMapPin /> {tour.location}
                       </MetaItem>
                     </TourMeta>
 
@@ -691,7 +864,9 @@ const DayTripsPage = () => {
                           ))}
                         </div>
                         <span className="rating-number">{tour.rating}</span>
-                        <span className="reviews">({tour.reviewCount} reviews)</span>
+                        {tour.reviewCount > 0 && (
+                          <span className="reviews">({tour.reviewCount} reviews)</span>
+                        )}
                       </Rating>
                     )}
 
@@ -700,10 +875,18 @@ const DayTripsPage = () => {
                         <span className="amount">{formatPrice(tour.price)}</span>
                         {!isMobile && <span className="note">{tour.priceNote}</span>}
                       </Price>
-                      <ViewDetailsButton to={`/TripsDetails/${tour.id}`}>
-                        {isMobile ? 'View' : 'View Details'}
-                      </ViewDetailsButton>
                     </PriceSection>
+
+                    <CardActions>
+                      <BookNowButton type="button" onClick={() => setShowBookingModal(true)}>
+                        Book Now
+                      </BookNowButton>
+                      {tour.detailPath !== null && (
+                        <ViewDetailsButton to={tour.detailPath || `/TripsDetails/${tour.id}`}>
+                          {isMobile ? 'View' : 'View Details'}
+                        </ViewDetailsButton>
+                      )}
+                    </CardActions>
                   </CardContent>
                 </TourCard>
               ))}
@@ -711,7 +894,7 @@ const DayTripsPage = () => {
           </FeaturedSection>
         )}
 
-        <SectionTitle>All Day Trips</SectionTitle>
+        <SectionTitle>{meta ? meta.section : 'All Day Trips'}</SectionTitle>
 
         <FilterBar>
           <SearchBox>
@@ -767,7 +950,7 @@ const DayTripsPage = () => {
                   <CardImageContainer>
                     <CardImage src={tour.image} alt={tour.name} />
                     {tour.status && (
-                      <StatusBadge>⭐ {isMobile ? tour.status.split(' ')[0] : tour.status}</StatusBadge>
+                      <StatusBadge $vip={tour.status.includes('VIP')}>⭐ {tour.status}</StatusBadge>
                     )}
                   </CardImageContainer>
                   
@@ -777,13 +960,13 @@ const DayTripsPage = () => {
                     
                     <TourMeta>
                       <MetaItem>
-                        <FiClock /> {isMobile ? tour.duration.split(' ')[0] : tour.duration}
+                        <FiClock /> {tour.duration}
                       </MetaItem>
                       <MetaItem>
                         <FiUsers /> {isMobile ? tour.groupSize.split(' ')[0] : tour.groupSize}
                       </MetaItem>
                       <MetaItem>
-                        <FiMapPin /> {isMobile ? tour.location.split(' ')[0] : tour.location}
+                        <FiMapPin /> {tour.location}
                       </MetaItem>
                     </TourMeta>
 
@@ -795,7 +978,9 @@ const DayTripsPage = () => {
                           ))}
                         </div>
                         <span className="rating-number">{tour.rating}</span>
-                        <span className="reviews">({tour.reviewCount} reviews)</span>
+                        {tour.reviewCount > 0 && (
+                          <span className="reviews">({tour.reviewCount} reviews)</span>
+                        )}
                       </Rating>
                     )}
 
@@ -804,10 +989,18 @@ const DayTripsPage = () => {
                         <span className="amount">{formatPrice(tour.price)}</span>
                         {!isMobile && <span className="note">{tour.priceNote}</span>}
                       </Price>
-                      <ViewDetailsButton to={`/TripsDetails/${tour.id}`}>
-                        {isMobile ? 'View' : 'View Details'}
-                      </ViewDetailsButton>
                     </PriceSection>
+
+                    <CardActions>
+                      <BookNowButton type="button" onClick={() => setShowBookingModal(true)}>
+                        Book Now
+                      </BookNowButton>
+                      {tour.detailPath !== null && (
+                        <ViewDetailsButton to={tour.detailPath || `/TripsDetails/${tour.id}`}>
+                          {isMobile ? 'View' : 'View Details'}
+                        </ViewDetailsButton>
+                      )}
+                    </CardActions>
                   </CardContent>
                 </TourCard>
               ))}
@@ -829,6 +1022,7 @@ const DayTripsPage = () => {
         </AnimatePresence>
       </ContentContainer>
 
+      <BookingFormModal open={showBookingModal} onClose={() => setShowBookingModal(false)} />
       <Footer />
     </PageContainer>
   );

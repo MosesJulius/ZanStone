@@ -3,10 +3,12 @@ import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { FiImage, FiVideo, FiHeart, FiPlus, FiSearch, FiMenu, FiFilter, FiX } from 'react-icons/fi';
 import { FaPinterest } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 import ImageGallery from '../components/ImageGallery';
 import VideoGallery from '../components/VideoGallery';
 import SectionTitle from '../components/SectionTitle';
 import Footer from '../components/Footer';
+import { color } from '../styles/color';
 
 const fadeIn = keyframes`
   from {
@@ -19,14 +21,71 @@ const fadeIn = keyframes`
   }
 `;
 
+const PageWrapper = styled.div`
+  background: ${color.cream};
+  min-height: 100vh;
+`;
+
+const PageHero = styled.section`
+  padding: 158px 20px 90px;
+  background: linear-gradient(135deg, #4CAF50, #2E7D32);
+  color: ${color.white};
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    padding: 118px 15px 60px;
+  }
+`;
+
+const HeroTitle = styled(motion.h1)`
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: ${color.white};
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.28);
+
+  @media (max-width: 768px) {
+    font-size: 2.2rem;
+  }
+`;
+
+const HeroSubtitle = styled(motion.p)`
+  font-size: 1.2rem;
+  font-style: italic;
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #FFF8F0;
+  opacity: 0.95;
+  position: relative;
+  z-index: 2;
+
+  @media (max-width: 768px) {
+    font-size: 1.02rem;
+  }
+`;
+
+const GalleryBand = styled.section`
+  background: ${color.white};
+  padding: 55px 0 65px;
+
+  @media (max-width: 768px) {
+    padding: 40px 0 55px;
+  }
+`;
+
 const GalleryContainer = styled.div`
-  padding: 70px 12px 25px;
+  padding: 0 12px;
   max-width: 1400px;
   margin: 0 auto;
   animation: ${fadeIn} 0.6s ease-out;
 
   @media (min-width: 768px) {
-    padding: 80px 20px 30px;
+    padding: 0 20px;
   }
 `;
 
@@ -62,7 +121,7 @@ const MobileLogo = styled.div`
   display: flex;
   align-items: center;
   font-weight: 700;
-  color: #e64900ff;
+  color: ${color.primary};
   font-size: 1.2rem;
 `;
 
@@ -76,8 +135,8 @@ const MobileMenuButton = styled.button`
 `;
 
 const DesktopHeader = styled.div`
-  display: none;
-  
+  display: block;
+
   @media (min-width: 768px) {
     display: block;
   }
@@ -155,9 +214,10 @@ const TabContainer = styled.div`
   justify-content: center;
   margin-bottom: 25px;
   background: white;
+  border: 1px solid ${color.border};
   padding: 5px;
-  border-radius: 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(42, 38, 34, 0.06);
   max-width: 100%;
   width: fit-content;
   margin-left: auto;
@@ -165,7 +225,7 @@ const TabContainer = styled.div`
 
   @media (min-width: 768px) {
     padding: 6px;
-    border-radius: 25px;
+    border-radius: 999px;
     max-width: 400px;
     margin-bottom: 35px;
   }
@@ -175,9 +235,9 @@ const TabButton = styled.button`
   padding: 10px 16px;
   margin: 0 4px;
   background: ${props => props.active ? 'linear-gradient(135deg, #e62300ff, #bd2600ff)' : 'transparent'};
-  color: ${props => props.active ? 'white' : '#333'};
+  color: ${props => props.active ? 'white' : color.textDark};
   border: none;
-  border-radius: 16px;
+  border-radius: 999px;
   cursor: pointer;
   font-size: 0.8rem;
   font-weight: 600;
@@ -185,12 +245,13 @@ const TabButton = styled.button`
   align-items: center;
   white-space: nowrap;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: ${props => props.active ? '0 2px 8px rgba(230, 0, 35, 0.25)' : 'none'};
+  box-shadow: ${props => props.active ? '0 4px 12px rgba(255, 125, 51, 0.28)' : 'none'};
 
   &:hover {
     background: ${props => props.active 
       ? 'linear-gradient(135deg, #e60023, #bd001c)' 
       : 'rgba(0,0,0,0.04)'};
+    color: ${props => props.active ? 'white' : color.primary};
     transform: ${props => props.active ? 'none' : 'translateY(-1px)'};
   }
 
@@ -203,7 +264,7 @@ const TabButton = styled.button`
     padding: 10px 24px;
     margin: 0 4px;
     font-size: 0.85rem;
-    border-radius: 20px;
+    border-radius: 999px;
     
     svg {
       font-size: 0.95rem;
@@ -224,7 +285,7 @@ const FloatingActionButton = styled.button`
   color: white;
   font-size: 1.1rem;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(230, 0, 35, 0.35);
+  box-shadow: 0 4px 15px rgba(255, 125, 51, 0.35);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -233,7 +294,7 @@ const FloatingActionButton = styled.button`
 
   &:hover {
     transform: scale(1.1) rotate(90deg);
-    box-shadow: 0 6px 20px rgba(230, 0, 35, 0.5);
+    box-shadow: 0 6px 20px rgba(255, 125, 51, 0.5);
   }
 
   @media (min-width: 768px) {
@@ -261,30 +322,31 @@ const FilterSection = styled.div`
 `;
 
 const FilterButton = styled.button`
-  padding: 6px 12px;
+  padding: 7px 14px;
   background: ${props => props.active ? '#e60023' : 'white'};
-  color: ${props => props.active ? 'white' : '#333'};
-  border: 1.5px solid ${props => props.active ? '#e60023' : '#e0e0e0'};
-  border-radius: 14px;
+  color: ${props => props.active ? 'white' : color.textDark};
+  border: 1px solid ${props => props.active ? color.primary : color.border};
+  border-radius: 999px;
   cursor: pointer;
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-size: 0.78rem;
+  font-weight: 600;
   transition: all 0.3s ease;
   white-space: nowrap;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 5px;
 
   &:hover {
     background: ${props => props.active ? '#e60023' : '#f8f8f8'};
-    border-color: ${props => props.active ? '#e60023' : '#ccc'};
+    border-color: ${props => props.active ? color.primaryDark : color.primary};
+    color: ${props => props.active ? 'white' : color.primary};
     transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(255, 125, 51, 0.18);
   }
 
   @media (min-width: 768px) {
-    padding: 8px 16px;
-    font-size: 0.8rem;
-    border-radius: 16px;
+    padding: 9px 20px;
+    font-size: 0.82rem;
   }
 `;
 
@@ -296,8 +358,9 @@ const StatsBar = styled.div`
   margin: 20px 0;
   padding: 12px;
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid ${color.border};
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(42, 38, 34, 0.05);
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -305,7 +368,7 @@ const StatsBar = styled.div`
   @media (min-width: 768px) {
     gap: 25px;
     padding: 15px;
-    border-radius: 15px;
+    border-radius: 14px;
     max-width: 500px;
     margin: 25px auto;
   }
@@ -323,7 +386,7 @@ const StatItem = styled.div`
   .stat-number {
     font-size: 1rem;
     font-weight: 700;
-    color: #e60023;
+    color: ${color.primary};
     margin-bottom: 2px;
     
     @media (min-width: 768px) {
@@ -333,7 +396,7 @@ const StatItem = styled.div`
   
   .stat-label {
     font-size: 0.7rem;
-    color: #666;
+    color: ${color.textMuted};
     font-weight: 500;
     
     @media (min-width: 768px) {
@@ -343,9 +406,9 @@ const StatItem = styled.div`
 `;
 
 const ModernSectionTitle = styled(SectionTitle)`
+  color: ${color.heading};
   background: linear-gradient(135deg, #333, #e64100ff);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-weight: 700;
   margin-bottom: 10px;
   
@@ -362,23 +425,122 @@ const ModernGalleryWrapper = styled.div`
     width: 100%;
     display: block;
   }
+
+  .image-gallery h1 {
+    color: ${color.heading} !important;
+    -webkit-text-fill-color: ${color.heading} !important;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 14px;
+    margin-bottom: 14px !important;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      width: 46px;
+      height: 3px;
+      background: ${color.primary};
+      border-radius: 2px;
+    }
+  }
+
+  .image-gallery p {
+    color: ${color.textMuted} !important;
+    font-style: italic;
+  }
+
+  .image-gallery input[type='text'] {
+    border: 1px solid ${color.border};
+    box-shadow: none;
+    color: ${color.textDark};
+
+    &:focus {
+      outline: none;
+      border-color: ${color.primary};
+      box-shadow: 0 0 0 3px rgba(255, 125, 51, 0.12);
+    }
+
+    &::placeholder {
+      color: ${color.textMuted};
+    }
+  }
+
+  .gal-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 55%;
+    opacity: 0;
+    transition: opacity 0.45s ease;
+    pointer-events: none;
+    z-index: 2;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .gal-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 10px 12px;
+    z-index: 3;
+    color: #ffffff;
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1.35;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.45s ease, transform 0.45s ease;
+    pointer-events: none;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .gal-item:hover::after {
+    opacity: 1;
+  }
+
+  .gal-item:hover .gal-caption {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (hover: none) {
+    .gal-item::after {
+      opacity: 1;
+    }
+
+    .gal-caption {
+      opacity: 1;
+      transform: none;
+    }
+  }
 `;
 
 const EmptyState = styled.div`
   text-align: center;
   padding: 60px 20px;
-  color: #666;
+  color: ${color.textMuted};
   
   svg {
     font-size: 3rem;
     margin-bottom: 15px;
-    color: #e0e0e0;
+    color: ${color.accent};
   }
   
   h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: #333;
+    color: ${color.heading};
   }
   
   p {
@@ -386,6 +548,7 @@ const EmptyState = styled.div`
     max-width: 400px;
     margin: 0 auto;
     line-height: 1.5;
+    color: ${color.textMuted};
   }
 `;
 
@@ -402,7 +565,7 @@ const GalleryPage = () => {
   const filters = [
     { key: 'all', label: 'All', icon: null },
     { key: 'popular', label: 'Popular', icon: <FiHeart size={12} /> },
-    { key: 'favorites', label: 'Favorites', icon: <FiHeart size={12} fill="#e60023" /> },
+    { key: 'favorites', label: 'Favorites', icon: <FiHeart size={12} fill={color.primary} /> },
     { key: 'recent', label: 'Recent', icon: null },
     { key: 'featured', label: 'Featured', icon: null }
   ];
@@ -425,6 +588,49 @@ const GalleryPage = () => {
       totalLikes: Math.floor(favoriteImages.length * 15)
     }));
   }, [favoriteImages]);
+
+  // Tag gallery thumbnails so this page can render the hover overlay + white title
+  useEffect(() => {
+    const formatTitle = (alt) =>
+      alt
+        .split('-')
+        .filter(Boolean)
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+
+    const applyCaptions = () => {
+      const root = document.getElementById('gallery-root');
+      if (!root) return;
+
+      root.querySelectorAll('img').forEach(img => {
+        const wrap = img.parentElement;
+        if (!wrap || wrap.tagName !== 'DIV') return;
+        if (wrap.style.position !== 'absolute') return;
+        if (!img.alt || wrap.dataset.captionReady === '1') return;
+
+        wrap.dataset.captionReady = '1';
+        wrap.classList.add('gal-item');
+
+        const caption = document.createElement('span');
+        caption.className = 'gal-caption';
+        caption.textContent = formatTitle(img.alt);
+        wrap.appendChild(caption);
+      });
+    };
+
+    applyCaptions();
+
+    const root = document.getElementById('gallery-root');
+    let observer = null;
+    if (root && typeof MutationObserver !== 'undefined') {
+      observer = new MutationObserver(applyCaptions);
+      observer.observe(root, { childList: true, subtree: true });
+    }
+
+    return () => {
+      if (observer) observer.disconnect();
+    };
+  }, []);
 
   const handleSearch = (e) => {
     setSearchQuery(e.target.value);
@@ -508,44 +714,67 @@ const GalleryPage = () => {
         </MobileMenuButton>
       </MobileHeader>
 
-      <GalleryContainer>
-        <DesktopHeader>
-          <HeaderSection>
-            <ModernSectionTitle>Our Gallery</ModernSectionTitle>
-            <p style={{ 
-              color: '#666', 
-              fontSize: '0.9rem',
-              maxWidth: '500px',
-              margin: '0 auto',
-              lineHeight: '1.4'
-            }}>
-              Explore beautiful photos and videos from Zanzibar. Come and Touch the Dream, Rafiki Visit Zanzibar 
-            </p>
-          </HeaderSection>
-        </DesktopHeader>
+      <PageWrapper>
+        <PageHero>
+          <DesktopHeader>
+            <HeaderSection>
+              <HeroTitle
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7 }}
+              >
+                Our Gallery
+              </HeroTitle>
+              <HeroSubtitle
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.15 }}
+              >
+                Explore beautiful photos and videos from Zanzibar. Come and Touch the Dream, Rafiki Visit Zanzibar
+              </HeroSubtitle>
+            </HeaderSection>
+          </DesktopHeader>
+        </PageHero>
 
-        
-        <TabContainer>
-          <TabButton 
-            active={true}
-            disabled
-          >
-            <FiImage /> Photos
-          </TabButton>
-        </TabContainer>
-        <ModernGalleryWrapper>
-          {renderEmptyState() || (
-            <div className="image-gallery">
-              <ImageGallery 
-                searchQuery={searchQuery}
-                activeFilter={activeFilter}
-                favoriteImages={favoriteImages}
-                setFavoriteImages={setFavoriteImages}
-              />
-            </div>
-          )}
-        </ModernGalleryWrapper>
-      </GalleryContainer>
+        <GalleryBand>
+          <GalleryContainer>
+            <TabContainer>
+              <TabButton 
+                active={true}
+                disabled
+              >
+                <FiImage /> Photos
+              </TabButton>
+            </TabContainer>
+
+            <FilterSection>
+              {filters.map(filter => (
+                <FilterButton
+                  key={filter.key}
+                  active={activeFilter === filter.key}
+                  onClick={() => handleFilterClick(filter.key)}
+                >
+                  {filter.icon}
+                  {filter.label}
+                </FilterButton>
+              ))}
+            </FilterSection>
+
+            <ModernGalleryWrapper id="gallery-root">
+              {renderEmptyState() || (
+                <div className="image-gallery">
+                  <ImageGallery 
+                    searchQuery={searchQuery}
+                    activeFilter={activeFilter}
+                    favoriteImages={favoriteImages}
+                    setFavoriteImages={setFavoriteImages}
+                  />
+                </div>
+              )}
+            </ModernGalleryWrapper>
+          </GalleryContainer>
+        </GalleryBand>
+      </PageWrapper>
 
       
 

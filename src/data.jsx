@@ -1,5 +1,4 @@
 import zanz1 from '../src/assets/video/zanz1.mp4'; // Make sure this path and file exist
-import safari1 from '../src/assets/image/safari1.jpg'; // Make sure this path and file exist
 import zanz2 from '../src/assets/image/zanz2.jpg'; // Make sure this path and file exist
 import zanz3 from '../src/assets/image/zanz3.jpg'; // Make sure this path
 import member1 from '../src/assets/image/member1.png';
@@ -10,32 +9,6 @@ import members from '../src/assets/image/user.jpg'
 
 // Make sure this path and file exist
 
-
-export const tours = [
-  {
-    id: 1,
-    title: "Stone Town Cultural Tour",
-    description: "Explore the UNESCO World Heritage Site with its fascinating blend of Arab, Persian, Indian and European influences.",
-    price: "$75",
-    duration: "4 hours",
-    image: zanz2,
-    highlights: ["House of Wonders", "Old Fort", "Forodhani Gardens", "Slave Market"]
-  },
-  // More tours...
-];
-
-export const safaris = [
-  {
-    id: 1,
-    title: "Selous Game Reserve",
-    description: "One of the largest faunal reserves in the world with diverse wildlife including elephants, hippos, and rare African wild dogs.",
-    duration: "3 Days",
-    price: "$450",
-    image: safari1,
-    highlights: ["Boat safaris along the Rufiji River", "Walking safaris with armed guides", "Night game drives"]
-  },
-  // More safaris...
-];
 
 export const testimonials = [
   {
